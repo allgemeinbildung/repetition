@@ -77,4 +77,46 @@
                 showResult();
             }
         }
+        function checkAnswer(answerIndex) {
+            const question = quizData.questions[currentQuestionIndex];
+            const selectedAnswer = question.answers[answerIndex];
+            feedback.textContent = selectedAnswer.feedback;
+            if (selectedAnswer.is_correct) {
+                score += question.points;
+            }
+            nextButton.style.display = 'block';
+            Array.from(answerContainer.children).forEach(button => button.disabled = true);
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentQuestionIndex++;
+            showQuestion();
+        });
+
+        function showResult() {
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            finalScore.textContent = score;
+        }
+
+        loadQuizButton.addEventListener('click', () => {
+            const selectedFile = topicSelect.value;
+            if (selectedFile) {
+                fetch(selectedFile)
+                    .then(response => response.json())
+                    .then(data => {
+                        quizData = data;
+                        currentQuestionIndex = 0;
+                        score = 0;
+                        questionContainer.style.display = 'block';
+                        resultContainer.style.display = 'none';
+                        showQuestion();
+                    });
+            } else {
+                alert('Please select a topic.');
+            }
+        });
+    </script>
+</body>
+</html>
 
