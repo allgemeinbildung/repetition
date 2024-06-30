@@ -11,6 +11,19 @@
             margin: 0 auto;
             padding: 20px;
         }
+        #fileList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #fileList li {
+            cursor: pointer;
+            padding: 5px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+        }
+        #fileList li:hover {
+            background-color: #e0e0e0;
+        }
         #questionContainer, #resultContainer {
             margin-top: 20px;
         }
@@ -22,10 +35,8 @@
 <body>
     <h1>Lernquiz</h1>
     <div>
-        <label for="fileSelect">Wähle eine JSON-Datei:</label>
-        <select id="fileSelect">
-            <option value="">Bitte wählen</option>
-        </select>
+        <h2>Wähle eine JSON-Datei:</h2>
+        <ul id="fileList"></ul>
     </div>
     <div id="questionContainer" style="display:none;">
         <h2 id="questionTitle"></h2>
@@ -44,7 +55,7 @@
         let currentQuestionIndex = 0;
         let score = 0;
 
-        const fileSelect = document.getElementById('fileSelect');
+        const fileList = document.getElementById('fileList');
         const questionContainer = document.getElementById('questionContainer');
         const questionTitle = document.getElementById('questionTitle');
         const questionText = document.getElementById('questionText');
@@ -54,30 +65,33 @@
         const resultContainer = document.getElementById('resultContainer');
         const finalScore = document.getElementById('finalScore');
 
-        // Load available JSON files
-        fetch('/questions')
-            .then(response => response.json())
-            .then(files => {
-                files.forEach(file => {
-                    const option = document.createElement('option');
-                    option.value = file;
-                    option.textContent = file;
-                    fileSelect.appendChild(option);
+        // Load and display available JSON files
+        fetch('questions/')
+            .then(response => response.text())
+            .then(text => {
+                const parser = new DOMParser();
+                const htmlDoc = parser.parseFromString(text, 'text/html');
+                const links = htmlDoc.querySelectorAll('a');
+                links.forEach(link => {
+                    if (link.href.endsWith('.json')) {
+                        const li = document.createElement('li');
+                        li.textContent = link.textContent;
+                        li.addEventListener('click', () => loadQuestions(link.textContent));
+                        fileList.appendChild(li);
+                    }
                 });
             });
 
-        fileSelect.addEventListener('change', (event) => {
-            if (event.target.value) {
-                fetch(`/questions/${event.target.value}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        questions = data.questions;
-                        currentQuestionIndex = 0;
-                        score = 0;
-                        showQuestion();
-                    });
-            }
-        });
+        function loadQuestions(filename) {
+            fetch(`questions/${filename}`)
+                .then(response => response.json())
+                .then(data => {
+                    questions = data.questions;
+                    currentQuestionIndex = 0;
+                    score = 0;
+                    showQuestion();
+                });
+        }
 
         function showQuestion() {
             if (currentQuestionIndex < questions.length) {
