@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lernquiz</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        #questionContainer, #resultContainer {
-            margin-top: 20px;
-        }
-        button {
-            margin-top: 10px;
-            margin-right: 10px;
-        }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        button { margin-top: 10px; margin-right: 10px; }
     </style>
 </head>
 <body>
@@ -37,146 +26,33 @@
     <script>
         // Hardcoded quiz data
         const quizData = {
-              "questions": [
+            "questions": [
                 {
-                  "title": "Preisbildung",
-                  "type": "Multiple Choice",
-                  "question_text": "Was passiert mit dem Preis eines Gutes, wenn es im Überfluss vorhanden ist?",
-                  "answers": [
-                    {
-                      "text": "Der Preis sinkt.",
-                      "is_correct": true,
-                      "feedback": "Richtig! Wenn ein Gut im Überfluss vorhanden ist, sinkt der Preis, da das Angebot die Nachfrage übersteigt. Ein Beispiel ist die Senkung der Preise für Sommerkleidung am Ende der Saison, wenn der Markt übersättigt ist."
-                    },
-                    {
-                      "text": "Der Preis steigt.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Der Preis steigt, wenn ein Gut knapp ist. Die richtige Antwort ist, dass der Preis sinkt. Zum Beispiel fallen die Preise für Lebensmittel nach der Ernte, wenn ein Überschuss vorhanden ist."
-                    },
-                    {
-                      "text": "Der Preis bleibt gleich.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Der Preis bleibt nicht gleich, wenn das Angebot steigt und die Nachfrage gleich bleibt. Die richtige Antwort ist, dass der Preis sinkt. Zum Beispiel sinken die Preise für Elektronikprodukte, wenn neue Modelle eingeführt werden und das alte Modell im Überfluss vorhanden ist."
-                    }
-                  ],
-                  "points": 1,
-                  "penalty": 0,
-                  "additional_info": {
-                    "real_life_example": "Ein Beispiel ist die Senkung der Preise für Sommerkleidung am Ende der Saison, wenn der Markt übersättigt ist."
-                  }
-                },
-                {
-                  "title": "Wirtschaftskreislauf",
-                  "type": "Multiple Choice",
-                  "question_text": "Welche Produktionsfaktoren sind notwendig, um Güter herzustellen und Dienstleistungen anzubieten?",
-                  "answers": [
-                    {
-                      "text": "Boden, Arbeit und Kapital",
-                      "is_correct": true,
-                      "feedback": "Richtig! Die drei klassischen Produktionsfaktoren sind Boden, Arbeit und Kapital. Zum Beispiel benötigt ein Bauernhof Land, Arbeitskräfte und Maschinen, um landwirtschaftliche Produkte zu erzeugen."
-                    },
-                    {
-                      "text": "Kapital, Arbeit und Dienstleistungen",
-                      "is_correct": false,
-                      "feedback": "Falsch! Dienstleistungen sind keine Produktionsfaktoren, sondern das Ergebnis der Produktion. Die richtige Antwort ist Boden, Arbeit und Kapital. Beispielsweise benötigt ein Industriebetrieb Land für die Fabrik, Arbeiter und Maschinen."
-                    },
-                    {
-                      "text": "Rohstoffe, Arbeit und Nachfrage",
-                      "is_correct": false,
-                      "feedback": "Falsch! Nachfrage ist kein Produktionsfaktor. Die richtigen Produktionsfaktoren sind Boden, Arbeit und Kapital. Zum Beispiel nutzt eine Textilfabrik Land, Arbeitskräfte und Kapital für Maschinen und Gebäude."
-                    }
-                  ],
-                  "points": 1,
-                  "penalty": 0,
-                  "additional_info": {
-                    "real_life_example": "Zum Beispiel benötigt ein Bauernhof Land, Arbeitskräfte und Maschinen, um landwirtschaftliche Produkte zu erzeugen."
-                  }
-                },
-                {
-                  "title": "Marktgleichgewicht",
-                  "type": "Multiple Choice",
-                  "question_text": "Was versteht man unter dem Begriff 'Marktgleichgewicht'?",
-                  "answers": [
-                    {
-                      "text": "Den Zustand, in dem Angebot und Nachfrage eines Gutes übereinstimmen.",
-                      "is_correct": true,
-                      "feedback": "Richtig! Marktgleichgewicht beschreibt den Zustand, in dem die angebotene Menge eines Gutes der nachgefragten Menge entspricht. Ein Beispiel ist, wenn das Angebot an Wohnungen in einer Stadt genau der Nachfrage entspricht und die Preise stabil bleiben."
-                    },
-                    {
-                      "text": "Den Zustand, in dem das Angebot eines Gutes höher ist als die Nachfrage.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Das ist ein Zustand des Überschusses. Die richtige Antwort ist, dass das Marktgleichgewicht erreicht ist, wenn Angebot und Nachfrage übereinstimmen. Zum Beispiel bleiben die Preise für Konzerttickets stabil, wenn die Nachfrage die Anzahl der verfügbaren Tickets genau abdeckt."
-                    },
-                    {
-                      "text": "Den Zustand, in dem die Nachfrage nach einem Gut höher ist als das Angebot.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Das ist ein Zustand der Knappheit. Die richtige Antwort ist, dass das Marktgleichgewicht erreicht ist, wenn Angebot und Nachfrage übereinstimmen. Ein Beispiel ist der Markt für Smartphones, wenn die produzierte Menge genau der Kaufbereitschaft der Konsumenten entspricht."
-                    }
-                  ],
-                  "points": 1,
-                  "penalty": 0,
-                  "additional_info": {
-                    "real_life_example": "Ein Beispiel ist, wenn das Angebot an Wohnungen in einer Stadt genau der Nachfrage entspricht und die Preise stabil bleiben."
-                  }
-                },
-                {
-                  "title": "Strukturwandel",
-                  "type": "Multiple Choice",
-                  "question_text": "Was versteht man unter dem 'Strukturwandel' in Bezug auf die Wirtschaftssektoren?",
-                  "answers": [
-                    {
-                      "text": "Die Veränderung der relativen Bedeutung der Wirtschaftssektoren im Laufe der Zeit.",
-                      "is_correct": true,
-                      "feedback": "Richtig! Strukturwandel beschreibt die Veränderung der Bedeutung verschiedener Wirtschaftssektoren im Laufe der Zeit. Zum Beispiel hat sich die Schweizer Wirtschaft von der Landwirtschaft über die Industrie hin zu einer Dienstleistungsgesellschaft entwickelt."
-                    },
-                    {
-                      "text": "Die Ausdehnung der Produktionskapazitäten in einem Sektor.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Dies beschreibt das Wachstum innerhalb eines Sektors. Die richtige Antwort ist die Veränderung der relativen Bedeutung der Wirtschaftssektoren. Zum Beispiel hat die Zunahme des tertiären Sektors in der Schweiz den Rückgang des primären Sektors begleitet."
-                    },
-                    {
-                      "text": "Den Wechsel von der Produktion von Gütern zu Dienstleistungen innerhalb eines Unternehmens.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Das ist eine unternehmerische Entscheidung, keine gesamtwirtschaftliche Veränderung. Strukturwandel betrifft die Veränderung der relativen Bedeutung der Sektoren. Ein Beispiel ist der Rückgang der Beschäftigung in der Landwirtschaft zugunsten des Dienstleistungssektors."
-                    }
-                  ],
-                  "points": 1,
-                  "penalty": 0,
-                  "additional_info": {
-                    "real_life_example": "Zum Beispiel hat sich die Schweizer Wirtschaft von der Landwirtschaft über die Industrie hin zu einer Dienstleistungsgesellschaft entwickelt."
-                  }
-                },
-                {
-                  "title": "Bedürfnisse",
-                  "type": "Multiple Choice",
-                  "question_text": "Was sind Wahlbedürfnisse?",
-                  "answers": [
-                    {
-                      "text": "Bedürfnisse, die nicht lebensnotwendig sind und erst befriedigt werden, wenn die Existenz gesichert ist.",
-                      "is_correct": true,
-                      "feedback": "Richtig! Wahlbedürfnisse sind nicht überlebenswichtig und werden erst dann befriedigt, wenn die Existenz gesichert ist. Zum Beispiel der Wunsch nach einem neuen Auto oder einer Urlaubsreise."
-                    },
-                    {
-                      "text": "Lebensnotwendige Bedürfnisse wie Nahrung und Schlaf.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Das sind Existenzbedürfnisse. Die richtige Antwort ist, dass Wahlbedürfnisse nicht lebensnotwendig sind und erst befriedigt werden, wenn die Existenz gesichert ist. Zum Beispiel der Kauf eines Luxusguts nach Erfüllung aller Grundbedürfnisse."
-                    },
-                    {
-                      "text": "Bedürfnisse, die durch Werbung geweckt werden.",
-                      "is_correct": false,
-                      "feedback": "Falsch! Werbung kann sowohl Existenz- als auch Wahlbedürfnisse wecken. Die richtige Antwort ist, dass Wahlbedürfnisse nicht lebensnotwendig sind und erst befriedigt werden, wenn die Existenz gesichert ist. Ein Beispiel ist der Kauf von Unterhaltungselektronik."
-                    }
-                  ],
-                  "points": 1,
-                  "penalty": 0,
-                  "additional_info": {
-                    "real_life_example": "Zum Beispiel der Wunsch nach einem neuen Auto oder einer Urlaubsreise."
-                  }
+                    "title": "Bruttolohn und Nettolohn",
+                    "type": "MC",
+                    "question_text": "Was ist der Bruttolohn?",
+                    "answers": [
+                        {
+                            "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen.",
+                            "is_correct": true,
+                            "feedback": "Richtig! Der Bruttolohn ist der vereinbarte Lohn vor Abzügen."
+                        },
+                        {
+                            "text": "Der Lohn, der nach allen Abzügen an den Arbeitnehmer ausgezahlt wird.",
+                            "is_correct": false,
+                            "feedback": "Falsch! Das ist der Nettolohn."
+                        },
+                        {
+                            "text": "Der Lohn inklusive aller Bonuszahlungen und Überstunden.",
+                            "is_correct": false,
+                            "feedback": "Falsch! Der Bruttolohn ist der Grundlohn plus Lohnzusätze, aber vor Abzügen."
+                        }
+                    ],
+                    "points": 1,
+                    "penalty": 0
                 }
-              ]
-            }
-            
-                    };
+            ]
+        };
 
         let currentQuestionIndex = 0;
         let score = 0;
@@ -191,8 +67,10 @@
         const finalScore = document.getElementById('finalScore');
 
         function showQuestion() {
+            console.log('Showing question', currentQuestionIndex);
             if (currentQuestionIndex < quizData.questions.length) {
                 const question = quizData.questions[currentQuestionIndex];
+                console.log('Question data:', question);
                 questionTitle.textContent = question.title;
                 questionText.textContent = question.question_text;
                 answerContainer.innerHTML = '';
@@ -210,6 +88,7 @@
         }
 
         function checkAnswer(answerIndex) {
+            console.log('Checking answer', answerIndex);
             const question = quizData.questions[currentQuestionIndex];
             const selectedAnswer = question.answers[answerIndex];
             feedback.textContent = selectedAnswer.feedback;
@@ -226,12 +105,14 @@
         });
 
         function showResult() {
+            console.log('Showing result');
             questionContainer.style.display = 'none';
             resultContainer.style.display = 'block';
             finalScore.textContent = score;
         }
 
         // Start the quiz
+        console.log('Starting quiz');
         showQuestion();
     </script>
 </body>
