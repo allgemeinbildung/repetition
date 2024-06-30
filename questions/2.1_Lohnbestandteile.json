@@ -134,11 +134,7 @@
       "additional_info": {
         "real_life_example": "Ein monatlicher Kontoauszug kann die Gehaltszahlung, Mietausgaben und andere Transaktionen zeigen."
       }
-    }
-  ]
-}
-{
-  "questions": [
+    },
     {
       "title": "Nettolohn",
       "type": "MC",
@@ -273,11 +269,7 @@
       "additional_info": {
         "real_life_example": "Ein Arbeitnehmer hat einen Skiunfall in der Freizeit, der durch die NBU gedeckt ist. Die Prämie für die NBU wird vom Lohn abgezogen."
       }
-    }
-  ]
-}
-{
-  "questions": [
+    },
     {
       "title": "AHV-Beitrag",
       "type": "MC",
@@ -415,4 +407,3 @@
     }
   ]
 }
-
