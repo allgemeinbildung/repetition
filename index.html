@@ -1,151 +1,114 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lernquiz</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        button { margin-top: 10px; margin-right: 10px; }
-    </style>
-</head>
-<body>
-    <h1>Lernquiz</h1>
-    <div>
-        <label for="topicSelect">Wählen Sie ein Thema:</label>
-        <select id="topicSelect">
-            <option value="">Themen</option>
-        </select>
-        <button id="loadQuizButton">Fragen laden</button>
-    </div>
-    <div id="questionContainer" style="display:none;">
-        <h2 id="questionTitle"></h2>
-        <p id="questionText"></p>
-        <div id="answerContainer"></div>
-        <p id="feedback"></p>
-        <button id="nextButton" style="display:none;">Nächste Frage</button>
-    </div>
-    <div id="resultContainer" style="display:none;">
-        <h2>Quiz beendet</h2>
-        <p>Deine Punkte: <span id="finalScore"></span> von maximal 6 Punkten</p>
-    </div>
+<script>
+    const topicSelect = document.getElementById('topicSelect');
+    const loadQuizButton = document.getElementById('loadQuizButton');
 
-    <script>
-        const topicSelect = document.getElementById('topicSelect');
-        const loadQuizButton = document.getElementById('loadQuizButton');
-
-        // Load the list of JSON files
-        fetch('questions/filelist.json')
-            .then(response => response.json())
-            .then(data => {
-                data.files.forEach(file => {
-                    const option = document.createElement('option');
-                    option.value = file;
-                    option.textContent = file.split('/').pop().replace('.json', '');
-                    topicSelect.appendChild(option);
-                });
-            })
-            .catch(error => console.error('Error loading file list:', error));
-
-        let quizData;
-        let currentQuestionIndex = 0;
-        let score = 0;
-
-        const questionContainer = document.getElementById('questionContainer');
-        const questionTitle = document.getElementById('questionTitle');
-        const questionText = document.getElementById('questionText');
-        const answerContainer = document.getElementById('answerContainer');
-        const feedback = document.getElementById('feedback');
-        const nextButton = document.getElementById('nextButton');
-        const resultContainer = document.getElementById('resultContainer');
-        const finalScore = document.getElementById('finalScore');
-
-        function getRandomQuestions(questions, count) {
-            const shuffled = questions.sort(() => 0.5 - Math.random());
-            return shuffled.slice(0, count);
-        }
-
-        function showQuestion() {
-            if (currentQuestionIndex < quizData.questions.length) {
-                const question = quizData.questions[currentQuestionIndex];
-                questionTitle.textContent = question.title;
-                questionText.textContent = question.question_text;
-                answerContainer.innerHTML = '';
-                question.answers.forEach((answer, index) => {
-                    const button = document.createElement('button');
-                    button.textContent = answer.text;
-                    button.style.backgroundColor = ''; // Reset background color
-                    button.style.color = ''; // Reset text color
-                    button.addEventListener('click', () => checkAnswer(index));
-                    answerContainer.appendChild(button);
-                });
-                feedback.textContent = '';
-                nextButton.style.display = 'none';
-            } else {
-                showResult();
-            }
-        }
-        
-        function checkAnswer(answerIndex) {
-            const question = quizData.questions[currentQuestionIndex];
-            const selectedAnswer = question.answers[answerIndex];
-            
-            let feedbackText = '';
-            if (selectedAnswer.feedback) {
-                feedbackText += selectedAnswer.feedback;
-            }
-            if (question.additional_info && question.additional_info.real_life_example) {
-                feedbackText += (feedbackText ? " " : "") + question.additional_info.real_life_example;
-            }
-            feedback.textContent = feedbackText;
-        
-            // ... rest of the function remains the same
-        }
-        
-            Array.from(answerContainer.children).forEach((button, index) => {
-                button.disabled = true;
-                if (index === answerIndex) {
-                    button.style.backgroundColor = selectedAnswer.is_correct ? 'green' : 'red';
-                    button.style.color = 'white';
-                }
-                if (question.answers[index].is_correct) {
-                    button.style.backgroundColor = 'green';
-                    button.style.color = 'white';
-                }
+    // Load the list of JSON files
+    fetch('questions/filelist.json')
+        .then(response => response.json())
+        .then(data => {
+            data.files.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = file.split('/').pop().replace('.json', '');
+                topicSelect.appendChild(option);
             });
+        })
+        .catch(error => console.error('Error loading file list:', error));
+
+    let quizData;
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    const questionContainer = document.getElementById('questionContainer');
+    const questionTitle = document.getElementById('questionTitle');
+    const questionText = document.getElementById('questionText');
+    const answerContainer = document.getElementById('answerContainer');
+    const feedback = document.getElementById('feedback');
+    const nextButton = document.getElementById('nextButton');
+    const resultContainer = document.getElementById('resultContainer');
+    const finalScore = document.getElementById('finalScore');
+
+    function getRandomQuestions(questions, count) {
+        const shuffled = questions.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
+    }
+
+    function showQuestion() {
+        if (currentQuestionIndex < quizData.questions.length) {
+            const question = quizData.questions[currentQuestionIndex];
+            questionTitle.textContent = question.title;
+            questionText.textContent = question.question_text;
+            answerContainer.innerHTML = '';
+            question.answers.forEach((answer, index) => {
+                const button = document.createElement('button');
+                button.textContent = answer.text;
+                button.style.backgroundColor = ''; // Reset background color
+                button.style.color = ''; // Reset text color
+                button.addEventListener('click', () => checkAnswer(index));
+                answerContainer.appendChild(button);
+            });
+            feedback.textContent = '';
+            nextButton.style.display = 'none';
+        } else {
+            showResult();
+        }
+    }
+    
+    function checkAnswer(answerIndex) {
+        const question = quizData.questions[currentQuestionIndex];
+        const selectedAnswer = question.answers[answerIndex];
         
-            if (selectedAnswer.is_correct) {
-                score += question.points;
+        let feedbackText = '';
+        if (selectedAnswer.feedback) {
+            feedbackText += selectedAnswer.feedback;
+        }
+        if (question.additional_info && question.additional_info.real_life_example) {
+            feedbackText += (feedbackText ? " " : "") + question.additional_info.real_life_example;
+        }
+        feedback.textContent = feedbackText;
+    
+        Array.from(answerContainer.children).forEach((button, index) => {
+            button.disabled = true;
+            if (index === answerIndex) {
+                button.style.backgroundColor = selectedAnswer.is_correct ? 'green' : 'red';
+                button.style.color = 'white';
             }
-            nextButton.style.display = 'block';
-        }
-
-        function showResult() {
-            questionContainer.style.display = 'none';
-            resultContainer.style.display = 'block';
-            finalScore.textContent = score;
-        }
-
-        loadQuizButton.addEventListener('click', () => {
-            const selectedFile = topicSelect.value;
-            if (selectedFile) {
-                fetch(selectedFile)
-                    .then(response => response.json())
-                    .then(data => {
-                        quizData = {
-                            questions: getRandomQuestions(data.questions, 6)
-                        };
-                        currentQuestionIndex = 0;
-                        score = 0;
-                        questionContainer.style.display = 'block';
-                        resultContainer.style.display = 'none';
-                        showQuestion();
-                    })
-                    .catch(error => console.error('Error loading quiz data:', error));
-            } else {
-                alert('Please select a topic.');
+            if (question.answers[index].is_correct) {
+                button.style.backgroundColor = 'green';
+                button.style.color = 'white';
             }
         });
-    </script>
-</body>
-</html>
+    
+        if (selectedAnswer.is_correct) {
+            score += question.points;
+        }
+        nextButton.style.display = 'block';
+    }
+
+    function showResult() {
+        questionContainer.style.display = 'none';
+        resultContainer.style.display = 'block';
+        finalScore.textContent = score;
+    }
+
+    loadQuizButton.addEventListener('click', () => {
+        const selectedFile = topicSelect.value;
+        if (selectedFile) {
+            fetch(selectedFile)
+                .then(response => response.json())
+                .then(data => {
+                    quizData = {
+                        questions: getRandomQuestions(data.questions, 6)
+                    };
+                    currentQuestionIndex = 0;
+                    score = 0;
+                    questionContainer.style.display = 'block';
+                    resultContainer.style.display = 'none';
+                    showQuestion();
+                })
+                .catch(error => console.error('Error loading quiz data:', error));
+        } else {
+            alert('Please select a topic.');
+        }
+    });
+</script>
