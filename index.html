@@ -27,7 +27,7 @@
     </div>
     <div id="resultContainer" style="display:none;">
         <h2>Quiz beendet</h2>
-        <p>Deine Punkte: <span id="finalScore"></span></p>
+        <p>Deine Punkte: <span id="finalScore"></span> von maximal 6 Punkten</p>
     </div>
 
     <script>
@@ -59,6 +59,11 @@
         const nextButton = document.getElementById('nextButton');
         const resultContainer = document.getElementById('resultContainer');
         const finalScore = document.getElementById('finalScore');
+
+        function getRandomQuestions(questions, count) {
+            const shuffled = questions.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
 
         function showQuestion() {
             if (currentQuestionIndex < quizData.questions.length) {
@@ -107,7 +112,9 @@
                 fetch(selectedFile)
                     .then(response => response.json())
                     .then(data => {
-                        quizData = data;
+                        quizData = {
+                            questions: getRandomQuestions(data.questions, 6)
+                        };
                         currentQuestionIndex = 0;
                         score = 0;
                         questionContainer.style.display = 'block';
