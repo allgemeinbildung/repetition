@@ -33,7 +33,7 @@
     <script>
         const topicSelect = document.getElementById('topicSelect');
         const loadQuizButton = document.getElementById('loadQuizButton');
-    
+
         // Load the list of JSON files
         fetch('questions/filelist.json')
             .then(response => response.json())
@@ -46,11 +46,11 @@
                 });
             })
             .catch(error => console.error('Error loading file list:', error));
-    
+
         let quizData;
         let currentQuestionIndex = 0;
         let score = 0;
-    
+
         const questionContainer = document.getElementById('questionContainer');
         const questionTitle = document.getElementById('questionTitle');
         const questionText = document.getElementById('questionText');
@@ -59,12 +59,12 @@
         const nextButton = document.getElementById('nextButton');
         const resultContainer = document.getElementById('resultContainer');
         const finalScore = document.getElementById('finalScore');
-    
+
         function getRandomQuestions(questions, count) {
             const shuffled = questions.sort(() => 0.5 - Math.random());
             return shuffled.slice(0, count);
         }
-    
+
         function showQuestion() {
             if (currentQuestionIndex < quizData.questions.length) {
                 const question = quizData.questions[currentQuestionIndex];
@@ -78,9 +78,6 @@
                     button.style.color = ''; // Reset text color
                     button.addEventListener('click', () => checkAnswer(index));
                     answerContainer.appendChild(button);
-                    nextButton.addEventListener('click', () => {
-                        currentQuestionIndex++;
-                        showQuestion();
                 });
                 feedback.textContent = '';
                 nextButton.style.display = 'none';
@@ -88,11 +85,11 @@
                 showResult();
             }
         }
-        
+
         function checkAnswer(answerIndex) {
             const question = quizData.questions[currentQuestionIndex];
             const selectedAnswer = question.answers[answerIndex];
-            
+
             let feedbackText = '';
             if (selectedAnswer.feedback) {
                 feedbackText += selectedAnswer.feedback;
@@ -101,7 +98,7 @@
                 feedbackText += (feedbackText ? " " : "") + question.additional_info.real_life_example;
             }
             feedback.textContent = feedbackText;
-        
+
             Array.from(answerContainer.children).forEach((button, index) => {
                 button.disabled = true;
                 if (index === answerIndex) {
@@ -113,19 +110,24 @@
                     button.style.color = 'white';
                 }
             });
-        
+
             if (selectedAnswer.is_correct) {
                 score += question.points;
             }
             nextButton.style.display = 'block';
         }
-    
+
         function showResult() {
             questionContainer.style.display = 'none';
             resultContainer.style.display = 'block';
             finalScore.textContent = score;
         }
-    
+
+        nextButton.addEventListener('click', () => {
+            currentQuestionIndex++;
+            showQuestion();
+        });
+
         loadQuizButton.addEventListener('click', () => {
             const selectedFile = topicSelect.value;
             if (selectedFile) {
