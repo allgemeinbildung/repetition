@@ -1,0 +1,590 @@
+{
+  "questions": [
+    {
+      "title": "Toleranz",
+      "type": "MC",
+      "question_text": "Was verstehen Sie unter Toleranz? Toleranz ist…",
+      "answers": [
+        {
+          "text": "die neutrale Haltung gegenüber verschiedenen Wertvorstellungen. ",
+          "is_correct": false
+        },
+        {
+          "text": "die Achtung vor den Wertvorstellungen anderer bei gleichzeitigem Festhalten an der eigenen Überzeugung.",
+          "is_correct": true
+        },
+        {
+          "text": "das Aufgeben der eigenen Meinung zugunsten des Willens einer Mehrheit. ",
+          "is_correct": false
+        },
+        {
+          "text": "die Überzeugung, dass die Wertvorstellungen anderer richtig sind. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Sozialismus",
+      "type": "MC",
+      "question_text": "Welches Merkmal trifft auf den Sozialismus zu?",
+      "answers": [
+        {
+          "text": "Er will das Bestehende erhalten. ",
+          "is_correct": false
+        },
+        {
+          "text": "Er baut auf die freie Marktwirtschaft.",
+          "is_correct": false
+        },
+        {
+          "text": "Er bekämpft die wirtschaftliche Ausbeutung der Menschen.",
+          "is_correct": true
+        },
+        {
+          "text": "Er tritt für die wirtschaftliche und persönliche Freiheit ein.",
+          "is_correct": false
+        },
+        {
+          "text": "Er befürwortet eine hohe Selbstverantwortung. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Proporzwahl",
+      "type": "MC",
+      "question_text": "Welche Antwort ist richtig? Von einer Proporzwahl spricht man, wenn…",
+      "answers": [
+        {
+          "text": "der Bundesrat im Verhältnis zur Stärke der grössten Parteien gewählt wird. ",
+          "is_correct": false
+        },
+        {
+          "text": "die Person gewählt ist, die die höchste Stimmenzahl erreicht hat. ",
+          "is_correct": false
+        },
+        {
+          "text": "die Person gewählt ist, die das absolute Mehr erreicht hat. ",
+          "is_correct": false
+        },
+        {
+          "text": "die Sitzzuteilung im Verhältnis zur Parteistärke erfolgt.",
+          "is_correct": true
+        },
+        {
+          "text": "der National- und der Ständerat am gleichen Tag gewählt werden.",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Föderalismus",
+      "type": "MC",
+      "question_text": "Welches ist ein Vorteil des Föderalismus?",
+      "answers": [
+        {
+          "text": "Teilstaaten können ihre Interessen besser verfolgen. ",
+          "is_correct": true
+        },
+        {
+          "text": "Die Interessen von Minderheiten werden weniger gewahrt.",
+          "is_correct": false
+        },
+        {
+          "text": "Die unterschiedlichen Lösungen öffentlicher Aufgaben sind unübersichtlicher. ",
+          "is_correct": false
+        },
+        {
+          "text": "Die Anteilnahme des Bürgers an den öffentlichen Angelegenheiten ist gering. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Bundesverfassung (BV)",
+      "type": "MC",
+      "question_text": "Welche Behauptung ist richtig?",
+      "answers": [
+        {
+          "text": "Gesetze dürfen der BV nicht wiedersprechen.",
+          "is_correct": true
+        },
+        {
+          "text": "Die Bundesversammlung darf die BV endgültig abändern. ",
+          "is_correct": false
+        },
+        {
+          "text": "Die BV garantiert den Bürgern Rechte. Die Pflichten sind in den Gesetzen geregelt. ",
+          "is_correct": false
+        },
+        {
+          "text": "Die BV regelt die Aufgabenteilung zwischen Bund und Gemeinden. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Nationalrat",
+      "type": "MC",
+      "question_text": "In welchem der folgenden Gesetzesbücher können Sie sich darüber informieren, wie viele Nationalräte es gibt?",
+      "answers": [
+        {
+          "text": "OR",
+          "is_correct": false
+        },
+        {
+          "text": "ZGB",
+          "is_correct": false
+        },
+        {
+          "text": "BV",
+          "is_correct": true
+        },
+        {
+          "text": "d)StGB",
+          "is_correct": false
+        },
+        {
+          "text": "In keinem der aufgeführten Gesetzesbücher",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Motion",
+      "type": "MC",
+      "question_text": "Welche Aussage ist richtig? Eine Motion aus dem Parlament verlangt vom Bundesrat…",
+      "answers": [
+        {
+          "text": "zu prüfen, ob sinnvollerweise zu einem Problem ein Gesetz zu schaffen sei.",
+          "is_correct": false
+        },
+        {
+          "text": "verpflichtend, einen Gesetzesentwurf auszuarbeiten. ",
+          "is_correct": true
+        },
+        {
+          "text": "einem Parlamentsmitglied schriftlich Auskunft über eine Angelegenheit zu geben. ",
+          "is_correct": false
+        },
+        {
+          "text": "Fragen aus dem Parlament mündlich zu beantworten. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Bundeskanzler",
+      "type": "MC",
+      "question_text": "Welche Aussage ist richtig? Der Bundeskanzler der Schweiz…",
+      "answers": [
+        {
+          "text": "führt Bundesratsbeschlüsse aus. ",
+          "is_correct": false
+        },
+        {
+          "text": "nimmt an den Bundesratssitzungen teil. ",
+          "is_correct": true
+        },
+        {
+          "text": "ist das Bindeglied zwischen Bundesrat und Parlament.",
+          "is_correct": false
+        },
+        {
+          "text": "überprüft alle Gesetze auf ihre Rechtmässigkeit. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Finanzaushalt",
+      "type": "MC",
+      "question_text": "Wie lautet der Grundsatz des Finanzhaushaltes des Bundes?",
+      "answers": [
+        {
+          "text": "Es dürfen keine neuen Steuern erhoben werden. ",
+          "is_correct": false
+        },
+        {
+          "text": "Einnahmen und Ausgaben müssen im Gleichgewicht sein. ",
+          "is_correct": false
+        },
+        {
+          "text": "Langfristig müssen sich Einnahmen und Ausgaben die Waage halten. ",
+          "is_correct": true
+        },
+        {
+          "text": "Sparen ist das oberste Ziel. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Bundesaufgaben",
+      "type": "MC",
+      "question_text": "Welche Aufgabe ist ausschliesslich Bundessache?",
+      "answers": [
+        {
+          "text": "Schule",
+          "is_correct": false
+        },
+        {
+          "text": "Gesundheit",
+          "is_correct": false
+        },
+        {
+          "text": "Zölle",
+          "is_correct": true
+        },
+        {
+          "text": "Strassenbau",
+          "is_correct": false
+        },
+        {
+          "text": "Steuern ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Zivilfall",
+      "type": "MC",
+      "question_text": "Welche Aussage zum Zivilfall stimmt nicht?",
+      "answers": [
+        {
+          "text": "Der Anlass ist ein Streit oder eine Forderung.",
+          "is_correct": false
+        },
+        {
+          "text": "Die Untersuchung führt die Polizei. ",
+          "is_correct": true
+        },
+        {
+          "text": "Die gesetzliche Grundlage ist das ZGB oder das OR.",
+          "is_correct": false
+        },
+        {
+          "text": "Der Richter beurteilt, wer im Recht oder wer im Unrecht ist. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Gerichte",
+      "type": "MC",
+      "question_text": "Welches der aufgeführten Gerichte ist ein Fachgericht?",
+      "answers": [
+        {
+          "text": "Polizeigericht",
+          "is_correct": false
+        },
+        {
+          "text": "Untersuchungsgericht",
+          "is_correct": false
+        },
+        {
+          "text": "Arbeitsgericht",
+          "is_correct": true
+        },
+        {
+          "text": "Bundesgericht",
+          "is_correct": false
+        },
+        {
+          "text": "Bundesstrafgericht",
+          "is_correct": false
+        },
+        {
+          "text": "Amtsgericht",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Gesetze",
+      "type": "MC",
+      "question_text": "Der National- und der Ständerat können sich über ein Gesetz nicht einigen. Was gilt nun?",
+      "answers": [
+        {
+          "text": "Die Fassung des Nationalrates gilt, weil er die grosse Kammer ist.",
+          "is_correct": false
+        },
+        {
+          "text": "Die Fassung des Ständerates gilt, weil alle Kantone zwei Mitglieder im Rat haben.",
+          "is_correct": false
+        },
+        {
+          "text": "Die Vereinigte Bundesversammlung wird einberufen und entscheidet. ",
+          "is_correct": false
+        },
+        {
+          "text": "Der Bundesrat hat in solchen Fällen das letzte Wort. ",
+          "is_correct": false
+        },
+        {
+          "text": "Das Volk muss an der Urne entscheiden. ",
+          "is_correct": false
+        },
+        {
+          "text": "Es kommt kein Gesetz zustande. ",
+          "is_correct": true
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Fakultatives Referendum",
+      "type": "MC",
+      "question_text": "Welche Aussage zum fakultativen Referendum ist falsch?",
+      "answers": [
+        {
+          "text": "Es braucht mindestens 50'000 Unterschriften.",
+          "is_correct": false
+        },
+        {
+          "text": "Die Unterschriften müssen innert 18 Monaten gesammelt werden. ",
+          "is_correct": true
+        },
+        {
+          "text": "Es geht um eine Abstimmung über ein vom Parlament beschlossenes Gesetz. ",
+          "is_correct": false
+        },
+        {
+          "text": "Bei diesem Referendum braucht es nur das Volksmehr. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Obligatorisches Referendum",
+      "type": "MC",
+      "question_text": "In welchem Fall ist das Referendum obligatorisch?",
+      "answers": [
+        {
+          "text": "Die eidgenössischen Räte haben die Verfassung abgeändert. ",
+          "is_correct": true
+        },
+        {
+          "text": "Die Räte haben ein neues Gesetz beschlossen.",
+          "is_correct": false
+        },
+        {
+          "text": "Die eidgenössischen Räte haben eine Motion an den Bundesrat überwiesen. ",
+          "is_correct": false
+        },
+        {
+          "text": "Die Räte haben das Budget für das folgende Jahr verabschiedet. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Wirtschaftsfreiheit",
+      "type": "MC",
+      "question_text": "Welche Aussage gehört nicht zur Wirtschaftsfreiheit?",
+      "answers": [
+        {
+          "text": "Die freie Wahl des Arbeitsplatzes",
+          "is_correct": false
+        },
+        {
+          "text": "Die freie Wahl des Berufes",
+          "is_correct": false
+        },
+        {
+          "text": "Die freie Wahl eines eigenen Gewerbes",
+          "is_correct": false
+        },
+        {
+          "text": "Die freie Wahl der Arbeitszeit",
+          "is_correct": true
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Armee",
+      "type": "MC",
+      "question_text": "Welche Aussage im Bezug auf die Armee ist richtig? ",
+      "answers": [
+        {
+          "text": "Im Kriegsfall ist der gewählte General niemandem unterstellt. ",
+          "is_correct": false
+        },
+        {
+          "text": "In der Schweiz gilt die allgemeine Militärdienstpflicht. ",
+          "is_correct": true
+        },
+        {
+          "text": "Jeder Stellungspflichtige kann frei wählen, ob er Militärdienst oder zivilen Ersatzdienst leisten will. ",
+          "is_correct": false
+        },
+        {
+          "text": "Ziviler Ersatzdienst und Militärdienst dauern gleich lange. ",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Staatsschutz",
+      "type": "MC",
+      "question_text": "Welches ist eine Aufgabe des Staatsschutzes?",
+      "answers": [
+        {
+          "text": "Unsere Institutionen schützen",
+          "is_correct": false
+        },
+        {
+          "text": "Die immer währende Neutralität sichern",
+          "is_correct": false
+        },
+        {
+          "text": "Strafanstalten für Terroristen führen",
+          "is_correct": false
+        },
+        {
+          "text": "Bei Sprengstoffdelikten ermitteln",
+          "is_correct": true
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Konkordanzdemokratie",
+      "type": "MC",
+      "question_text": "Was trifft auf den Begriff Konkordanzdemokratie zu?",
+      "answers": [
+        {
+          "text": "Eine Partei verfügt über die Mehrheit der Sitze im Parlament und stellt daher de Regierung.",
+          "is_correct": false
+        },
+        {
+          "text": "Die restlichen Parteien im Parlament stehen in Opposition zur Regierungspartei. ",
+          "is_correct": false
+        },
+        {
+          "text": "Alle massgeblichen Parteien sind in der Regierung vertreten. ",
+          "is_correct": true
+        },
+        {
+          "text": "Die Opposition versucht mit Hilfe der «Vertrauensfrage» die Regierung zu stürzen.",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Internationale Organisationen",
+      "type": "MC",
+      "question_text": "Welche Aussage umschreibt kein Ziel der OSZE?",
+      "answers": [
+        {
+          "text": "Unverletzlichkeit der Grenzen der Mitgliedländer anerkennen",
+          "is_correct": false
+        },
+        {
+          "text": "Politischer Zusammenschluss der Mitgliedländer fördern",
+          "is_correct": true
+        },
+        {
+          "text": "Selbstbestimmungsrecht der Völker anerkennen",
+          "is_correct": false
+        },
+        {
+          "text": "Sich nicht in innere Angelegenheiten einmischen",
+          "is_correct": false
+        },
+        {
+          "text": "Zusammenarbeit zwischen den Staaten fördern",
+          "is_correct": false
+        },
+        {
+          "text": "Streitigkeiten friedlich zu regeln versuchen",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    },
+    {
+      "title": "Internationale Organisationen",
+      "type": "MC",
+      "question_text": "In welcher Organisation ist die Schweiz Mitglied?",
+      "answers": [
+        {
+          "text": "OSZE",
+          "is_correct": true
+        },
+        {
+          "text": "GUS",
+          "is_correct": false
+        },
+        {
+          "text": "EU",
+          "is_correct": false
+        },
+        {
+          "text": "NATO",
+          "is_correct": false
+        }
+      ],
+      "points": 1.0,
+      "penalty": 0,
+      "additional_info": {}
+    }
+  ]
+}
