@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernquiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #questionContainer, #resultContainer {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lernquiz</h1>
+    <div>
+        <label for="fileSelect">Wähle eine JSON-Datei:</label>
+        <select id="fileSelect">
+            <option value="">Bitte wählen</option>
+        </select>
+    </div>
+    <div id="questionContainer" style="display:none;">
+        <h2 id="questionTitle"></h2>
+        <p id="questionText"></p>
+        <div id="answerContainer"></div>
+        <p id="feedback"></p>
+        <button id="nextButton" style="display:none;">Nächste Frage</button>
+    </div>
+    <div id="resultContainer" style="display:none;">
+        <h2>Quiz beendet</h2>
+        <p>Deine Punkte: <span id="finalScore"></span></p>
+    </div>
+
+    <script>
+        let questions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        const fileSelect = document.getElementById('fileSelect');
+        const questionContainer = document.getElementById('questionContainer');
+        const questionTitle = document.getElementById('questionTitle');
+        const questionText = document.getElementById('questionText');
+        const answerContainer = document.getElementById('answerContainer');
+        const feedback = document.getElementById('feedback');
+        const nextButton = document.getElementById('nextButton');
+        const resultContainer = document.getElementById('resultContainer');
+        const finalScore = document.getElementById('finalScore');
+
+        // Load available JSON files
+        fetch('/questions')
+            .then(response => response.json())
+            .then(files => {
+                files.forEach(file => {
+                    const option = document.createElement('option');
+                    option.value = file;
+                    option.textContent = file;
+                    fileSelect.appendChild(option);
+                });
+            });
+
+        fileSelect.addEventListener('change', (event) => {
+            if (event.target.value) {
+                fetch(`/questions/${event.target.value}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        questions = data.questions;
+                        currentQuestionIndex = 0;
+                        score = 0;
+                        showQuestion();
+                    });
+            }
+        });
+
+        function showQuestion() {
+            if (currentQuestionIndex < questions.length) {
+                const question = questions[currentQuestionIndex];
+                questionTitle.textContent = question.title;
+                questionText.textContent = question.question_text;
+                answerContainer.innerHTML = '';
+                question.answers.forEach((answer, index) => {
+                    const button = document.createElement('button');
+                    button.textContent = answer.text;
+                    button.addEventListener('click', () => checkAnswer(index));
+                    answerContainer.appendChild(button);
+                });
+                questionContainer.style.display = 'block';
+                nextButton.style.display = 'none';
+                feedback.textContent = '';
+            } else {
+                showResult();
+            }
+        }
+
+        function checkAnswer(answerIndex) {
+            const question = questions[currentQuestionIndex];
+            const selectedAnswer = question.answers[answerIndex];
+            feedback.textContent = selectedAnswer.feedback;
+            if (selectedAnswer.is_correct) {
+                score += question.points;
+            }
+            nextButton.style.display = 'block';
+            Array.from(answerContainer.children).forEach(button => button.disabled = true);
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentQuestionIndex++;
+            showQuestion();
+        });
+
+        function showResult() {
+            questionContainer.style.display = 'none';
+            resultContainer.style.display = 'block';
+            finalScore.textContent = score;
+        }
+    </script>
+</body>
+</html>
