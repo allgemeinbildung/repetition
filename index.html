@@ -35,7 +35,7 @@
         const loadQuizButton = document.getElementById('loadQuizButton');
 
         // Load the list of JSON files
-        fetch('filelist.json')
+        fetch('questions/filelist.json')
             .then(response => response.json())
             .then(data => {
                 data.files.forEach(file => {
