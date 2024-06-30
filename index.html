@@ -85,12 +85,23 @@
                 showResult();
             }
         }
-
+        
         function checkAnswer(answerIndex) {
             const question = quizData.questions[currentQuestionIndex];
             const selectedAnswer = question.answers[answerIndex];
-            feedback.textContent = selectedAnswer.feedback + (question.additional_info ? " " + question.additional_info.real_life_example : "");
             
+            let feedbackText = '';
+            if (selectedAnswer.feedback) {
+                feedbackText += selectedAnswer.feedback;
+            }
+            if (question.additional_info && question.additional_info.real_life_example) {
+                feedbackText += (feedbackText ? " " : "") + question.additional_info.real_life_example;
+            }
+            feedback.textContent = feedbackText;
+        
+            // ... rest of the function remains the same
+        }
+        
             Array.from(answerContainer.children).forEach((button, index) => {
                 button.disabled = true;
                 if (index === answerIndex) {
