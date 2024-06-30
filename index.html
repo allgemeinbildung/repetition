@@ -85,12 +85,7 @@
                 showResult();
             }
         }
-
-        function checkAnswer(answerIndex) {
-            const question = quizData.questions[currentQuestionIndex];
-            const selectedAnswer = question.answers[answerIndex];
-            feedback.textContent = selectedAnswer.feedback + (question.additional_info ? " " + question.additional_info.real_life_example : "");
-            
+                    
             Array.from(answerContainer.children).forEach((button, index) => {
                 button.disabled = true;
                 if (index === answerIndex) {
