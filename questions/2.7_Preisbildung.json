@@ -1,409 +1,205 @@
 {
-  "questions": [
-    {
-      "title": "Bruttolohn und Nettolohn",
-      "type": "MC",
-      "question_text": "Was ist der Bruttolohn?",
-      "answers": [
-        {
-          "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen.",
-          "is_correct": true,
-          "feedback": "Richtig! Der Bruttolohn ist der vereinbarte Lohn vor Abzügen. Zum Beispiel, ein vereinbarter Monatslohn von CHF 4000 wäre der Bruttolohn."
-        },
-        {
-          "text": "Der Lohn, der nach allen Abzügen an den Arbeitnehmer ausgezahlt wird.",
-          "is_correct": false,
-          "feedback": "Falsch! Das ist der Nettolohn. Der Bruttolohn ist der Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen."
-        },
-        {
-          "text": "Der Lohn inklusive aller Bonuszahlungen und Überstunden.",
-          "is_correct": false,
-          "feedback": "Falsch! Der Bruttolohn ist der Grundlohn plus Lohnzusätze, aber vor Abzug von Steuern und Sozialversicherungsbeiträgen."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein vereinbarter Monatslohn von CHF 4000 wäre der Bruttolohn."
-      }
+  "ChapterTitle": "Preisbildung und Wirtschaftskreislauf",
+  "overview": {
+    "summary": "Dieses Kapitel behandelt die Grundlagen der Preisbildung und des Wirtschaftskreislaufs. Es werden Bedürfnisse und ihre Klassifizierung, die Angebots- und Nachfragekurven, der Markt und das Marktgleichgewicht sowie der einfache und erweiterte Wirtschaftskreislauf erläutert. Weitere Themen sind die Produktionsfaktoren und der Strukturwandel in den Wirtschaftssektoren.",
+    "importance": "Die Inhalte dieses Kapitels sind entscheidend für das Verständnis der grundlegenden Mechanismen, die den Preis eines Gutes und die Interaktionen im Wirtschaftskreislauf beeinflussen. Diese Kenntnisse sind wichtig für die Analyse wirtschaftlicher Zusammenhänge und die Bewertung von Marktbedingungen."
+  },
+  "headings": {
+    "heading1": {
+      "title": "Bedürfnisse",
+      "paragraphs": [
+        "Bedürfnisse: Einführung in das Thema Bedürfnisse und Werbung. Beschreibung der Bedürfnispyramide nach Maslow.",
+        "Bedürfnisarten: Unterscheidung von Bedürfnissen anhand von sechs Kategorien mit Beispielen: Existenzbedürfnisse, Wahlbedürfnisse, Individualbedürfnisse, Kollektivbedürfnisse, materielle Bedürfnisse, immaterielle Bedürfnisse."
+      ]
     },
-    {
-      "title": "Lohnabzüge",
-      "type": "MC",
-      "question_text": "Welche Abzüge gehören zu den gesetzlichen Lohnabzügen?",
-      "answers": [
-        {
-          "text": "Beiträge zur Alters- und Hinterlassenenversicherung (AHV), Invalidenversicherung (IV), Erwerbsersatzordnung (EO) und Arbeitslosenversicherung (ALV).",
-          "is_correct": true,
-          "feedback": "Richtig! Diese Abzüge sind gesetzlich vorgeschrieben und werden zur Hälfte von Arbeitnehmer und Arbeitgeber getragen."
-        },
-        {
-          "text": "Beiträge zur Krankenversicherung und Mietkosten.",
-          "is_correct": false,
-          "feedback": "Falsch! Krankenversicherung und Mietkosten sind keine gesetzlichen Lohnabzüge. Die gesetzlich vorgeschriebenen Abzüge sind AHV, IV, EO und ALV."
-        },
-        {
-          "text": "Beiträge zur Berufsunfallversicherung und Lebensversicherung.",
-          "is_correct": false,
-          "feedback": "Falsch! Die Berufsunfallversicherung ist eine gesetzliche Pflicht, aber die Lebensversicherung ist keine gesetzliche Anforderung. Die gesetzlichen Abzüge sind AHV, IV, EO und ALV."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Arbeitnehmer in der Schweiz hat gesetzliche Abzüge wie AHV und IV von seinem Bruttolohn."
-      }
+    "heading2": {
+      "title": "Nutzen und Preisänderungen",
+      "paragraphs": [
+        "Nutzen und Preisänderungen: Definition von \"Nutzen\" im Kontext der Bedürfnisbefriedigung. Erklärung des Zusammenhangs zwischen Preisänderungen und Nachfrage anhand des \"Gesetzes der Nachfrage\".",
+        "Die Nachfragekurve: Grafische Darstellung des Gesetzes der Nachfrage: Preissenkungen führen zu erhöhter Nachfrage und umgekehrt."
+      ]
     },
-    {
-      "title": "Sozialversicherungsbeiträge",
-      "type": "MC",
-      "question_text": "Wie hoch ist der Beitragssatz für AHV/IV/EO?",
-      "answers": [
-        {
-          "text": "8,7%",
-          "is_correct": true,
-          "feedback": "Richtig! Der Beitragssatz für AHV, IV und EO beträgt zusammen 8,7%, aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
-        },
-        {
-          "text": "10,5%",
-          "is_correct": false,
-          "feedback": "Falsch! Der korrekte Beitragssatz für AHV/IV/EO beträgt 8,7%. Dieser Satz wird zur Hälfte von Arbeitnehmer und Arbeitgeber getragen."
-        },
-        {
-          "text": "5,5%",
-          "is_correct": false,
-          "feedback": "Falsch! Der Beitragssatz für AHV/IV/EO ist höher und beträgt 8,7%. Dieser Satz wird aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Arbeitnehmer zahlt 4,35% seines Bruttolohns an AHV/IV/EO."
-      }
+    "heading3": {
+      "title": "Angebot",
+      "paragraphs": [
+        "Angebot: Unterscheidung von wirtschaftlichen Gütern und freien Gütern sowie von Sachgütern und Dienstleistungen. Weitere Unterteilung der Güterarten in Konsumgüter, Gebrauchsgüter, Investitionsgüter und Verbrauchsgüter.",
+        "Die Angebotskurve: Erklärung der Reaktion von Anbietern auf Preisänderungen. Grafische Darstellung des Zusammenhangs von Preis und Angebotsmenge: Preissteigerungen führen zu erhöhtem Angebot."
+      ]
     },
-    {
-      "title": "Lohnabrechnung",
-      "type": "MC",
-      "question_text": "Was zeigt die monatliche Lohnabrechnung an?",
-      "answers": [
-        {
-          "text": "Die Zusammensetzung des Bruttolohns, alle Abzüge und den Nettolohn.",
-          "is_correct": true,
-          "feedback": "Richtig! Die Lohnabrechnung zeigt detailliert den Bruttolohn, die Abzüge und den Nettolohn an. Dies bietet Transparenz über die monatlichen Finanzen."
-        },
-        {
-          "text": "Nur den Bruttolohn ohne Abzüge.",
-          "is_correct": false,
-          "feedback": "Falsch! Die Lohnabrechnung zeigt sowohl den Bruttolohn als auch alle Abzüge und den resultierenden Nettolohn."
-        },
-        {
-          "text": "Nur den Nettolohn, der ausgezahlt wird.",
-          "is_correct": false,
-          "feedback": "Falsch! Die Lohnabrechnung umfasst den Bruttolohn, alle Abzüge und den Nettolohn."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Die Lohnabrechnung für einen Mitarbeiter zeigt seinen Bruttolohn von CHF 5000, Abzüge von CHF 1000 und den Nettolohn von CHF 4000."
-      }
+    "heading4": {
+      "title": "Der Markt",
+      "paragraphs": [
+        "Der Markt: Definition des Marktes als Ort des Zusammentreffens von Angebot und Nachfrage in der freien Marktwirtschaft. Erklärung der Preisbildung durch Angebot und Nachfrage. Beschreibung der Signalfunktion des Preises und seiner Auswirkungen auf Angebot und Nachfrage.",
+        "Marktgleichgewicht: Definition und Erklärung des Gleichgewichtspreises und der Gleichgewichtsmenge am Beispiel eines \"geräumten Marktes\".",
+        "Voraussetzungen für einen funktionierenden Markt: Beschreibung der Bedingungen für einen freien Markt, insbesondere vollständiger Wettbewerb und informierte Konsumenten.",
+        "Veränderung des Marktgleichgewichts: Erklärung der Auswirkungen von Veränderungen anderer Einflussfaktoren auf den Markt und das Marktgleichgewicht."
+      ]
     },
-    {
-      "title": "Kontoauszug",
-      "type": "MC",
-      "question_text": "Was ist ein Kontoauszug?",
-      "answers": [
-        {
-          "text": "Ein schriftlicher oder elektronischer Nachweis über alle Ein- und Auszahlungen auf einem Bankkonto innerhalb eines bestimmten Zeitraums.",
-          "is_correct": true,
-          "feedback": "Richtig! Ein Kontoauszug listet alle Kontobewegungen auf und zeigt den aktuellen Kontostand."
-        },
-        {
-          "text": "Ein Dokument, das nur die Ausgaben eines Bankkontos auflistet.",
-          "is_correct": false,
-          "feedback": "Falsch! Ein Kontoauszug zeigt sowohl Ein- als auch Auszahlungen, nicht nur die Ausgaben."
-        },
-        {
-          "text": "Eine monatliche Übersicht über die Kreditkartenzahlungen.",
-          "is_correct": false,
-          "feedback": "Falsch! Ein Kontoauszug umfasst alle Banktransaktionen, nicht nur Kreditkartenzahlungen."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein monatlicher Kontoauszug kann die Gehaltszahlung, Mietausgaben und andere Transaktionen zeigen."
-      }
+    "heading5": {
+      "title": "Veränderung des Marktgleichgewichts",
+      "paragraphs": [
+        "Veränderung des Marktgleichgewichts: Grafische Darstellung und Erläuterung der Marktveränderungen bei Verschiebung der Nachfrage- oder Angebotskurve anhand von vier Beispielen: Neues Trendprodukt, Überangebot an Tomaten, Wirtschaftskrise, Verknappung von Erdöl."
+      ]
     },
-    {
-      "title": "Nettolohn",
-      "type": "MC",
-      "question_text": "Was ist der Nettolohn?",
-      "answers": [
-        {
-          "text": "Der Betrag, der nach Abzug aller Steuern und Sozialversicherungsbeiträge ausbezahlt wird.",
-          "is_correct": true,
-          "feedback": "Richtig! Der Nettolohn ist der Betrag, den der Arbeitnehmer nach allen Abzügen erhält. Zum Beispiel, bei einem Bruttolohn von CHF 4000 und Abzügen von CHF 1000 beträgt der Nettolohn CHF 3000."
-        },
-        {
-          "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzügen.",
-          "is_correct": false,
-          "feedback": "Falsch! Das ist der Bruttolohn. Der Nettolohn ist der Betrag, der nach allen Abzügen ausgezahlt wird."
-        },
-        {
-          "text": "Der Lohn inklusive aller Bonuszahlungen.",
-          "is_correct": false,
-          "feedback": "Falsch! Der Nettolohn ist der Lohn nach allen Abzügen, nicht der Lohn inklusive Bonuszahlungen."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Bei einem Bruttolohn von CHF 4000 und Abzügen von CHF 1000 beträgt der Nettolohn CHF 3000."
-      }
+    "heading6": {
+      "title": "Einfacher Wirtschaftskreislauf",
+      "paragraphs": [
+        "Einfacher Wirtschaftskreislauf: Einführung des einfachen Wirtschaftskreislaufs als Modell zur Darstellung des Zusammenwirkens von Unternehmen und Haushalten.",
+        "Darstellung des einfachen Wirtschaftskreislaufs: Grafische Darstellung des einfachen Wirtschaftskreislaufs mit Güterstrom (Produktionsfaktoren, Waren und Dienstleistungen) und Geldstrom (Löhne, Zinsen, Gewinne, Renten, Zahlungen für Waren und Dienstleistungen)."
+      ]
     },
-    {
-      "title": "Lohnzusätze",
-      "type": "MC",
-      "question_text": "Welche der folgenden sind Beispiele für Lohnzusätze?",
-      "answers": [
-        {
-          "text": "Überstunden, 13. Monatslohn und Naturallohn.",
-          "is_correct": true,
-          "feedback": "Richtig! Diese sind typische Lohnzusätze, die zusätzlich zum Grundlohn bezahlt werden."
-        },
-        {
-          "text": "Krankenkassenprämien und Mietzuschüsse.",
-          "is_correct": false,
-          "feedback": "Falsch! Krankenkassenprämien und Mietzuschüsse sind keine typischen Lohnzusätze. Lohnzusätze sind zusätzliche Leistungen wie Überstundenvergütung oder ein 13. Monatslohn."
-        },
-        {
-          "text": "Reisekosten und Essensgutscheine.",
-          "is_correct": false,
-          "feedback": "Falsch! Reisekosten und Essensgutscheine sind eher Spesen und keine typischen Lohnzusätze."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Mitarbeiter erhält neben seinem Grundlohn Überstundenvergütungen und einen 13. Monatslohn als Lohnzusatz."
-      }
+    "heading7": {
+      "title": "Erweiterter Wirtschaftskreislauf",
+      "paragraphs": [
+        "Erweiterter Wirtschaftskreislauf: Erweiterung des einfachen Wirtschaftskreislaufs um die Akteure Staat, Banken und Ausland.",
+        "Geldfluss im erweiterten Wirtschaftskreislauf: Grafische Darstellung der Geldströme zwischen Unternehmen, Haushalten, Staat, Banken und Ausland."
+      ]
     },
-    {
-      "title": "Berufliche Vorsorge (BVG)",
-      "type": "MC",
-      "question_text": "Welche Funktion hat die berufliche Vorsorge (BVG)?",
-      "answers": [
-        {
-          "text": "Sie dient der Altersvorsorge, der Absicherung bei Invalidität und im Todesfall.",
-          "is_correct": true,
-          "feedback": "Richtig! Die berufliche Vorsorge (BVG) ergänzt die staatliche Vorsorge und bietet finanzielle Sicherheit im Alter, bei Invalidität und im Todesfall."
-        },
-        {
-          "text": "Sie deckt ausschließlich die Gesundheitskosten ab.",
-          "is_correct": false,
-          "feedback": "Falsch! Die berufliche Vorsorge (BVG) deckt nicht die Gesundheitskosten ab. Sie dient der Altersvorsorge und der Absicherung bei Invalidität und im Todesfall."
-        },
-        {
-          "text": "Sie dient der Absicherung gegen Arbeitslosigkeit.",
-          "is_correct": false,
-          "feedback": "Falsch! Die Arbeitslosenversicherung (ALV) ist für die Absicherung gegen Arbeitslosigkeit zuständig. Die berufliche Vorsorge (BVG) dient der Altersvorsorge und der Absicherung bei Invalidität und im Todesfall."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Arbeitnehmer zahlt in die BVG ein, um im Alter eine Rente zu erhalten und um bei Invalidität oder Tod finanziell abgesichert zu sein."
-      }
+    "heading8": {
+      "title": "Der Staat als Wirtschaftsakteur",
+      "paragraphs": [
+        "Der Staat als Wirtschaftsakteur: Beschreibung der Rolle des Staates als Empfänger von Steuern und Zöllen und als Akteur, der durch Ausgaben und politische Instrumente die Wirtschaft beeinflusst.",
+        "Die Rolle der Banken: Erklärung der Funktion von Banken als Kapitalvermittler, die Spareinlagen entgegennehmen und als Kredite vergeben. Beschreibung der Funktionsweise von Zinsen und der Veränderungen im Zinsumfeld.",
+        "Das Ausland: Bedeutung des Auslands für die Schweizer Wirtschaft, insbesondere Rohstoffimporte, Export von veredelten Produkten und Finanzdienstleistungen, sowie Erlöse aus dem Tourismus."
+      ]
     },
-    {
-      "title": "Unfallversicherung",
-      "type": "MC",
-      "question_text": "Wer trägt die Kosten für die Berufsunfallversicherung (BU) bei Lernenden?",
-      "answers": [
-        {
-          "text": "Der Lehrbetrieb.",
-          "is_correct": true,
-          "feedback": "Richtig! Der Lehrbetrieb übernimmt die Kosten für die Berufsunfallversicherung (BU) vollständig."
-        },
-        {
-          "text": "Der Lernende selbst.",
-          "is_correct": false,
-          "feedback": "Falsch! Der Lernende trägt nicht die Kosten für die Berufsunfallversicherung. Diese Kosten werden vollständig vom Lehrbetrieb übernommen."
-        },
-        {
-          "text": "Die Eltern des Lernenden.",
-          "is_correct": false,
-          "feedback": "Falsch! Die Eltern tragen nicht die Kosten für die Berufsunfallversicherung. Diese Kosten werden vom Lehrbetrieb übernommen."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Lernender, der in einem Betrieb arbeitet, ist durch die Berufsunfallversicherung des Lehrbetriebs abgesichert."
-      }
+    "heading9": {
+      "title": "Die ganzheitliche Sicht",
+      "paragraphs": [
+        "Die ganzheitliche Sicht: Kritische Reflexion der Begrenztheit des Modells \"erweiterter Wirtschaftskreislauf\" und Notwendigkeit einer ganzheitlichen Betrachtungsweise, die Umweltbelastung, soziale Gerechtigkeit und Arbeitsbedingungen miteinbezieht."
+      ]
     },
-    {
-      "title": "Nichtberufsunfallversicherung (NBU)",
-      "type": "MC",
-      "question_text": "Was ist die Nichtberufsunfallversicherung (NBU) und wer muss sie bezahlen?",
-      "answers": [
-        {
-          "text": "Die NBU deckt Unfälle außerhalb der Arbeit und wird in der Regel vom Lohn des Arbeitnehmers abgezogen.",
-          "is_correct": true,
-          "feedback": "Richtig! Die NBU deckt Nichtberufsunfälle und die Prämien werden vom Lohn des Arbeitnehmers abgezogen, wobei der Arbeitgeber oft einen Teil der Kosten trägt."
-        },
-        {
-          "text": "Die NBU deckt nur Arbeitsunfälle und wird vollständig vom Arbeitgeber bezahlt.",
-          "is_correct": false,
-          "feedback": "Falsch! Die NBU deckt Unfälle außerhalb der Arbeit und wird teilweise vom Lohn des Arbeitnehmers abgezogen. Die Berufsunfallversicherung (BU) deckt Arbeitsunfälle."
-        },
-        {
-          "text": "Die NBU ist eine freiwillige Versicherung für Freizeitunfälle.",
-          "is_correct": false,
-          "feedback": "Falsch! Die NBU ist obligatorisch und deckt Unfälle außerhalb der Arbeit. Sie ist keine freiwillige Versicherung."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Arbeitnehmer hat einen Skiunfall in der Freizeit, der durch die NBU gedeckt ist. Die Prämie für die NBU wird vom Lohn abgezogen."
-      }
+    "heading10": {
+      "title": "Produktionsfaktoren",
+      "paragraphs": [
+        "Produktionsfaktoren: Definition und Beschreibung der drei Produktionsfaktoren Boden/Umwelt, Arbeit/Wissen und Kapital.",
+        "Boden/Umwelt: Entwicklung des Begriffs \"Boden\" vom Ackerboden zu Rohstoffträger, Nährstoffträger, Betriebsstandort, Infrastrukturträger, Tourismuslandschaft und Anlageobjekt.",
+        "Arbeit/Wissen: Definition von \"Arbeit\" als körperliche und geistige Tätigkeit gegen Entgelt. Bedeutung von Wissen und \"Know-how\" für die Qualität der Arbeit.",
+        "Kapital: Definition von \"Kapital\" als Geld- und Sachkapital, das zur Herstellung von Gütern und Dienstleistungen eingesetzt wird. Beispiel: Investition von Geldkapital in Sachkapital. Auswirkungen der aktuellen Niedrigzinsphase auf das Sparverhalten und die Investitionstätigkeit."
+      ]
     },
-    {
-      "title": "AHV-Beitrag",
-      "type": "MC",
-      "question_text": "Wie hoch ist der gesamte AHV-Beitrag (Arbeitnehmer- und Arbeitgeberanteil) in Prozent?",
-      "answers": [
-        {
-          "text": "8,7%",
-          "is_correct": true,
-          "feedback": "Richtig! Der gesamte AHV-Beitrag beträgt 8,7%, wobei jeder die Hälfte, also 4,35%, trägt."
-        },
-        {
-          "text": "10,2%",
-          "is_correct": false,
-          "feedback": "Falsch! Der gesamte AHV-Beitrag beträgt 8,7%, aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
-        },
-        {
-          "text": "7,5%",
-          "is_correct": false,
-          "feedback": "Falsch! Der AHV-Beitrag beträgt 8,7% und wird zwischen Arbeitnehmer und Arbeitgeber aufgeteilt."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Bei einem Bruttolohn von CHF 5000 werden insgesamt CHF 435 für die AHV abgezogen, wobei sowohl Arbeitnehmer als auch Arbeitgeber jeweils CHF 217.50 zahlen."
-      }
-    },
-    {
-      "title": "ALV-Beitrag",
-      "type": "MC",
-      "question_text": "In welchem Fall kann der ALV-Beitrag mehr als 1,1% betragen?",
-      "answers": [
-        {
-          "text": "Wenn der Lohn über CHF 148'200.- liegt.",
-          "is_correct": true,
-          "feedback": "Richtig! Wenn der Lohn über CHF 148'200.- liegt, beträgt der ALV-Beitrag für das darüber liegende Einkommen 0,5%."
-        },
-        {
-          "text": "Wenn der Arbeitnehmer unter 18 Jahre alt ist.",
-          "is_correct": false,
-          "feedback": "Falsch! Der ALV-Beitrag hängt nicht vom Alter des Arbeitnehmers ab. Er kann über 1,1% liegen, wenn der Lohn über CHF 148'200.- liegt."
-        },
-        {
-          "text": "Wenn der Arbeitnehmer Teilzeit arbeitet.",
-          "is_correct": false,
-          "feedback": "Falsch! Die Höhe des ALV-Beitrags hängt nicht von der Arbeitszeit ab, sondern kann über 1,1% liegen, wenn der Lohn über CHF 148'200.- liegt."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Arbeitnehmer mit einem Jahreslohn von CHF 160'000 zahlt für die ersten CHF 148'200 1,1% ALV und für die restlichen CHF 11'800 zusätzlich 0,5%."
-      }
-    },
-    {
-      "title": "Kost und Logis",
-      "type": "MC",
-      "question_text": "Welche zusätzlichen Abzüge können neben den Sozialversicherungsbeiträgen vom Lohn abgezogen werden?",
-      "answers": [
-        {
-          "text": "Kosten für Kost und Logis.",
-          "is_correct": true,
-          "feedback": "Richtig! Neben den Sozialversicherungsbeiträgen können auch Kosten für Kost und Logis vom Lohn abgezogen werden."
-        },
-        {
-          "text": "Beiträge zur Krankenversicherung.",
-          "is_correct": false,
-          "feedback": "Falsch! Beiträge zur Krankenversicherung sind in der Regel nicht direkt vom Lohn abgezogen. Zusätzliche Abzüge können Kosten für Kost und Logis umfassen."
-        },
-        {
-          "text": "Steuerabgaben.",
-          "is_correct": false,
-          "feedback": "Falsch! Steuerabgaben sind separate Abzüge. Zusätzliche Abzüge neben den Sozialversicherungsbeiträgen können Kosten für Kost und Logis sein."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Ein Lernender, der im Betrieb wohnt, hat Abzüge für Kost und Logis auf seiner Lohnabrechnung."
-      }
-    },
-    {
-      "title": "Erwerbsersatzordnung (EO)",
-      "type": "MC",
-      "question_text": "Welche Leistung deckt die Erwerbsersatzordnung (EO)?",
-      "answers": [
-        {
-          "text": "Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft.",
-          "is_correct": true,
-          "feedback": "Richtig! Die EO deckt den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft ab."
-        },
-        {
-          "text": "Erwerbsausfall bei Krankheitskosten.",
-          "is_correct": false,
-          "feedback": "Falsch! Die EO deckt nicht die Krankheitskosten, sondern den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft."
-        },
-        {
-          "text": "Erwerbsausfall bei Arbeitslosigkeit.",
-          "is_correct": false,
-          "feedback": "Falsch! Arbeitslosigkeit wird von der Arbeitslosenversicherung (ALV) gedeckt. Die EO deckt den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Eine Mutter, die nach der Geburt ihres Kindes Mutterschaftsurlaub nimmt, erhält Leistungen aus der EO."
-      }
-    },
-    {
-      "title": "Kinder- und Ausbildungszulagen",
-      "type": "MC",
-      "question_text": "Was sind Kinder- und Ausbildungszulagen?",
-      "answers": [
-        {
-          "text": "Finanzielle Unterstützungen für Familien mit Kindern in Ausbildung.",
-          "is_correct": true,
-          "feedback": "Richtig! Kinder- und Ausbildungszulagen sind finanzielle Unterstützungen, die Familien helfen, die Kosten für den Lebensunterhalt und die Ausbildung der Kinder zu decken."
-        },
-        {
-          "text": "Zuschüsse für die Krankenversicherung der Kinder.",
-          "is_correct": false,
-          "feedback": "Falsch! Kinder- und Ausbildungszulagen sind nicht speziell für die Krankenversicherung gedacht, sondern eine allgemeine finanzielle Unterstützung für Familien mit Kindern in Ausbildung."
-        },
-        {
-          "text": "Einmalige Zahlungen bei der Geburt eines Kindes.",
-          "is_correct": false,
-          "feedback": "Falsch! Kinder- und Ausbildungszulagen sind laufende finanzielle Unterstützungen und keine einmaligen Zahlungen bei der Geburt eines Kindes."
-        }
-      ],
-      "points": 1,
-      "penalty": 0,
-      "additional_info": {
-        "real_life_example": "Eine Familie erhält monatlich Kinderzulagen, um die Kosten für die Ausbildung ihrer Kinder zu unterstützen."
-      }
+    "heading11": {
+      "title": "Wirtschaftssektoren",
+      "paragraphs": [
+        "Wirtschaftssektoren: Einteilung der Arbeitnehmenden in die drei Wirtschaftssektoren (primär, sekundär, tertiär) anhand ihrer beruflichen Tätigkeit. Beschreibung der Tätigkeiten und Beispielbranchen der drei Sektoren.",
+        "Strukturwandel: Beschreibung des Wandels der Schweizer Wirtschaft von einer Agrargesellschaft über einen Industriestaat hin zu einer Dienstleistungsgesellschaft anhand einer Grafik, die die Anzahl der Erwerbstätigen in den drei Sektoren seit 1850 darstellt."
+      ]
     }
-  ]
+  },
+  "terminology": {
+    "Bedürfnis": "Das Empfinden eines Mangelgefühls, verbunden mit dem Wunsch, diesen Mangel zu beseitigen.",
+    "Güter": "Mittel zur Bedürfnisbefriedigung.",
+    "Dienstleistungen": "Immaterielle Güter, die zur Bedürfnisbefriedigung dienen.",
+    "Nachfrage": "Bereitschaft und Fähigkeit der Konsumenten, ein bestimmtes Gut zu einem bestimmten Preis zu kaufen.",
+    "Angebot": "Bereitschaft und Fähigkeit der Produzenten, ein bestimmtes Gut zu einem bestimmten Preis anzubieten.",
+    "Preis": "Wertverhältnis, das beim Austausch von Gütern und Dienstleistungen zugrunde gelegt wird.",
+    "Markt": "Ort, an dem Angebot und Nachfrage aufeinandertreffen und Preise gebildet werden.",
+    "Marktgleichgewicht": "Zustand, in dem angebotene und nachgefragte Menge eines Gutes übereinstimmen.",
+    "Wirtschaftskreislauf": "Modell zur Darstellung der komplexen Beziehungen zwischen den verschiedenen Akteuren einer Volkswirtschaft.",
+    "Produktionsfaktoren": "Alle Mittel, die zur Herstellung von Gütern und Dienstleistungen eingesetzt werden.",
+    "Wirtschaftssektoren": "Einteilung der Wirtschaft in verschiedene Bereiche nach Art der erbrachten Leistung (primär, sekundär, tertiär).",
+    "Strukturwandel": "Veränderung der relativen Bedeutung der Wirtschaftssektoren im Laufe der Zeit."
+  },
+  "faqs": {
+    "faq1": {
+      "question": "Was versteht man unter dem Begriff \"Bedürfnis\" im wirtschaftlichen Kontext? Nennen Sie zwei Beispiele.",
+      "answer": "Unter \"Bedürfnis\" versteht man im wirtschaftlichen Kontext das Gefühl eines Mangels, welches mit dem Streben verbunden ist, diesen Mangel zu beseitigen. Beispiele für Bedürfnisse sind Hunger und Durst oder der Wunsch nach einem Smartphone."
+    },
+    "faq2": {
+      "question": "Erklären Sie den Unterschied zwischen Existenz- und Wahlbedürfnissen. Geben Sie je ein Beispiel.",
+      "answer": "Existenzbedürfnisse sind lebensnotwendig, wie z.B. Nahrung. Wahlbedürfnisse hingegen sind nicht überlebenswichtig und werden erst dann befriedigt, wenn die Existenz gesichert ist, z.B. der Kauf eines Autos."
+    },
+    "faq3": {
+      "question": "Wie wirkt sich eine Preiserhöhung auf die nachgefragte Menge eines Gutes aus? Beschreiben Sie diesen Zusammenhang anhand eines Beispiels.",
+      "answer": "Steigt der Preis für ein Gut, sinkt in der Regel die nachgefragte Menge. Dies liegt daran, dass Konsumenten bei höheren Preisen eher auf Alternativen ausweichen oder ganz auf den Konsum verzichten. Beispiel: Steigt der Preis für Butter, greifen Konsumenten eher zu Margarine oder kaufen insgesamt weniger Butter."
+    },
+    "faq4": {
+      "question": "Was ist ein \"Markt\" im wirtschaftlichen Sinne?",
+      "answer": "Ein Markt ist ein Ort, an dem Angebot und Nachfrage aufeinandertreffen. Dort werden Güter und Dienstleistungen gehandelt."
+    },
+    "faq5": {
+      "question": "Erläutern Sie den Begriff \"Marktgleichgewicht\".",
+      "answer": "Das Marktgleichgewicht beschreibt den Zustand, in dem die angebotene Menge eines Gutes der nachgefragten Menge entspricht. Zu diesem Gleichgewichtspreis wird die Ware gehandelt."
+    },
+    "faq6": {
+      "question": "Welche Folgen hat es, wenn bei gleichbleibendem Angebot die Nachfrage nach einem Produkt steigt?",
+      "answer": "Steigt die Nachfrage bei gleichbleibendem Angebot, erhöht sich in der Regel der Preis des Produkts. Dies liegt daran, dass mehr Konsumenten bereit sind, den aktuellen Preis für das begrenzte Angebot zu zahlen."
+    },
+    "faq7": {
+      "question": "Nennen Sie die drei Akteure im einfachen Wirtschaftskreislauf und beschreiben Sie kurz ihre jeweilige Rolle.",
+      "answer": "Die drei Akteure im einfachen Wirtschaftskreislauf sind Unternehmen, Haushalte und der Markt. Unternehmen produzieren Güter und Dienstleistungen, Haushalte konsumieren diese und bieten den Unternehmen Produktionsfaktoren an. Auf dem Markt treffen Angebot und Nachfrage aufeinander."
+    },
+    "faq8": {
+      "question": "Welche zusätzlichen Akteure werden im erweiterten Wirtschaftskreislauf berücksichtigt?",
+      "answer": "Im erweiterten Wirtschaftskreislauf werden zusätzlich der Staat, die Banken und das Ausland berücksichtigt."
+    },
+    "faq9": {
+      "question": "Definieren Sie den Begriff \"Produktionsfaktoren\" und nennen Sie die drei klassischen Produktionsfaktoren.",
+      "answer": "Produktionsfaktoren sind alle Mittel, die zur Herstellung von Gütern und Dienstleistungen benötigt werden. Die drei klassischen Produktionsfaktoren sind Boden, Arbeit und Kapital."
+    },
+    "faq10": {
+      "question": "Was versteht man unter dem \"Strukturwandel\" in Bezug auf die Wirtschaftssektoren?",
+      "answer": "Unter \"Strukturwandel\" versteht man die Veränderung der Bedeutung verschiedener Wirtschaftssektoren im Laufe der Zeit. In der Schweiz hat sich die Wirtschaft von einem dominierenden Primärsektor (Landwirtschaft) hin zu einem dominierenden Tertiärsektor (Dienstleistungen) entwickelt."
+    }
+  },
+  "key_points": {
+    "point1": "Bedürfnisse des Menschen sind praktisch unbeschränkt.",
+    "point2": "Je knapper ein Gut ist, desto höher ist sein Preis.",
+    "point3": "Dort, wo sich Angebots- und Nachfrageverhalten treffen, herrscht Marktgleichgewicht.",
+    "point4": "Volkswirtschaftlich bedeutet „Arbeit“ jede körperliche und geistige Tätigkeit, mit der ein Einkommen erzielt wird.",
+    "point5": "Die Schweiz entwickelte sich von der Agrargesellschaft zum Industriestaat und schließlich zur Dienstleistungsgesellschaft von heute."
+  },
+  "good_to_know": {
+    "fact1": "Die Bedürfnisse des Menschen sind praktisch unbeschränkt.",
+    "fact2": "Je knapper ein Gut ist, desto höher ist sein Preis.",
+    "fact3": "Volkswirtschaftlich bedeutet „Arbeit“ jede körperliche und geistige Tätigkeit, mit der ein Einkommen erzielt wird.",
+    "fact4": "Die Schweiz entwickelte sich von der Agrargesellschaft zum Industriestaat und schließlich zur Dienstleistungsgesellschaft von heute."
+  },
+  "resources": {
+    "resource1": "Lehrbuch für Wirtschaftslehre",
+    "resource2": "Abraham Maslow: Motivation and Personality",
+    "resource3": "Statistiken zur Schweizer Wirtschaftsgeschichte"
+  },
+  "DasWeissIchJetzt": {
+    "question1": {
+      "question": "Was versteht man unter dem Begriff \"Bedürfnis\" im wirtschaftlichen Kontext? Nennen Sie zwei Beispiele.",
+      "answer": "Unter \"Bedürfnis\" versteht man im wirtschaftlichen Kontext das Gefühl eines Mangels, welches mit dem Streben verbunden ist, diesen Mangel zu beseitigen. Beispiele für Bedürfnisse sind Hunger und Durst oder der Wunsch nach einem Smartphone."
+    },
+    "question2": {
+      "question": "Erklären Sie den Unterschied zwischen Existenz- und Wahlbedürfnissen. Geben Sie je ein Beispiel.",
+      "answer": "Existenzbedürfnisse sind lebensnotwendig, wie z.B. Nahrung. Wahlbedürfnisse hingegen sind nicht überlebenswichtig und werden erst dann befriedigt, wenn die Existenz gesichert ist, z.B. der Kauf eines Autos."
+    },
+    "question3": {
+      "question": "Wie wirkt sich eine Preiserhöhung auf die nachgefragte Menge eines Gutes aus? Beschreiben Sie diesen Zusammenhang anhand eines Beispiels.",
+      "answer": "Steigt der Preis für ein Gut, sinkt in der Regel die nachgefragte Menge. Dies liegt daran, dass Konsumenten bei höheren Preisen eher auf Alternativen ausweichen oder ganz auf den Konsum verzichten. Beispiel: Steigt der Preis für Butter, greifen Konsumenten eher zu Margarine oder kaufen insgesamt weniger Butter."
+    },
+    "question4": {
+      "question": "Was ist ein \"Markt\" im wirtschaftlichen Sinne?",
+      "answer": "Ein Markt ist ein Ort, an dem Angebot und Nachfrage aufeinandertreffen. Dort werden Güter und Dienstleistungen gehandelt."
+    },
+    "question5": {
+      "question": "Erläutern Sie den Begriff \"Marktgleichgewicht\".",
+      "answer": "Das Marktgleichgewicht beschreibt den Zustand, in dem die angebotene Menge eines Gutes der nachgefragten Menge entspricht. Zu diesem Gleichgewichtspreis wird die Ware gehandelt."
+    },
+    "question6": {
+      "question": "Welche Folgen hat es, wenn bei gleichbleibendem Angebot die Nachfrage nach einem Produkt steigt?",
+      "answer": "Steigt die Nachfrage bei gleichbleibendem Angebot, erhöht sich in der Regel der Preis des Produkts. Dies liegt daran, dass mehr Konsumenten bereit sind, den aktuellen Preis für das begrenzte Angebot zu zahlen."
+    },
+    "question7": {
+      "question": "Nennen Sie die drei Akteure im einfachen Wirtschaftskreislauf und beschreiben Sie kurz ihre jeweilige Rolle.",
+      "answer": "Die drei Akteure im einfachen Wirtschaftskreislauf sind Unternehmen, Haushalte und der Markt. Unternehmen produzieren Güter und Dienstleistungen, Haushalte konsumieren diese und bieten den Unternehmen Produktionsfaktoren an. Auf dem Markt treffen Angebot und Nachfrage aufeinander."
+    },
+    "question8": {
+      "question": "Welche zusätzlichen Akteure werden im erweiterten Wirtschaftskreislauf berücksichtigt?",
+      "answer": "Im erweiterten Wirtschaftskreislauf werden zusätzlich der Staat, die Banken und das Ausland berücksichtigt."
+    },
+    "question9": {
+      "question": "Definieren Sie den Begriff \"Produktionsfaktoren\" und nennen Sie die drei klassischen Produktionsfaktoren.",
+      "answer": "Produktionsfaktoren sind alle Mittel, die zur Herstellung von Gütern und Dienstleistungen benötigt werden. Die drei klassischen Produktionsfaktoren sind Boden, Arbeit und Kapital."
+    },
+    "question10": {
+      "question": "Was versteht man unter dem \"Strukturwandel\" in Bezug auf die Wirtschaftssektoren?",
+      "answer": "Unter \"Strukturwandel\" versteht man die Veränderung der Bedeutung verschiedener Wirtschaftssektoren im Laufe der Zeit. In der Schweiz hat sich die Wirtschaft von einem dominierenden Primärsektor (Landwirtschaft) hin zu einem dominierenden Tertiärsektor (Dienstleistungen) entwickelt."
+    }
+  }
 }
