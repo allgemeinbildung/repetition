@@ -44,7 +44,8 @@
                     option.textContent = file.split('/').pop().replace('.json', '');
                     topicSelect.appendChild(option);
                 });
-            });
+            })
+            .catch(error => console.error('Error loading file list:', error));
 
         let quizData;
         let currentQuestionIndex = 0;
@@ -77,6 +78,7 @@
                 showResult();
             }
         }
+
         function checkAnswer(answerIndex) {
             const question = quizData.questions[currentQuestionIndex];
             const selectedAnswer = question.answers[answerIndex];
@@ -111,7 +113,8 @@
                         questionContainer.style.display = 'block';
                         resultContainer.style.display = 'none';
                         showQuestion();
-                    });
+                    })
+                    .catch(error => console.error('Error loading quiz data:', error));
             } else {
                 alert('Please select a topic.');
             }
@@ -119,4 +122,3 @@
     </script>
 </body>
 </html>
-
