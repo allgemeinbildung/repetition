@@ -66,19 +66,14 @@
         const finalScore = document.getElementById('finalScore');
 
         // Load and display available JSON files
-        fetch('questions/')
-            .then(response => response.text())
-            .then(text => {
-                const parser = new DOMParser();
-                const htmlDoc = parser.parseFromString(text, 'text/html');
-                const links = htmlDoc.querySelectorAll('a');
-                links.forEach(link => {
-                    if (link.href.endsWith('.json')) {
-                        const li = document.createElement('li');
-                        li.textContent = link.textContent;
-                        li.addEventListener('click', () => loadQuestions(link.textContent));
-                        fileList.appendChild(li);
-                    }
+        fetch('questions/file_list.json')
+            .then(response => response.json())
+            .then(files => {
+                files.forEach(file => {
+                    const li = document.createElement('li');
+                    li.textContent = file;
+                    li.addEventListener('click', () => loadQuestions(file));
+                    fileList.appendChild(li);
                 });
             });
 
