@@ -75,7 +75,8 @@
                     li.addEventListener('click', () => loadQuestions(file));
                     fileList.appendChild(li);
                 });
-            });
+            })
+            .catch(error => console.error('Error loading file list:', error));
 
         function loadQuestions(filename) {
             fetch(`questions/${filename}`)
@@ -85,7 +86,10 @@
                     currentQuestionIndex = 0;
                     score = 0;
                     showQuestion();
-                });
+                    document.querySelector('div:first-of-type').style.display = 'none'; // Hide file list
+                    questionContainer.style.display = 'block'; // Show question container
+                })
+                .catch(error => console.error('Error loading questions:', error));
         }
 
         function showQuestion() {
@@ -100,9 +104,8 @@
                     button.addEventListener('click', () => checkAnswer(index));
                     answerContainer.appendChild(button);
                 });
-                questionContainer.style.display = 'block';
-                nextButton.style.display = 'none';
                 feedback.textContent = '';
+                nextButton.style.display = 'none';
             } else {
                 showResult();
             }
