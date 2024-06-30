@@ -74,6 +74,8 @@
                 question.answers.forEach((answer, index) => {
                     const button = document.createElement('button');
                     button.textContent = answer.text;
+                    button.style.backgroundColor = ''; // Reset background color
+                    button.style.color = ''; // Reset text color
                     button.addEventListener('click', () => checkAnswer(index));
                     answerContainer.appendChild(button);
                 });
@@ -88,17 +90,24 @@
             const question = quizData.questions[currentQuestionIndex];
             const selectedAnswer = question.answers[answerIndex];
             feedback.textContent = selectedAnswer.feedback + (question.additional_info ? " " + question.additional_info.real_life_example : "");
+            
+            Array.from(answerContainer.children).forEach((button, index) => {
+                button.disabled = true;
+                if (index === answerIndex) {
+                    button.style.backgroundColor = selectedAnswer.is_correct ? 'green' : 'red';
+                    button.style.color = 'white';
+                }
+                if (question.answers[index].is_correct) {
+                    button.style.backgroundColor = 'green';
+                    button.style.color = 'white';
+                }
+            });
+        
             if (selectedAnswer.is_correct) {
                 score += question.points;
             }
             nextButton.style.display = 'block';
-            Array.from(answerContainer.children).forEach(button => button.disabled = true);
         }
-
-        nextButton.addEventListener('click', () => {
-            currentQuestionIndex++;
-            showQuestion();
-        });
 
         function showResult() {
             questionContainer.style.display = 'none';
