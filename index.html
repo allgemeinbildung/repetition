@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lernquiz Lohn</title>
+    <title>Lernquiz</title>
     <style>
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
         button { margin-top: 10px; margin-right: 10px; }
@@ -25,422 +25,425 @@
 
     <script>
         // Hardcoded quiz data
-        const quizData ={
-          "questions": [
-            {
-              "title": "Bruttolohn und Nettolohn",
-              "type": "MC",
-              "question_text": "Was ist der Bruttolohn?",
-              "answers": [
+        const quizData = {
+            "questions": [
                 {
-                  "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Der Bruttolohn ist der vereinbarte Lohn vor Abzügen. Zum Beispiel, ein vereinbarter Monatslohn von CHF 4000 wäre der Bruttolohn."
+                  "title": "Bruttolohn und Nettolohn",
+                  "type": "MC",
+                  "question_text": "Was ist der Bruttolohn?",
+                  "answers": [
+                    {
+                      "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Der Bruttolohn ist der vereinbarte Lohn vor Abzügen. Zum Beispiel, ein vereinbarter Monatslohn von CHF 4000 wäre der Bruttolohn."
+                    },
+                    {
+                      "text": "Der Lohn, der nach allen Abzügen an den Arbeitnehmer ausgezahlt wird.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Das ist der Nettolohn. Der Bruttolohn ist der Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen."
+                    },
+                    {
+                      "text": "Der Lohn inklusive aller Bonuszahlungen und Überstunden.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der Bruttolohn ist der Grundlohn plus Lohnzusätze, aber vor Abzug von Steuern und Sozialversicherungsbeiträgen."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein vereinbarter Monatslohn von CHF 4000 wäre der Bruttolohn."
+                  }
                 },
                 {
-                  "text": "Der Lohn, der nach allen Abzügen an den Arbeitnehmer ausgezahlt wird.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Das ist der Nettolohn. Der Bruttolohn ist der Lohn vor Abzug von Steuern und Sozialversicherungsbeiträgen."
+                  "title": "Lohnabzüge",
+                  "type": "MC",
+                  "question_text": "Welche Abzüge gehören zu den gesetzlichen Lohnabzügen?",
+                  "answers": [
+                    {
+                      "text": "Beiträge zur Alters- und Hinterlassenenversicherung (AHV), Invalidenversicherung (IV), Erwerbsersatzordnung (EO) und Arbeitslosenversicherung (ALV).",
+                      "is_correct": true,
+                      "feedback": "Richtig! Diese Abzüge sind gesetzlich vorgeschrieben und werden zur Hälfte von Arbeitnehmer und Arbeitgeber getragen."
+                    },
+                    {
+                      "text": "Beiträge zur Krankenversicherung und Mietkosten.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Krankenversicherung und Mietkosten sind keine gesetzlichen Lohnabzüge. Die gesetzlich vorgeschriebenen Abzüge sind AHV, IV, EO und ALV."
+                    },
+                    {
+                      "text": "Beiträge zur Berufsunfallversicherung und Lebensversicherung.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die Berufsunfallversicherung ist eine gesetzliche Pflicht, aber die Lebensversicherung ist keine gesetzliche Anforderung. Die gesetzlichen Abzüge sind AHV, IV, EO und ALV."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Arbeitnehmer in der Schweiz hat gesetzliche Abzüge wie AHV und IV von seinem Bruttolohn."
+                  }
                 },
                 {
-                  "text": "Der Lohn inklusive aller Bonuszahlungen und Überstunden.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der Bruttolohn ist der Grundlohn plus Lohnzusätze, aber vor Abzug von Steuern und Sozialversicherungsbeiträgen."
+                  "title": "Sozialversicherungsbeiträge",
+                  "type": "MC",
+                  "question_text": "Wie hoch ist der Beitragssatz für AHV/IV/EO?",
+                  "answers": [
+                    {
+                      "text": "8,7%",
+                      "is_correct": true,
+                      "feedback": "Richtig! Der Beitragssatz für AHV, IV und EO beträgt zusammen 8,7%, aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
+                    },
+                    {
+                      "text": "10,5%",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der korrekte Beitragssatz für AHV/IV/EO beträgt 8,7%. Dieser Satz wird zur Hälfte von Arbeitnehmer und Arbeitgeber getragen."
+                    },
+                    {
+                      "text": "5,5%",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der Beitragssatz für AHV/IV/EO ist höher und beträgt 8,7%. Dieser Satz wird aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Arbeitnehmer zahlt 4,35% seines Bruttolohns an AHV/IV/EO."
+                  }
+                },
+                {
+                  "title": "Lohnabrechnung",
+                  "type": "MC",
+                  "question_text": "Was zeigt die monatliche Lohnabrechnung an?",
+                  "answers": [
+                    {
+                      "text": "Die Zusammensetzung des Bruttolohns, alle Abzüge und den Nettolohn.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Die Lohnabrechnung zeigt detailliert den Bruttolohn, die Abzüge und den Nettolohn an. Dies bietet Transparenz über die monatlichen Finanzen."
+                    },
+                    {
+                      "text": "Nur den Bruttolohn ohne Abzüge.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die Lohnabrechnung zeigt sowohl den Bruttolohn als auch alle Abzüge und den resultierenden Nettolohn."
+                    },
+                    {
+                      "text": "Nur den Nettolohn, der ausgezahlt wird.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die Lohnabrechnung umfasst den Bruttolohn, alle Abzüge und den Nettolohn."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Die Lohnabrechnung für einen Mitarbeiter zeigt seinen Bruttolohn von CHF 5000, Abzüge von CHF 1000 und den Nettolohn von CHF 4000."
+                  }
+                },
+                {
+                  "title": "Kontoauszug",
+                  "type": "MC",
+                  "question_text": "Was ist ein Kontoauszug?",
+                  "answers": [
+                    {
+                      "text": "Ein schriftlicher oder elektronischer Nachweis über alle Ein- und Auszahlungen auf einem Bankkonto innerhalb eines bestimmten Zeitraums.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Ein Kontoauszug listet alle Kontobewegungen auf und zeigt den aktuellen Kontostand."
+                    },
+                    {
+                      "text": "Ein Dokument, das nur die Ausgaben eines Bankkontos auflistet.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Ein Kontoauszug zeigt sowohl Ein- als auch Auszahlungen, nicht nur die Ausgaben."
+                    },
+                    {
+                      "text": "Eine monatliche Übersicht über die Kreditkartenzahlungen.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Ein Kontoauszug umfasst alle Banktransaktionen, nicht nur Kreditkartenzahlungen."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein monatlicher Kontoauszug kann die Gehaltszahlung, Mietausgaben und andere Transaktionen zeigen."
+                  }
                 }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein vereinbarter Monatslohn von CHF 4000 wäre der Bruttolohn."
-              }
-            },
-            {
-              "title": "Lohnabzüge",
-              "type": "MC",
-              "question_text": "Welche Abzüge gehören zu den gesetzlichen Lohnabzügen?",
-              "answers": [
-                {
-                  "text": "Beiträge zur Alters- und Hinterlassenenversicherung (AHV), Invalidenversicherung (IV), Erwerbsersatzordnung (EO) und Arbeitslosenversicherung (ALV).",
-                  "is_correct": true,
-                  "feedback": "Richtig! Diese Abzüge sind gesetzlich vorgeschrieben und werden zur Hälfte von Arbeitnehmer und Arbeitgeber getragen."
-                },
-                {
-                  "text": "Beiträge zur Krankenversicherung und Mietkosten.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Krankenversicherung und Mietkosten sind keine gesetzlichen Lohnabzüge. Die gesetzlich vorgeschriebenen Abzüge sind AHV, IV, EO und ALV."
-                },
-                {
-                  "text": "Beiträge zur Berufsunfallversicherung und Lebensversicherung.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die Berufsunfallversicherung ist eine gesetzliche Pflicht, aber die Lebensversicherung ist keine gesetzliche Anforderung. Die gesetzlichen Abzüge sind AHV, IV, EO und ALV."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Arbeitnehmer in der Schweiz hat gesetzliche Abzüge wie AHV und IV von seinem Bruttolohn."
-              }
-            },
-            {
-              "title": "Sozialversicherungsbeiträge",
-              "type": "MC",
-              "question_text": "Wie hoch ist der Beitragssatz für AHV/IV/EO?",
-              "answers": [
-                {
-                  "text": "8,7%",
-                  "is_correct": true,
-                  "feedback": "Richtig! Der Beitragssatz für AHV, IV und EO beträgt zusammen 8,7%, aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
-                },
-                {
-                  "text": "10,5%",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der korrekte Beitragssatz für AHV/IV/EO beträgt 8,7%. Dieser Satz wird zur Hälfte von Arbeitnehmer und Arbeitgeber getragen."
-                },
-                {
-                  "text": "5,5%",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der Beitragssatz für AHV/IV/EO ist höher und beträgt 8,7%. Dieser Satz wird aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Arbeitnehmer zahlt 4,35% seines Bruttolohns an AHV/IV/EO."
-              }
-            },
-            {
-              "title": "Lohnabrechnung",
-              "type": "MC",
-              "question_text": "Was zeigt die monatliche Lohnabrechnung an?",
-              "answers": [
-                {
-                  "text": "Die Zusammensetzung des Bruttolohns, alle Abzüge und den Nettolohn.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Die Lohnabrechnung zeigt detailliert den Bruttolohn, die Abzüge und den Nettolohn an. Dies bietet Transparenz über die monatlichen Finanzen."
-                },
-                {
-                  "text": "Nur den Bruttolohn ohne Abzüge.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die Lohnabrechnung zeigt sowohl den Bruttolohn als auch alle Abzüge und den resultierenden Nettolohn."
-                },
-                {
-                  "text": "Nur den Nettolohn, der ausgezahlt wird.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die Lohnabrechnung umfasst den Bruttolohn, alle Abzüge und den Nettolohn."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Die Lohnabrechnung für einen Mitarbeiter zeigt seinen Bruttolohn von CHF 5000, Abzüge von CHF 1000 und den Nettolohn von CHF 4000."
-              }
-            },
-            {
-              "title": "Kontoauszug",
-              "type": "MC",
-              "question_text": "Was ist ein Kontoauszug?",
-              "answers": [
-                {
-                  "text": "Ein schriftlicher oder elektronischer Nachweis über alle Ein- und Auszahlungen auf einem Bankkonto innerhalb eines bestimmten Zeitraums.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Ein Kontoauszug listet alle Kontobewegungen auf und zeigt den aktuellen Kontostand."
-                },
-                {
-                  "text": "Ein Dokument, das nur die Ausgaben eines Bankkontos auflistet.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Ein Kontoauszug zeigt sowohl Ein- als auch Auszahlungen, nicht nur die Ausgaben."
-                },
-                {
-                  "text": "Eine monatliche Übersicht über die Kreditkartenzahlungen.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Ein Kontoauszug umfasst alle Banktransaktionen, nicht nur Kreditkartenzahlungen."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein monatlicher Kontoauszug kann die Gehaltszahlung, Mietausgaben und andere Transaktionen zeigen."
-              }
+              ]
             }
-          ]
-        }
-        {
-          "questions": [
             {
-              "title": "Nettolohn",
-              "type": "MC",
-              "question_text": "Was ist der Nettolohn?",
-              "answers": [
+              "questions": [
                 {
-                  "text": "Der Betrag, der nach Abzug aller Steuern und Sozialversicherungsbeiträge ausbezahlt wird.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Der Nettolohn ist der Betrag, den der Arbeitnehmer nach allen Abzügen erhält. Zum Beispiel, bei einem Bruttolohn von CHF 4000 und Abzügen von CHF 1000 beträgt der Nettolohn CHF 3000."
+                  "title": "Nettolohn",
+                  "type": "MC",
+                  "question_text": "Was ist der Nettolohn?",
+                  "answers": [
+                    {
+                      "text": "Der Betrag, der nach Abzug aller Steuern und Sozialversicherungsbeiträge ausbezahlt wird.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Der Nettolohn ist der Betrag, den der Arbeitnehmer nach allen Abzügen erhält. Zum Beispiel, bei einem Bruttolohn von CHF 4000 und Abzügen von CHF 1000 beträgt der Nettolohn CHF 3000."
+                    },
+                    {
+                      "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzügen.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Das ist der Bruttolohn. Der Nettolohn ist der Betrag, der nach allen Abzügen ausgezahlt wird."
+                    },
+                    {
+                      "text": "Der Lohn inklusive aller Bonuszahlungen.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der Nettolohn ist der Lohn nach allen Abzügen, nicht der Lohn inklusive Bonuszahlungen."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Bei einem Bruttolohn von CHF 4000 und Abzügen von CHF 1000 beträgt der Nettolohn CHF 3000."
+                  }
                 },
                 {
-                  "text": "Der mit dem Arbeitgeber vereinbarte Lohn vor Abzügen.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Das ist der Bruttolohn. Der Nettolohn ist der Betrag, der nach allen Abzügen ausgezahlt wird."
+                  "title": "Lohnzusätze",
+                  "type": "MC",
+                  "question_text": "Welche der folgenden sind Beispiele für Lohnzusätze?",
+                  "answers": [
+                    {
+                      "text": "Überstunden, 13. Monatslohn und Naturallohn.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Diese sind typische Lohnzusätze, die zusätzlich zum Grundlohn bezahlt werden."
+                    },
+                    {
+                      "text": "Krankenkassenprämien und Mietzuschüsse.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Krankenkassenprämien und Mietzuschüsse sind keine typischen Lohnzusätze. Lohnzusätze sind zusätzliche Leistungen wie Überstundenvergütung oder ein 13. Monatslohn."
+                    },
+                    {
+                      "text": "Reisekosten und Essensgutscheine.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Reisekosten und Essensgutscheine sind eher Spesen und keine typischen Lohnzusätze."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Mitarbeiter erhält neben seinem Grundlohn Überstundenvergütungen und einen 13. Monatslohn als Lohnzusatz."
+                  }
                 },
                 {
-                  "text": "Der Lohn inklusive aller Bonuszahlungen.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der Nettolohn ist der Lohn nach allen Abzügen, nicht der Lohn inklusive Bonuszahlungen."
+                  "title": "Berufliche Vorsorge (BVG)",
+                  "type": "MC",
+                  "question_text": "Welche Funktion hat die berufliche Vorsorge (BVG)?",
+                  "answers": [
+                    {
+                      "text": "Sie dient der Altersvorsorge, der Absicherung bei Invalidität und im Todesfall.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Die berufliche Vorsorge (BVG) ergänzt die staatliche Vorsorge und bietet finanzielle Sicherheit im Alter, bei Invalidität und im Todesfall."
+                    },
+                    {
+                      "text": "Sie deckt ausschließlich die Gesundheitskosten ab.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die berufliche Vorsorge (BVG) deckt nicht die Gesundheitskosten ab. Sie dient der Altersvorsorge und der Absicherung bei Invalidität und im Todesfall."
+                    },
+                    {
+                      "text": "Sie dient der Absicherung gegen Arbeitslosigkeit.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die Arbeitslosenversicherung (ALV) ist für die Absicherung gegen Arbeitslosigkeit zuständig. Die berufliche Vorsorge (BVG) dient der Altersvorsorge und der Absicherung bei Invalidität und im Todesfall."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Arbeitnehmer zahlt in die BVG ein, um im Alter eine Rente zu erhalten und um bei Invalidität oder Tod finanziell abgesichert zu sein."
+                  }
+                },
+                {
+                  "title": "Unfallversicherung",
+                  "type": "MC",
+                  "question_text": "Wer trägt die Kosten für die Berufsunfallversicherung (BU) bei Lernenden?",
+                  "answers": [
+                    {
+                      "text": "Der Lehrbetrieb.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Der Lehrbetrieb übernimmt die Kosten für die Berufsunfallversicherung (BU) vollständig."
+                    },
+                    {
+                      "text": "Der Lernende selbst.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der Lernende trägt nicht die Kosten für die Berufsunfallversicherung. Diese Kosten werden vollständig vom Lehrbetrieb übernommen."
+                    },
+                    {
+                      "text": "Die Eltern des Lernenden.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die Eltern tragen nicht die Kosten für die Berufsunfallversicherung. Diese Kosten werden vom Lehrbetrieb übernommen."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Lernender, der in einem Betrieb arbeitet, ist durch die Berufsunfallversicherung des Lehrbetriebs abgesichert."
+                  }
+                },
+                {
+                  "title": "Nichtberufsunfallversicherung (NBU)",
+                  "type": "MC",
+                  "question_text": "Was ist die Nichtberufsunfallversicherung (NBU) und wer muss sie bezahlen?",
+                  "answers": [
+                    {
+                      "text": "Die NBU deckt Unfälle außerhalb der Arbeit und wird in der Regel vom Lohn des Arbeitnehmers abgezogen.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Die NBU deckt Nichtberufsunfälle und die Prämien werden vom Lohn des Arbeitnehmers abgezogen, wobei der Arbeitgeber oft einen Teil der Kosten trägt."
+                    },
+                    {
+                      "text": "Die NBU deckt nur Arbeitsunfälle und wird vollständig vom Arbeitgeber bezahlt.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die NBU deckt Unfälle außerhalb der Arbeit und wird teilweise vom Lohn des Arbeitnehmers abgezogen. Die Berufsunfallversicherung (BU) deckt Arbeitsunfälle."
+                    },
+                    {
+                      "text": "Die NBU ist eine freiwillige Versicherung für Freizeitunfälle.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die NBU ist obligatorisch und deckt Unfälle außerhalb der Arbeit. Sie ist keine freiwillige Versicherung."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Arbeitnehmer hat einen Skiunfall in der Freizeit, der durch die NBU gedeckt ist. Die Prämie für die NBU wird vom Lohn abgezogen."
+                  }
                 }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Bei einem Bruttolohn von CHF 4000 und Abzügen von CHF 1000 beträgt der Nettolohn CHF 3000."
-              }
-            },
-            {
-              "title": "Lohnzusätze",
-              "type": "MC",
-              "question_text": "Welche der folgenden sind Beispiele für Lohnzusätze?",
-              "answers": [
-                {
-                  "text": "Überstunden, 13. Monatslohn und Naturallohn.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Diese sind typische Lohnzusätze, die zusätzlich zum Grundlohn bezahlt werden."
-                },
-                {
-                  "text": "Krankenkassenprämien und Mietzuschüsse.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Krankenkassenprämien und Mietzuschüsse sind keine typischen Lohnzusätze. Lohnzusätze sind zusätzliche Leistungen wie Überstundenvergütung oder ein 13. Monatslohn."
-                },
-                {
-                  "text": "Reisekosten und Essensgutscheine.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Reisekosten und Essensgutscheine sind eher Spesen und keine typischen Lohnzusätze."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Mitarbeiter erhält neben seinem Grundlohn Überstundenvergütungen und einen 13. Monatslohn als Lohnzusatz."
-              }
-            },
-            {
-              "title": "Berufliche Vorsorge (BVG)",
-              "type": "MC",
-              "question_text": "Welche Funktion hat die berufliche Vorsorge (BVG)?",
-              "answers": [
-                {
-                  "text": "Sie dient der Altersvorsorge, der Absicherung bei Invalidität und im Todesfall.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Die berufliche Vorsorge (BVG) ergänzt die staatliche Vorsorge und bietet finanzielle Sicherheit im Alter, bei Invalidität und im Todesfall."
-                },
-                {
-                  "text": "Sie deckt ausschließlich die Gesundheitskosten ab.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die berufliche Vorsorge (BVG) deckt nicht die Gesundheitskosten ab. Sie dient der Altersvorsorge und der Absicherung bei Invalidität und im Todesfall."
-                },
-                {
-                  "text": "Sie dient der Absicherung gegen Arbeitslosigkeit.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die Arbeitslosenversicherung (ALV) ist für die Absicherung gegen Arbeitslosigkeit zuständig. Die berufliche Vorsorge (BVG) dient der Altersvorsorge und der Absicherung bei Invalidität und im Todesfall."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Arbeitnehmer zahlt in die BVG ein, um im Alter eine Rente zu erhalten und um bei Invalidität oder Tod finanziell abgesichert zu sein."
-              }
-            },
-            {
-              "title": "Unfallversicherung",
-              "type": "MC",
-              "question_text": "Wer trägt die Kosten für die Berufsunfallversicherung (BU) bei Lernenden?",
-              "answers": [
-                {
-                  "text": "Der Lehrbetrieb.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Der Lehrbetrieb übernimmt die Kosten für die Berufsunfallversicherung (BU) vollständig."
-                },
-                {
-                  "text": "Der Lernende selbst.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der Lernende trägt nicht die Kosten für die Berufsunfallversicherung. Diese Kosten werden vollständig vom Lehrbetrieb übernommen."
-                },
-                {
-                  "text": "Die Eltern des Lernenden.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die Eltern tragen nicht die Kosten für die Berufsunfallversicherung. Diese Kosten werden vom Lehrbetrieb übernommen."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Lernender, der in einem Betrieb arbeitet, ist durch die Berufsunfallversicherung des Lehrbetriebs abgesichert."
-              }
-            },
-            {
-              "title": "Nichtberufsunfallversicherung (NBU)",
-              "type": "MC",
-              "question_text": "Was ist die Nichtberufsunfallversicherung (NBU) und wer muss sie bezahlen?",
-              "answers": [
-                {
-                  "text": "Die NBU deckt Unfälle außerhalb der Arbeit und wird in der Regel vom Lohn des Arbeitnehmers abgezogen.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Die NBU deckt Nichtberufsunfälle und die Prämien werden vom Lohn des Arbeitnehmers abgezogen, wobei der Arbeitgeber oft einen Teil der Kosten trägt."
-                },
-                {
-                  "text": "Die NBU deckt nur Arbeitsunfälle und wird vollständig vom Arbeitgeber bezahlt.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die NBU deckt Unfälle außerhalb der Arbeit und wird teilweise vom Lohn des Arbeitnehmers abgezogen. Die Berufsunfallversicherung (BU) deckt Arbeitsunfälle."
-                },
-                {
-                  "text": "Die NBU ist eine freiwillige Versicherung für Freizeitunfälle.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die NBU ist obligatorisch und deckt Unfälle außerhalb der Arbeit. Sie ist keine freiwillige Versicherung."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Arbeitnehmer hat einen Skiunfall in der Freizeit, der durch die NBU gedeckt ist. Die Prämie für die NBU wird vom Lohn abgezogen."
-              }
+              ]
             }
-          ]
-        }
-        {
-          "questions": [
             {
-              "title": "AHV-Beitrag",
-              "type": "MC",
-              "question_text": "Wie hoch ist der gesamte AHV-Beitrag (Arbeitnehmer- und Arbeitgeberanteil) in Prozent?",
-              "answers": [
+              "questions": [
                 {
-                  "text": "8,7%",
-                  "is_correct": true,
-                  "feedback": "Richtig! Der gesamte AHV-Beitrag beträgt 8,7%, wobei jeder die Hälfte, also 4,35%, trägt."
+                  "title": "AHV-Beitrag",
+                  "type": "MC",
+                  "question_text": "Wie hoch ist der gesamte AHV-Beitrag (Arbeitnehmer- und Arbeitgeberanteil) in Prozent?",
+                  "answers": [
+                    {
+                      "text": "8,7%",
+                      "is_correct": true,
+                      "feedback": "Richtig! Der gesamte AHV-Beitrag beträgt 8,7%, wobei jeder die Hälfte, also 4,35%, trägt."
+                    },
+                    {
+                      "text": "10,2%",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der gesamte AHV-Beitrag beträgt 8,7%, aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
+                    },
+                    {
+                      "text": "7,5%",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der AHV-Beitrag beträgt 8,7% und wird zwischen Arbeitnehmer und Arbeitgeber aufgeteilt."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Bei einem Bruttolohn von CHF 5000 werden insgesamt CHF 435 für die AHV abgezogen, wobei sowohl Arbeitnehmer als auch Arbeitgeber jeweils CHF 217.50 zahlen."
+                  }
                 },
                 {
-                  "text": "10,2%",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der gesamte AHV-Beitrag beträgt 8,7%, aufgeteilt zwischen Arbeitnehmer und Arbeitgeber."
+                  "title": "ALV-Beitrag",
+                  "type": "MC",
+                  "question_text": "In welchem Fall kann der ALV-Beitrag mehr als 1,1% betragen?",
+                  "answers": [
+                    {
+                      "text": "Wenn der Lohn über CHF 148'200.- liegt.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Wenn der Lohn über CHF 148'200.- liegt, beträgt der ALV-Beitrag für das darüber liegende Einkommen 0,5%."
+                    },
+                    {
+                      "text": "Wenn der Arbeitnehmer unter 18 Jahre alt ist.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Der ALV-Beitrag hängt nicht vom Alter des Arbeitnehmers ab. Er kann über 1,1% liegen, wenn der Lohn über CHF 148'200.- liegt."
+                    },
+                    {
+                      "text": "Wenn der Arbeitnehmer Teilzeit arbeitet.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die Höhe des ALV-Beitrags hängt nicht von der Arbeitszeit ab, sondern kann über 1,1% liegen, wenn der Lohn über CHF 148'200.- liegt."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Arbeitnehmer mit einem Jahreslohn von CHF 160'000 zahlt für die ersten CHF 148'200 1,1% ALV und für die restlichen CHF 11'800 zusätzlich 0,5%."
+                  }
                 },
                 {
-                  "text": "7,5%",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der AHV-Beitrag beträgt 8,7% und wird zwischen Arbeitnehmer und Arbeitgeber aufgeteilt."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Bei einem Bruttolohn von CHF 5000 werden insgesamt CHF 435 für die AHV abgezogen, wobei sowohl Arbeitnehmer als auch Arbeitgeber jeweils CHF 217.50 zahlen."
-              }
-            },
-            {
-              "title": "ALV-Beitrag",
-              "type": "MC",
-              "question_text": "In welchem Fall kann der ALV-Beitrag mehr als 1,1% betragen?",
-              "answers": [
-                {
-                  "text": "Wenn der Lohn über CHF 148'200.- liegt.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Wenn der Lohn über CHF 148'200.- liegt, beträgt der ALV-Beitrag für das darüber liegende Einkommen 0,5%."
+                  "title": "Kost und Logis",
+                  "type": "MC",
+                  "question_text": "Welche zusätzlichen Abzüge können neben den Sozialversicherungsbeiträgen vom Lohn abgezogen werden?",
+                  "answers": [
+                    {
+                      "text": "Kosten für Kost und Logis.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Neben den Sozialversicherungsbeiträgen können auch Kosten für Kost und Logis vom Lohn abgezogen werden."
+                    },
+                    {
+                      "text": "Beiträge zur Krankenversicherung.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Beiträge zur Krankenversicherung sind in der Regel nicht direkt vom Lohn abgezogen. Zusätzliche Abzüge können Kosten für Kost und Logis umfassen."
+                    },
+                    {
+                      "text": "Steuerabgaben.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Steuerabgaben sind separate Abzüge. Zusätzliche Abzüge neben den Sozialversicherungsbeiträgen können Kosten für Kost und Logis sein."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Ein Lernender, der im Betrieb wohnt, hat Abzüge für Kost und Logis auf seiner Lohnabrechnung."
+                  }
                 },
                 {
-                  "text": "Wenn der Arbeitnehmer unter 18 Jahre alt ist.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Der ALV-Beitrag hängt nicht vom Alter des Arbeitnehmers ab. Er kann über 1,1% liegen, wenn der Lohn über CHF 148'200.- liegt."
+                  "title": "Erwerbsersatzordnung (EO)",
+                  "type": "MC",
+                  "question_text": "Welche Leistung deckt die Erwerbsersatzordnung (EO)?",
+                  "answers": [
+                    {
+                      "text": "Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Die EO deckt den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft ab."
+                    },
+                    {
+                      "text": "Erwerbsausfall bei Krankheitskosten.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Die EO deckt nicht die Krankheitskosten, sondern den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft."
+                    },
+                    {
+                      "text": "Erwerbsausfall bei Arbeitslosigkeit.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Arbeitslosigkeit wird von der Arbeitslosenversicherung (ALV) gedeckt. Die EO deckt den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Eine Mutter, die nach der Geburt ihres Kindes Mutterschaftsurlaub nimmt, erhält Leistungen aus der EO."
+                  }
                 },
                 {
-                  "text": "Wenn der Arbeitnehmer Teilzeit arbeitet.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die Höhe des ALV-Beitrags hängt nicht von der Arbeitszeit ab, sondern kann über 1,1% liegen, wenn der Lohn über CHF 148'200.- liegt."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Arbeitnehmer mit einem Jahreslohn von CHF 160'000 zahlt für die ersten CHF 148'200 1,1% ALV und für die restlichen CHF 11'800 zusätzlich 0,5%."
-              }
-            },
-            {
-              "title": "Kost und Logis",
-              "type": "MC",
-              "question_text": "Welche zusätzlichen Abzüge können neben den Sozialversicherungsbeiträgen vom Lohn abgezogen werden?",
-              "answers": [
-                {
-                  "text": "Kosten für Kost und Logis.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Neben den Sozialversicherungsbeiträgen können auch Kosten für Kost und Logis vom Lohn abgezogen werden."
-                },
-                {
-                  "text": "Beiträge zur Krankenversicherung.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Beiträge zur Krankenversicherung sind in der Regel nicht direkt vom Lohn abgezogen. Zusätzliche Abzüge können Kosten für Kost und Logis umfassen."
-                },
-                {
-                  "text": "Steuerabgaben.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Steuerabgaben sind separate Abzüge. Zusätzliche Abzüge neben den Sozialversicherungsbeiträgen können Kosten für Kost und Logis sein."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Ein Lernender, der im Betrieb wohnt, hat Abzüge für Kost und Logis auf seiner Lohnabrechnung."
-              }
-            },
-            {
-              "title": "Erwerbsersatzordnung (EO)",
-              "type": "MC",
-              "question_text": "Welche Leistung deckt die Erwerbsersatzordnung (EO)?",
-              "answers": [
-                {
-                  "text": "Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Die EO deckt den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft ab."
-                },
-                {
-                  "text": "Erwerbsausfall bei Krankheitskosten.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Die EO deckt nicht die Krankheitskosten, sondern den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft."
-                },
-                {
-                  "text": "Erwerbsausfall bei Arbeitslosigkeit.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Arbeitslosigkeit wird von der Arbeitslosenversicherung (ALV) gedeckt. Die EO deckt den Erwerbsausfall bei Militärdienst, Mutterschaft oder Vaterschaft."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Eine Mutter, die nach der Geburt ihres Kindes Mutterschaftsurlaub nimmt, erhält Leistungen aus der EO."
-              }
-            },
-            {
-              "title": "Kinder- und Ausbildungszulagen",
-              "type": "MC",
-              "question_text": "Was sind Kinder- und Ausbildungszulagen?",
-              "answers": [
-                {
-                  "text": "Finanzielle Unterstützungen für Familien mit Kindern in Ausbildung.",
-                  "is_correct": true,
-                  "feedback": "Richtig! Kinder- und Ausbildungszulagen sind finanzielle Unterstützungen, die Familien helfen, die Kosten für den Lebensunterhalt und die Ausbildung der Kinder zu decken."
-                },
-                {
-                  "text": "Zuschüsse für die Krankenversicherung der Kinder.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Kinder- und Ausbildungszulagen sind nicht speziell für die Krankenversicherung gedacht, sondern eine allgemeine finanzielle Unterstützung für Familien mit Kindern in Ausbildung."
-                },
-                {
-                  "text": "Einmalige Zahlungen bei der Geburt eines Kindes.",
-                  "is_correct": false,
-                  "feedback": "Falsch! Kinder- und Ausbildungszulagen sind laufende finanzielle Unterstützungen und keine einmaligen Zahlungen bei der Geburt eines Kindes."
-                }
-              ],
-              "points": 1,
-              "penalty": 0,
-              "additional_info": {
-                "real_life_example": "Eine Familie erhält monatlich Kinderzulagen, um die Kosten für die Ausbildung ihrer Kinder zu unterstützen."
-              }
-            }
-          ]
+                  "title": "Kinder- und Ausbildungszulagen",
+                  "type": "MC",
+                  "question_text": "Was sind Kinder- und Ausbildungszulagen?",
+                  "answers": [
+                    {
+                      "text": "Finanzielle Unterstützungen für Familien mit Kindern in Ausbildung.",
+                      "is_correct": true,
+                      "feedback": "Richtig! Kinder- und Ausbildungszulagen sind finanzielle Unterstützungen, die Familien helfen, die Kosten für den Lebensunterhalt und die Ausbildung der Kinder zu decken."
+                    },
+                    {
+                      "text": "Zuschüsse für die Krankenversicherung der Kinder.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Kinder- und Ausbildungszulagen sind nicht speziell für die Krankenversicherung gedacht, sondern eine allgemeine finanzielle Unterstützung für Familien mit Kindern in Ausbildung."
+                    },
+                    {
+                      "text": "Einmalige Zahlungen bei der Geburt eines Kindes.",
+                      "is_correct": false,
+                      "feedback": "Falsch! Kinder- und Ausbildungszulagen sind laufende finanzielle Unterstützungen und keine einmaligen Zahlungen bei der Geburt eines Kindes."
+                    }
+                  ],
+                  "points": 1,
+                  "penalty": 0,
+                  "additional_info": {
+                    "real_life_example": "Eine Familie erhält monatlich Kinderzulagen, um die Kosten für die Ausbildung ihrer Kinder zu unterstützen."
+                  }
+                                ],
+                                "points": 1,
+                                "penalty": 0
+                            }
+            ]
         };
 
         let currentQuestionIndex = 0;
