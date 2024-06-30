@@ -1,205 +1,139 @@
 {
-  "ChapterTitle": "Preisbildung und Wirtschaftskreislauf",
-  "overview": {
-    "summary": "Dieses Kapitel behandelt die Grundlagen der Preisbildung und des Wirtschaftskreislaufs. Es werden Bedürfnisse und ihre Klassifizierung, die Angebots- und Nachfragekurven, der Markt und das Marktgleichgewicht sowie der einfache und erweiterte Wirtschaftskreislauf erläutert. Weitere Themen sind die Produktionsfaktoren und der Strukturwandel in den Wirtschaftssektoren.",
-    "importance": "Die Inhalte dieses Kapitels sind entscheidend für das Verständnis der grundlegenden Mechanismen, die den Preis eines Gutes und die Interaktionen im Wirtschaftskreislauf beeinflussen. Diese Kenntnisse sind wichtig für die Analyse wirtschaftlicher Zusammenhänge und die Bewertung von Marktbedingungen."
-  },
-  "headings": {
-    "heading1": {
+  "questions": [
+    {
+      "title": "Preisbildung",
+      "type": "Multiple Choice",
+      "question_text": "Was passiert mit dem Preis eines Gutes, wenn es im Überfluss vorhanden ist?",
+      "answers": [
+        {
+          "text": "Der Preis sinkt.",
+          "is_correct": true,
+          "feedback": "Richtig! Wenn ein Gut im Überfluss vorhanden ist, sinkt der Preis, da das Angebot die Nachfrage übersteigt. Ein Beispiel ist die Senkung der Preise für Sommerkleidung am Ende der Saison, wenn der Markt übersättigt ist."
+        },
+        {
+          "text": "Der Preis steigt.",
+          "is_correct": false,
+          "feedback": "Falsch! Der Preis steigt, wenn ein Gut knapp ist. Die richtige Antwort ist, dass der Preis sinkt. Zum Beispiel fallen die Preise für Lebensmittel nach der Ernte, wenn ein Überschuss vorhanden ist."
+        },
+        {
+          "text": "Der Preis bleibt gleich.",
+          "is_correct": false,
+          "feedback": "Falsch! Der Preis bleibt nicht gleich, wenn das Angebot steigt und die Nachfrage gleich bleibt. Die richtige Antwort ist, dass der Preis sinkt. Zum Beispiel sinken die Preise für Elektronikprodukte, wenn neue Modelle eingeführt werden und das alte Modell im Überfluss vorhanden ist."
+        }
+      ],
+      "points": 1,
+      "penalty": 0,
+      "additional_info": {
+        "real_life_example": "Ein Beispiel ist die Senkung der Preise für Sommerkleidung am Ende der Saison, wenn der Markt übersättigt ist."
+      }
+    },
+    {
+      "title": "Wirtschaftskreislauf",
+      "type": "Multiple Choice",
+      "question_text": "Welche Produktionsfaktoren sind notwendig, um Güter herzustellen und Dienstleistungen anzubieten?",
+      "answers": [
+        {
+          "text": "Boden, Arbeit und Kapital",
+          "is_correct": true,
+          "feedback": "Richtig! Die drei klassischen Produktionsfaktoren sind Boden, Arbeit und Kapital. Zum Beispiel benötigt ein Bauernhof Land, Arbeitskräfte und Maschinen, um landwirtschaftliche Produkte zu erzeugen."
+        },
+        {
+          "text": "Kapital, Arbeit und Dienstleistungen",
+          "is_correct": false,
+          "feedback": "Falsch! Dienstleistungen sind keine Produktionsfaktoren, sondern das Ergebnis der Produktion. Die richtige Antwort ist Boden, Arbeit und Kapital. Beispielsweise benötigt ein Industriebetrieb Land für die Fabrik, Arbeiter und Maschinen."
+        },
+        {
+          "text": "Rohstoffe, Arbeit und Nachfrage",
+          "is_correct": false,
+          "feedback": "Falsch! Nachfrage ist kein Produktionsfaktor. Die richtigen Produktionsfaktoren sind Boden, Arbeit und Kapital. Zum Beispiel nutzt eine Textilfabrik Land, Arbeitskräfte und Kapital für Maschinen und Gebäude."
+        }
+      ],
+      "points": 1,
+      "penalty": 0,
+      "additional_info": {
+        "real_life_example": "Zum Beispiel benötigt ein Bauernhof Land, Arbeitskräfte und Maschinen, um landwirtschaftliche Produkte zu erzeugen."
+      }
+    },
+    {
+      "title": "Marktgleichgewicht",
+      "type": "Multiple Choice",
+      "question_text": "Was versteht man unter dem Begriff 'Marktgleichgewicht'?",
+      "answers": [
+        {
+          "text": "Den Zustand, in dem Angebot und Nachfrage eines Gutes übereinstimmen.",
+          "is_correct": true,
+          "feedback": "Richtig! Marktgleichgewicht beschreibt den Zustand, in dem die angebotene Menge eines Gutes der nachgefragten Menge entspricht. Ein Beispiel ist, wenn das Angebot an Wohnungen in einer Stadt genau der Nachfrage entspricht und die Preise stabil bleiben."
+        },
+        {
+          "text": "Den Zustand, in dem das Angebot eines Gutes höher ist als die Nachfrage.",
+          "is_correct": false,
+          "feedback": "Falsch! Das ist ein Zustand des Überschusses. Die richtige Antwort ist, dass das Marktgleichgewicht erreicht ist, wenn Angebot und Nachfrage übereinstimmen. Zum Beispiel bleiben die Preise für Konzerttickets stabil, wenn die Nachfrage die Anzahl der verfügbaren Tickets genau abdeckt."
+        },
+        {
+          "text": "Den Zustand, in dem die Nachfrage nach einem Gut höher ist als das Angebot.",
+          "is_correct": false,
+          "feedback": "Falsch! Das ist ein Zustand der Knappheit. Die richtige Antwort ist, dass das Marktgleichgewicht erreicht ist, wenn Angebot und Nachfrage übereinstimmen. Ein Beispiel ist der Markt für Smartphones, wenn die produzierte Menge genau der Kaufbereitschaft der Konsumenten entspricht."
+        }
+      ],
+      "points": 1,
+      "penalty": 0,
+      "additional_info": {
+        "real_life_example": "Ein Beispiel ist, wenn das Angebot an Wohnungen in einer Stadt genau der Nachfrage entspricht und die Preise stabil bleiben."
+      }
+    },
+    {
+      "title": "Strukturwandel",
+      "type": "Multiple Choice",
+      "question_text": "Was versteht man unter dem 'Strukturwandel' in Bezug auf die Wirtschaftssektoren?",
+      "answers": [
+        {
+          "text": "Die Veränderung der relativen Bedeutung der Wirtschaftssektoren im Laufe der Zeit.",
+          "is_correct": true,
+          "feedback": "Richtig! Strukturwandel beschreibt die Veränderung der Bedeutung verschiedener Wirtschaftssektoren im Laufe der Zeit. Zum Beispiel hat sich die Schweizer Wirtschaft von der Landwirtschaft über die Industrie hin zu einer Dienstleistungsgesellschaft entwickelt."
+        },
+        {
+          "text": "Die Ausdehnung der Produktionskapazitäten in einem Sektor.",
+          "is_correct": false,
+          "feedback": "Falsch! Dies beschreibt das Wachstum innerhalb eines Sektors. Die richtige Antwort ist die Veränderung der relativen Bedeutung der Wirtschaftssektoren. Zum Beispiel hat die Zunahme des tertiären Sektors in der Schweiz den Rückgang des primären Sektors begleitet."
+        },
+        {
+          "text": "Den Wechsel von der Produktion von Gütern zu Dienstleistungen innerhalb eines Unternehmens.",
+          "is_correct": false,
+          "feedback": "Falsch! Das ist eine unternehmerische Entscheidung, keine gesamtwirtschaftliche Veränderung. Strukturwandel betrifft die Veränderung der relativen Bedeutung der Sektoren. Ein Beispiel ist der Rückgang der Beschäftigung in der Landwirtschaft zugunsten des Dienstleistungssektors."
+        }
+      ],
+      "points": 1,
+      "penalty": 0,
+      "additional_info": {
+        "real_life_example": "Zum Beispiel hat sich die Schweizer Wirtschaft von der Landwirtschaft über die Industrie hin zu einer Dienstleistungsgesellschaft entwickelt."
+      }
+    },
+    {
       "title": "Bedürfnisse",
-      "paragraphs": [
-        "Bedürfnisse: Einführung in das Thema Bedürfnisse und Werbung. Beschreibung der Bedürfnispyramide nach Maslow.",
-        "Bedürfnisarten: Unterscheidung von Bedürfnissen anhand von sechs Kategorien mit Beispielen: Existenzbedürfnisse, Wahlbedürfnisse, Individualbedürfnisse, Kollektivbedürfnisse, materielle Bedürfnisse, immaterielle Bedürfnisse."
-      ]
-    },
-    "heading2": {
-      "title": "Nutzen und Preisänderungen",
-      "paragraphs": [
-        "Nutzen und Preisänderungen: Definition von \"Nutzen\" im Kontext der Bedürfnisbefriedigung. Erklärung des Zusammenhangs zwischen Preisänderungen und Nachfrage anhand des \"Gesetzes der Nachfrage\".",
-        "Die Nachfragekurve: Grafische Darstellung des Gesetzes der Nachfrage: Preissenkungen führen zu erhöhter Nachfrage und umgekehrt."
-      ]
-    },
-    "heading3": {
-      "title": "Angebot",
-      "paragraphs": [
-        "Angebot: Unterscheidung von wirtschaftlichen Gütern und freien Gütern sowie von Sachgütern und Dienstleistungen. Weitere Unterteilung der Güterarten in Konsumgüter, Gebrauchsgüter, Investitionsgüter und Verbrauchsgüter.",
-        "Die Angebotskurve: Erklärung der Reaktion von Anbietern auf Preisänderungen. Grafische Darstellung des Zusammenhangs von Preis und Angebotsmenge: Preissteigerungen führen zu erhöhtem Angebot."
-      ]
-    },
-    "heading4": {
-      "title": "Der Markt",
-      "paragraphs": [
-        "Der Markt: Definition des Marktes als Ort des Zusammentreffens von Angebot und Nachfrage in der freien Marktwirtschaft. Erklärung der Preisbildung durch Angebot und Nachfrage. Beschreibung der Signalfunktion des Preises und seiner Auswirkungen auf Angebot und Nachfrage.",
-        "Marktgleichgewicht: Definition und Erklärung des Gleichgewichtspreises und der Gleichgewichtsmenge am Beispiel eines \"geräumten Marktes\".",
-        "Voraussetzungen für einen funktionierenden Markt: Beschreibung der Bedingungen für einen freien Markt, insbesondere vollständiger Wettbewerb und informierte Konsumenten.",
-        "Veränderung des Marktgleichgewichts: Erklärung der Auswirkungen von Veränderungen anderer Einflussfaktoren auf den Markt und das Marktgleichgewicht."
-      ]
-    },
-    "heading5": {
-      "title": "Veränderung des Marktgleichgewichts",
-      "paragraphs": [
-        "Veränderung des Marktgleichgewichts: Grafische Darstellung und Erläuterung der Marktveränderungen bei Verschiebung der Nachfrage- oder Angebotskurve anhand von vier Beispielen: Neues Trendprodukt, Überangebot an Tomaten, Wirtschaftskrise, Verknappung von Erdöl."
-      ]
-    },
-    "heading6": {
-      "title": "Einfacher Wirtschaftskreislauf",
-      "paragraphs": [
-        "Einfacher Wirtschaftskreislauf: Einführung des einfachen Wirtschaftskreislaufs als Modell zur Darstellung des Zusammenwirkens von Unternehmen und Haushalten.",
-        "Darstellung des einfachen Wirtschaftskreislaufs: Grafische Darstellung des einfachen Wirtschaftskreislaufs mit Güterstrom (Produktionsfaktoren, Waren und Dienstleistungen) und Geldstrom (Löhne, Zinsen, Gewinne, Renten, Zahlungen für Waren und Dienstleistungen)."
-      ]
-    },
-    "heading7": {
-      "title": "Erweiterter Wirtschaftskreislauf",
-      "paragraphs": [
-        "Erweiterter Wirtschaftskreislauf: Erweiterung des einfachen Wirtschaftskreislaufs um die Akteure Staat, Banken und Ausland.",
-        "Geldfluss im erweiterten Wirtschaftskreislauf: Grafische Darstellung der Geldströme zwischen Unternehmen, Haushalten, Staat, Banken und Ausland."
-      ]
-    },
-    "heading8": {
-      "title": "Der Staat als Wirtschaftsakteur",
-      "paragraphs": [
-        "Der Staat als Wirtschaftsakteur: Beschreibung der Rolle des Staates als Empfänger von Steuern und Zöllen und als Akteur, der durch Ausgaben und politische Instrumente die Wirtschaft beeinflusst.",
-        "Die Rolle der Banken: Erklärung der Funktion von Banken als Kapitalvermittler, die Spareinlagen entgegennehmen und als Kredite vergeben. Beschreibung der Funktionsweise von Zinsen und der Veränderungen im Zinsumfeld.",
-        "Das Ausland: Bedeutung des Auslands für die Schweizer Wirtschaft, insbesondere Rohstoffimporte, Export von veredelten Produkten und Finanzdienstleistungen, sowie Erlöse aus dem Tourismus."
-      ]
-    },
-    "heading9": {
-      "title": "Die ganzheitliche Sicht",
-      "paragraphs": [
-        "Die ganzheitliche Sicht: Kritische Reflexion der Begrenztheit des Modells \"erweiterter Wirtschaftskreislauf\" und Notwendigkeit einer ganzheitlichen Betrachtungsweise, die Umweltbelastung, soziale Gerechtigkeit und Arbeitsbedingungen miteinbezieht."
-      ]
-    },
-    "heading10": {
-      "title": "Produktionsfaktoren",
-      "paragraphs": [
-        "Produktionsfaktoren: Definition und Beschreibung der drei Produktionsfaktoren Boden/Umwelt, Arbeit/Wissen und Kapital.",
-        "Boden/Umwelt: Entwicklung des Begriffs \"Boden\" vom Ackerboden zu Rohstoffträger, Nährstoffträger, Betriebsstandort, Infrastrukturträger, Tourismuslandschaft und Anlageobjekt.",
-        "Arbeit/Wissen: Definition von \"Arbeit\" als körperliche und geistige Tätigkeit gegen Entgelt. Bedeutung von Wissen und \"Know-how\" für die Qualität der Arbeit.",
-        "Kapital: Definition von \"Kapital\" als Geld- und Sachkapital, das zur Herstellung von Gütern und Dienstleistungen eingesetzt wird. Beispiel: Investition von Geldkapital in Sachkapital. Auswirkungen der aktuellen Niedrigzinsphase auf das Sparverhalten und die Investitionstätigkeit."
-      ]
-    },
-    "heading11": {
-      "title": "Wirtschaftssektoren",
-      "paragraphs": [
-        "Wirtschaftssektoren: Einteilung der Arbeitnehmenden in die drei Wirtschaftssektoren (primär, sekundär, tertiär) anhand ihrer beruflichen Tätigkeit. Beschreibung der Tätigkeiten und Beispielbranchen der drei Sektoren.",
-        "Strukturwandel: Beschreibung des Wandels der Schweizer Wirtschaft von einer Agrargesellschaft über einen Industriestaat hin zu einer Dienstleistungsgesellschaft anhand einer Grafik, die die Anzahl der Erwerbstätigen in den drei Sektoren seit 1850 darstellt."
-      ]
+      "type": "Multiple Choice",
+      "question_text": "Was sind Wahlbedürfnisse?",
+      "answers": [
+        {
+          "text": "Bedürfnisse, die nicht lebensnotwendig sind und erst befriedigt werden, wenn die Existenz gesichert ist.",
+          "is_correct": true,
+          "feedback": "Richtig! Wahlbedürfnisse sind nicht überlebenswichtig und werden erst dann befriedigt, wenn die Existenz gesichert ist. Zum Beispiel der Wunsch nach einem neuen Auto oder einer Urlaubsreise."
+        },
+        {
+          "text": "Lebensnotwendige Bedürfnisse wie Nahrung und Schlaf.",
+          "is_correct": false,
+          "feedback": "Falsch! Das sind Existenzbedürfnisse. Die richtige Antwort ist, dass Wahlbedürfnisse nicht lebensnotwendig sind und erst befriedigt werden, wenn die Existenz gesichert ist. Zum Beispiel der Kauf eines Luxusguts nach Erfüllung aller Grundbedürfnisse."
+        },
+        {
+          "text": "Bedürfnisse, die durch Werbung geweckt werden.",
+          "is_correct": false,
+          "feedback": "Falsch! Werbung kann sowohl Existenz- als auch Wahlbedürfnisse wecken. Die richtige Antwort ist, dass Wahlbedürfnisse nicht lebensnotwendig sind und erst befriedigt werden, wenn die Existenz gesichert ist. Ein Beispiel ist der Kauf von Unterhaltungselektronik."
+        }
+      ],
+      "points": 1,
+      "penalty": 0,
+      "additional_info": {
+        "real_life_example": "Zum Beispiel der Wunsch nach einem neuen Auto oder einer Urlaubsreise."
+      }
     }
-  },
-  "terminology": {
-    "Bedürfnis": "Das Empfinden eines Mangelgefühls, verbunden mit dem Wunsch, diesen Mangel zu beseitigen.",
-    "Güter": "Mittel zur Bedürfnisbefriedigung.",
-    "Dienstleistungen": "Immaterielle Güter, die zur Bedürfnisbefriedigung dienen.",
-    "Nachfrage": "Bereitschaft und Fähigkeit der Konsumenten, ein bestimmtes Gut zu einem bestimmten Preis zu kaufen.",
-    "Angebot": "Bereitschaft und Fähigkeit der Produzenten, ein bestimmtes Gut zu einem bestimmten Preis anzubieten.",
-    "Preis": "Wertverhältnis, das beim Austausch von Gütern und Dienstleistungen zugrunde gelegt wird.",
-    "Markt": "Ort, an dem Angebot und Nachfrage aufeinandertreffen und Preise gebildet werden.",
-    "Marktgleichgewicht": "Zustand, in dem angebotene und nachgefragte Menge eines Gutes übereinstimmen.",
-    "Wirtschaftskreislauf": "Modell zur Darstellung der komplexen Beziehungen zwischen den verschiedenen Akteuren einer Volkswirtschaft.",
-    "Produktionsfaktoren": "Alle Mittel, die zur Herstellung von Gütern und Dienstleistungen eingesetzt werden.",
-    "Wirtschaftssektoren": "Einteilung der Wirtschaft in verschiedene Bereiche nach Art der erbrachten Leistung (primär, sekundär, tertiär).",
-    "Strukturwandel": "Veränderung der relativen Bedeutung der Wirtschaftssektoren im Laufe der Zeit."
-  },
-  "faqs": {
-    "faq1": {
-      "question": "Was versteht man unter dem Begriff \"Bedürfnis\" im wirtschaftlichen Kontext? Nennen Sie zwei Beispiele.",
-      "answer": "Unter \"Bedürfnis\" versteht man im wirtschaftlichen Kontext das Gefühl eines Mangels, welches mit dem Streben verbunden ist, diesen Mangel zu beseitigen. Beispiele für Bedürfnisse sind Hunger und Durst oder der Wunsch nach einem Smartphone."
-    },
-    "faq2": {
-      "question": "Erklären Sie den Unterschied zwischen Existenz- und Wahlbedürfnissen. Geben Sie je ein Beispiel.",
-      "answer": "Existenzbedürfnisse sind lebensnotwendig, wie z.B. Nahrung. Wahlbedürfnisse hingegen sind nicht überlebenswichtig und werden erst dann befriedigt, wenn die Existenz gesichert ist, z.B. der Kauf eines Autos."
-    },
-    "faq3": {
-      "question": "Wie wirkt sich eine Preiserhöhung auf die nachgefragte Menge eines Gutes aus? Beschreiben Sie diesen Zusammenhang anhand eines Beispiels.",
-      "answer": "Steigt der Preis für ein Gut, sinkt in der Regel die nachgefragte Menge. Dies liegt daran, dass Konsumenten bei höheren Preisen eher auf Alternativen ausweichen oder ganz auf den Konsum verzichten. Beispiel: Steigt der Preis für Butter, greifen Konsumenten eher zu Margarine oder kaufen insgesamt weniger Butter."
-    },
-    "faq4": {
-      "question": "Was ist ein \"Markt\" im wirtschaftlichen Sinne?",
-      "answer": "Ein Markt ist ein Ort, an dem Angebot und Nachfrage aufeinandertreffen. Dort werden Güter und Dienstleistungen gehandelt."
-    },
-    "faq5": {
-      "question": "Erläutern Sie den Begriff \"Marktgleichgewicht\".",
-      "answer": "Das Marktgleichgewicht beschreibt den Zustand, in dem die angebotene Menge eines Gutes der nachgefragten Menge entspricht. Zu diesem Gleichgewichtspreis wird die Ware gehandelt."
-    },
-    "faq6": {
-      "question": "Welche Folgen hat es, wenn bei gleichbleibendem Angebot die Nachfrage nach einem Produkt steigt?",
-      "answer": "Steigt die Nachfrage bei gleichbleibendem Angebot, erhöht sich in der Regel der Preis des Produkts. Dies liegt daran, dass mehr Konsumenten bereit sind, den aktuellen Preis für das begrenzte Angebot zu zahlen."
-    },
-    "faq7": {
-      "question": "Nennen Sie die drei Akteure im einfachen Wirtschaftskreislauf und beschreiben Sie kurz ihre jeweilige Rolle.",
-      "answer": "Die drei Akteure im einfachen Wirtschaftskreislauf sind Unternehmen, Haushalte und der Markt. Unternehmen produzieren Güter und Dienstleistungen, Haushalte konsumieren diese und bieten den Unternehmen Produktionsfaktoren an. Auf dem Markt treffen Angebot und Nachfrage aufeinander."
-    },
-    "faq8": {
-      "question": "Welche zusätzlichen Akteure werden im erweiterten Wirtschaftskreislauf berücksichtigt?",
-      "answer": "Im erweiterten Wirtschaftskreislauf werden zusätzlich der Staat, die Banken und das Ausland berücksichtigt."
-    },
-    "faq9": {
-      "question": "Definieren Sie den Begriff \"Produktionsfaktoren\" und nennen Sie die drei klassischen Produktionsfaktoren.",
-      "answer": "Produktionsfaktoren sind alle Mittel, die zur Herstellung von Gütern und Dienstleistungen benötigt werden. Die drei klassischen Produktionsfaktoren sind Boden, Arbeit und Kapital."
-    },
-    "faq10": {
-      "question": "Was versteht man unter dem \"Strukturwandel\" in Bezug auf die Wirtschaftssektoren?",
-      "answer": "Unter \"Strukturwandel\" versteht man die Veränderung der Bedeutung verschiedener Wirtschaftssektoren im Laufe der Zeit. In der Schweiz hat sich die Wirtschaft von einem dominierenden Primärsektor (Landwirtschaft) hin zu einem dominierenden Tertiärsektor (Dienstleistungen) entwickelt."
-    }
-  },
-  "key_points": {
-    "point1": "Bedürfnisse des Menschen sind praktisch unbeschränkt.",
-    "point2": "Je knapper ein Gut ist, desto höher ist sein Preis.",
-    "point3": "Dort, wo sich Angebots- und Nachfrageverhalten treffen, herrscht Marktgleichgewicht.",
-    "point4": "Volkswirtschaftlich bedeutet „Arbeit“ jede körperliche und geistige Tätigkeit, mit der ein Einkommen erzielt wird.",
-    "point5": "Die Schweiz entwickelte sich von der Agrargesellschaft zum Industriestaat und schließlich zur Dienstleistungsgesellschaft von heute."
-  },
-  "good_to_know": {
-    "fact1": "Die Bedürfnisse des Menschen sind praktisch unbeschränkt.",
-    "fact2": "Je knapper ein Gut ist, desto höher ist sein Preis.",
-    "fact3": "Volkswirtschaftlich bedeutet „Arbeit“ jede körperliche und geistige Tätigkeit, mit der ein Einkommen erzielt wird.",
-    "fact4": "Die Schweiz entwickelte sich von der Agrargesellschaft zum Industriestaat und schließlich zur Dienstleistungsgesellschaft von heute."
-  },
-  "resources": {
-    "resource1": "Lehrbuch für Wirtschaftslehre",
-    "resource2": "Abraham Maslow: Motivation and Personality",
-    "resource3": "Statistiken zur Schweizer Wirtschaftsgeschichte"
-  },
-  "DasWeissIchJetzt": {
-    "question1": {
-      "question": "Was versteht man unter dem Begriff \"Bedürfnis\" im wirtschaftlichen Kontext? Nennen Sie zwei Beispiele.",
-      "answer": "Unter \"Bedürfnis\" versteht man im wirtschaftlichen Kontext das Gefühl eines Mangels, welches mit dem Streben verbunden ist, diesen Mangel zu beseitigen. Beispiele für Bedürfnisse sind Hunger und Durst oder der Wunsch nach einem Smartphone."
-    },
-    "question2": {
-      "question": "Erklären Sie den Unterschied zwischen Existenz- und Wahlbedürfnissen. Geben Sie je ein Beispiel.",
-      "answer": "Existenzbedürfnisse sind lebensnotwendig, wie z.B. Nahrung. Wahlbedürfnisse hingegen sind nicht überlebenswichtig und werden erst dann befriedigt, wenn die Existenz gesichert ist, z.B. der Kauf eines Autos."
-    },
-    "question3": {
-      "question": "Wie wirkt sich eine Preiserhöhung auf die nachgefragte Menge eines Gutes aus? Beschreiben Sie diesen Zusammenhang anhand eines Beispiels.",
-      "answer": "Steigt der Preis für ein Gut, sinkt in der Regel die nachgefragte Menge. Dies liegt daran, dass Konsumenten bei höheren Preisen eher auf Alternativen ausweichen oder ganz auf den Konsum verzichten. Beispiel: Steigt der Preis für Butter, greifen Konsumenten eher zu Margarine oder kaufen insgesamt weniger Butter."
-    },
-    "question4": {
-      "question": "Was ist ein \"Markt\" im wirtschaftlichen Sinne?",
-      "answer": "Ein Markt ist ein Ort, an dem Angebot und Nachfrage aufeinandertreffen. Dort werden Güter und Dienstleistungen gehandelt."
-    },
-    "question5": {
-      "question": "Erläutern Sie den Begriff \"Marktgleichgewicht\".",
-      "answer": "Das Marktgleichgewicht beschreibt den Zustand, in dem die angebotene Menge eines Gutes der nachgefragten Menge entspricht. Zu diesem Gleichgewichtspreis wird die Ware gehandelt."
-    },
-    "question6": {
-      "question": "Welche Folgen hat es, wenn bei gleichbleibendem Angebot die Nachfrage nach einem Produkt steigt?",
-      "answer": "Steigt die Nachfrage bei gleichbleibendem Angebot, erhöht sich in der Regel der Preis des Produkts. Dies liegt daran, dass mehr Konsumenten bereit sind, den aktuellen Preis für das begrenzte Angebot zu zahlen."
-    },
-    "question7": {
-      "question": "Nennen Sie die drei Akteure im einfachen Wirtschaftskreislauf und beschreiben Sie kurz ihre jeweilige Rolle.",
-      "answer": "Die drei Akteure im einfachen Wirtschaftskreislauf sind Unternehmen, Haushalte und der Markt. Unternehmen produzieren Güter und Dienstleistungen, Haushalte konsumieren diese und bieten den Unternehmen Produktionsfaktoren an. Auf dem Markt treffen Angebot und Nachfrage aufeinander."
-    },
-    "question8": {
-      "question": "Welche zusätzlichen Akteure werden im erweiterten Wirtschaftskreislauf berücksichtigt?",
-      "answer": "Im erweiterten Wirtschaftskreislauf werden zusätzlich der Staat, die Banken und das Ausland berücksichtigt."
-    },
-    "question9": {
-      "question": "Definieren Sie den Begriff \"Produktionsfaktoren\" und nennen Sie die drei klassischen Produktionsfaktoren.",
-      "answer": "Produktionsfaktoren sind alle Mittel, die zur Herstellung von Gütern und Dienstleistungen benötigt werden. Die drei klassischen Produktionsfaktoren sind Boden, Arbeit und Kapital."
-    },
-    "question10": {
-      "question": "Was versteht man unter dem \"Strukturwandel\" in Bezug auf die Wirtschaftssektoren?",
-      "answer": "Unter \"Strukturwandel\" versteht man die Veränderung der Bedeutung verschiedener Wirtschaftssektoren im Laufe der Zeit. In der Schweiz hat sich die Wirtschaft von einem dominierenden Primärsektor (Landwirtschaft) hin zu einem dominierenden Tertiärsektor (Dienstleistungen) entwickelt."
-    }
-  }
+  ]
 }
