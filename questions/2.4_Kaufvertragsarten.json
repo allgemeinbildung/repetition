@@ -3,177 +3,191 @@
     {
       "title": "Vertragsabschluss",
       "type": "MC",
-      "question_text": "Was ist ein wesentliches Element für den Abschluss eines Kaufvertrages?",
+      "question_text": "Was ist neben dem Kaufgegenstand und dem Kaufpreis ein weiterer wesentlicher Bestandteil eines Kaufvertrages?",
       "answers": [
         {
-          "text": "Übereinstimmende Willenserklärungen der Parteien",
+          "text": "Die Menge des Kaufgegenstandes",
           "is_correct": true,
-          "feedback": "Richtig! Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande, d.h. beide Parteien müssen dem Kauf zu den vereinbarten Bedingungen zustimmen. Beispiel: Einigung über den Kauf eines Fahrrads für CHF 500."
+          "feedback": "Richtig! Die Menge ist essentiell, um den Umfang der beiderseitigen Leistungspflichten zu bestimmen. Beispiel: Ein Kaufvertrag über \"100 Äpfel\" ist präziser als einer über \"einige Äpfel\"."
         },
         {
-          "text": " Schriftliche Bestätigung des Angebots durch den Käufer",
+          "text": "Die Zahlungsfrist",
           "is_correct": false,
-          "feedback": "Falsch. Ein Kaufvertrag kann auch mündlich geschlossen werden, ausser er ist formbedürftig.  Richtig ist: Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande, d.h. beide Parteien müssen dem Kauf zu den vereinbarten Bedingungen zustimmen. Beispiel: Einigung über den Kauf eines Fahrrads für CHF 500.",
+          "feedback": "Falsch! Die Zahlungsfrist ist zwar relevant, aber nicht zwingend erforderlich. Fehlt sie, gilt die gesetzliche Regelung. Die korrekte Antwort ist die Menge des Kaufgegenstandes. Die Menge ist essentiell, um den Umfang der beiderseitigen Leistungspflichten zu bestimmen. Beispiel: Ein Kaufvertrag über \"100 Äpfel\" ist präziser als einer über \"einige Äpfel\"."
         },
         {
-          "text": "Zustellung der Rechnung an den Käufer",
+          "text": "Die Farbe des Kaufgegenstandes",
           "is_correct": false,
-          "feedback": "Falsch. Die Rechnung ist eine Zahlungsaufforderung und erfolgt nach Vertragsabschluss. Richtig ist: Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande, d.h. beide Parteien müssen dem Kauf zu den vereinbarten Bedingungen zustimmen. Beispiel: Einigung über den Kauf eines Fahrrads für CHF 500."
+          "feedback": "Falsch! Die Farbe ist meist eine Nebenpflicht und nur relevant, wenn sie explizit vereinbart wurde. Die korrekte Antwort ist die Menge des Kaufgegenstandes. Die Menge ist essentiell, um den Umfang der beiderseitigen Leistungspflichten zu bestimmen. Beispiel: Ein Kaufvertrag über \"100 Äpfel\" ist präziser als einer über \"einige Äpfel\"."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Ein Kaufvertrag über \"100 Äpfel\" ist präziser als einer über \"einige Äpfel\"."
+      }
     },
     {
-      "title": "Formfreiheit",
+      "title": "Formvorschriften",
       "type": "MC",
-      "question_text": "Was bedeutet Formfreiheit im Vertragsrecht?",
+      "question_text": "Welche Aussage zu den Formvorschriften bei Kaufverträgen ist korrekt?",
       "answers": [
         {
-          "text": "Verträge können grundsätzlich mündlich, schriftlich oder durch konkludentes Handeln geschlossen werden.",
+          "text": "Grundsätzlich können Kaufverträge formfrei geschlossen werden, also mündlich, schriftlich oder durch schlüssiges Verhalten.",
           "is_correct": true,
-          "feedback": "Richtig! Formfreiheit bedeutet, dass keine bestimmte Form für den Vertragsabschluss vorgeschrieben ist, ausser der Vertrag ist formbedürftig. Beispiel: Kauf einer Zeitung am Kiosk (konkludentes Handeln).",
+          "feedback": "Richtig! Das Schweizer Recht schreibt für Kaufverträge grundsätzlich keine bestimmte Form vor. Wichtig ist aber die Beweisbarkeit, daher ist Schriftform bei wichtigen Verträgen ratsam. Beispiel: Ein mündlicher Kaufvertrag über ein Brot ist gültig, für ein Auto hingegen riskant."
         },
         {
-          "text": "Verträge können nur schriftlich abgeschlossen werden.",
+          "text": "Kaufverträge bedürfen immer der Schriftform, um gültig zu sein.",
           "is_correct": false,
-          "feedback": "Falsch. Es gibt auch formlose Verträge. Richtig ist: Formfreiheit bedeutet, dass keine bestimmte Form für den Vertragsabschluss vorgeschrieben ist, ausser der Vertrag ist formbedürftig. Beispiel: Kauf einer Zeitung am Kiosk (konkludentes Handeln).",
+          "feedback": "Falsch! Grundsätzlich können Kaufverträge formfrei geschlossen werden, also mündlich, schriftlich oder durch schlüssiges Verhalten. Wichtig ist aber die Beweisbarkeit, daher ist Schriftform bei wichtigen Verträgen ratsam. Beispiel: Ein mündlicher Kaufvertrag über ein Brot ist gültig, für ein Auto hingegen riskant. Die korrekte Antwort ist: Grundsätzlich können Kaufverträge formfrei geschlossen werden, also mündlich, schriftlich oder durch schlüssiges Verhalten."
         },
         {
-          "text": "Verträge bedürfen keiner Zustimmung beider Parteien.",
+          "text": "Nur notariell beurkundete Kaufverträge sind rechtsgültig.",
           "is_correct": false,
-          "feedback": "Falsch. Die Zustimmung beider Parteien ist essentiell für einen Vertrag. Richtig ist: Formfreiheit bedeutet, dass keine bestimmte Form für den Vertragsabschluss vorgeschrieben ist, ausser der Vertrag ist formbedürftig. Beispiel: Kauf einer Zeitung am Kiosk (konkludentes Handeln)."
+          "feedback": "Falsch! Die notarielle Beurkundung ist nur in speziellen Fällen vorgeschrieben, z.B. beim Grundstückkauf. Grundsätzlich können Kaufverträge formfrei geschlossen werden, also mündlich, schriftlich oder durch schlüssiges Verhalten. Wichtig ist aber die Beweisbarkeit, daher ist Schriftform bei wichtigen Verträgen ratsam. Beispiel: Ein mündlicher Kaufvertrag über ein Brot ist gültig, für ein Auto hingegen riskant. Die korrekte Antwort ist: Grundsätzlich können Kaufverträge formfrei geschlossen werden, also mündlich, schriftlich oder durch schlüssiges Verhalten."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Ein mündlicher Kaufvertrag über ein Brot ist gültig, für ein Auto hingegen riskant."
+      }
     },
     {
       "title": "Wesentlicher Irrtum",
       "type": "MC",
-      "question_text": "Was ist ein 'wesentlicher Irrtum' im Vertragsrecht?",
+      "question_text": "Was versteht man im Vertragsrecht unter einem 'wesentlichen Irrtum'?",
       "answers": [
         {
-          "text": "Ein Irrtum über einen Punkt, der für den Abschluss des Vertrages entscheidend war.",
+          "text": "Eine falsche Vorstellung einer Vertragspartei vom Vertragsinhalt, die für ihren Vertragsentschluss relevant war.",
           "is_correct": true,
-          "feedback": "Richtig! Ein wesentlicher Irrtum berechtigt zur Anfechtung des Vertrages. Beispiel: Kauf eines vermeintlichen Picasso-Gemäldes, das sich als Fälschung herausstellt.",
+          "feedback": "Richtig! Ein wesentlicher Irrtum berechtigt zur Anfechtung des Vertrages. Beispiel: Jemand kauft ein Bild, weil er irrtümlich glaubt, es stamme von einem berühmten Künstler."
         },
         {
-          "text": "Ein Irrtum über einen unwesentlichen Nebenpunkt des Vertrages.",
+          "text": "Einen Schreibfehler im Vertrag, der sich auf die Höhe des Kaufpreises bezieht.",
           "is_correct": false,
-          "feedback": "Falsch. Ein unwesentlicher Irrtum berechtigt nicht zur Anfechtung. Richtig ist: Ein wesentlicher Irrtum berechtigt zur Anfechtung des Vertrages. Beispiel: Kauf eines vermeintlichen Picasso-Gemäldes, das sich als Fälschung herausstellt.",
+          "feedback": "Falsch! Ein Schreibfehler kann zwar zur Vertragsanpassung führen, ist aber kein wesentlicher Irrtum im juristischen Sinne. Die korrekte Antwort ist: Eine falsche Vorstellung einer Vertragspartei vom Vertragsinhalt, die für ihren Vertragsentschluss relevant war. Beispiel: Jemand kauft ein Bild, weil er irrtümlich glaubt, es stamme von einem berühmten Künstler."
         },
         {
-          "text": "Ein Irrtum, der durch Fahrlässigkeit des Vertragspartners entstanden ist.",
+          "text": "Die Unkenntnis einer Vertragspartei von den gesetzlichen Bestimmungen zum Kaufvertrag.",
           "is_correct": false,
-          "feedback": "Falsch. Ein durch Fahrlässigkeit entstandener Irrtum ist nicht zwingend ein wesentlicher Irrtum. Richtig ist: Ein wesentlicher Irrtum berechtigt zur Anfechtung des Vertrages. Beispiel: Kauf eines vermeintlichen Picasso-Gemäldes, das sich als Fälschung herausstellt."
+          "feedback": "Falsch! Unkenntnis des Gesetzes schützt nicht vor Strafe und berechtigt nicht zur Anfechtung. Die korrekte Antwort ist: Eine falsche Vorstellung einer Vertragspartei vom Vertragsinhalt, die für ihren Vertragsentschluss relevant war. Beispiel: Jemand kauft ein Bild, weil er irrtümlich glaubt, es stamme von einem berühmten Künstler."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Jemand kauft ein Bild, weil er irrtümlich glaubt, es stamme von einem berühmten Künstler."
+      }
     },
     {
       "title": "Widerrufsrecht",
       "type": "MC",
-      "question_text": "In welchem Fall besteht grundsätzlich ein Widerrufsrecht beim Kaufvertrag?",
+      "question_text": "In welchem Fall besteht grundsätzlich ein Widerrufsrecht für den Käufer?",
       "answers": [
         {
           "text": "Bei Haustürgeschäften, wenn der Wert der Ware 100 Franken übersteigt.",
           "is_correct": true,
-          "feedback": "Richtig! Bei Haustürgeschäften hat der Käufer ein Widerrufsrecht von 14 Tagen. Beispiel: Kauf eines Staubsaugers an der Haustür.",
+          "feedback": "Richtig! Dieses Sonderrecht soll Käufer vor Überrumpelung schützen. Beispiel: Ein Staubsaugervertreter verkauft Ihnen an der Haustür einen teuren Staubsauger. Sie haben 14 Tage Zeit, um den Vertrag zu widerrufen."
         },
         {
-          "text": "Bei Käufen im Internet.",
+          "text": "Bei Käufen im Einzelhandel, wenn der Käufer die Ware vor Ort bezahlt hat.",
           "is_correct": false,
-          "feedback": "Falsch. Bei Onlinekäufen gibt es kein generelles Widerrufsrecht. Richtig ist: Bei Haustürgeschäften hat der Käufer ein Widerrufsrecht von 14 Tagen. Beispiel: Kauf eines Staubsaugers an der Haustür.",
+          "feedback": "Falsch! Im Einzelhandel besteht kein generelles Widerrufsrecht. Die korrekte Antwort ist: Bei Haustürgeschäften, wenn der Wert der Ware 100 Franken übersteigt. Dieses Sonderrecht soll Käufer vor Überrumpelung schützen. Beispiel: Ein Staubsaugervertreter verkauft Ihnen an der Haustür einen teuren Staubsauger. Sie haben 14 Tage Zeit, um den Vertrag zu widerrufen."
         },
         {
-          "text": "Bei Käufen im Einzelhandel.",
+          "text": "Bei Onlinekäufen, unabhängig vom Wert der Ware.",
           "is_correct": false,
-          "feedback": "Falsch. Im Einzelhandel gibt es kein generelles Widerrufsrecht. Richtig ist: Bei Haustürgeschäften hat der Käufer ein Widerrufsrecht von 14 Tagen. Beispiel: Kauf eines Staubsaugers an der Haustür."
+          "feedback": "Falsch! Auch bei Onlinekäufen gibt es Ausnahmen vom Widerrufsrecht, z.B. bei schnell verderblichen Waren. Die korrekte Antwort ist: Bei Haustürgeschäften, wenn der Wert der Ware 100 Franken übersteigt. Dieses Sonderrecht soll Käufer vor Überrumpelung schützen. Beispiel: Ein Staubsaugervertreter verkauft Ihnen an der Haustür einen teuren Staubsauger. Sie haben 14 Tage Zeit, um den Vertrag zu widerrufen."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Ein Staubsaugervertreter verkauft Ihnen an der Haustür einen teuren Staubsauger. Sie haben 14 Tage Zeit, um den Vertrag zu widerrufen."
+      }
     },
     {
       "title": "Lieferverzug",
       "type": "MC",
-      "question_text": "Was kann ein Käufer bei Lieferverzug des Verkäufers tun?",
+      "question_text": "Welche Rechte hat ein Käufer bei Lieferverzug des Verkäufers?",
       "answers": [
         {
-          "text": "Den Verkäufer mahnen und eine Nachfrist zur Lieferung setzen.",
+          "text": "Der Käufer kann den Verkäufer mahnen, eine Nachfrist setzen und bei fruchtlosem Fristablauf Schadenersatz verlangen oder vom Vertrag zurücktreten.",
           "is_correct": true,
-          "feedback": "Richtig! Der Käufer kann den Verkäufer zunächst mahnen und eine Nachfrist setzen. Beispiel: Bestellte Möbel werden nicht zum vereinbarten Termin geliefert.",
+          "feedback": "Richtig! Der Ablauf dieser Schritte ist wichtig, um die Rechte des Käufers zu wahren. Beispiel: Sie haben ein Sofa bestellt, das nicht zum vereinbarten Termin geliefert wird. Sie mahnen den Verkäufer und setzen ihm eine Nachfrist. Kommt er dieser nicht nach, können Sie Schadenersatz verlangen oder vom Kauf zurücktreten."
         },
         {
-          "text": "Sofort vom Vertrag zurücktreten, ohne dem Verkäufer eine Nachfrist zu gewähren.",
+          "text": "Der Käufer kann sofort vom Vertrag zurücktreten und Schadenersatz verlangen, ohne dem Verkäufer eine Nachfrist setzen zu müssen.",
           "is_correct": false,
-          "feedback": "Falsch. Grundsätzlich muss dem Verkäufer zuerst eine Nachfrist gewährt werden. Richtig ist: Der Käufer kann den Verkäufer zunächst mahnen und eine Nachfrist setzen. Beispiel: Bestellte Möbel werden nicht zum vereinbarten Termin geliefert.",
+          "feedback": "Falsch! Eine Nachfristsetzung ist in der Regel erforderlich, bevor der Käufer weitere rechtliche Schritte einleiten kann. Die korrekte Antwort ist: Der Käufer kann den Verkäufer mahnen, eine Nachfrist setzen und bei fruchtlosem Fristablauf Schadenersatz verlangen oder vom Vertrag zurücktreten. Der Ablauf dieser Schritte ist wichtig, um die Rechte des Käufers zu wahren. Beispiel: Sie haben ein Sofa bestellt, das nicht zum vereinbarten Termin geliefert wird. Sie mahnen den Verkäufer und setzen ihm eine Nachfrist. Kommt er dieser nicht nach, können Sie Schadenersatz verlangen oder vom Kauf zurücktreten."
         },
         {
-          "text": "Den Kaufpreis einseitig mindern.",
+          "text": "Der Käufer hat bei Lieferverzug keine Rechte, da der Verkäufer nicht für Lieferverzögerungen verantwortlich ist.",
           "is_correct": false,
-          "feedback": "Falsch. Eine Preisminderung ist nur bei Mängeln möglich. Richtig ist: Der Käufer kann den Verkäufer zunächst mahnen und eine Nachfrist setzen. Beispiel: Bestellte Möbel werden nicht zum vereinbarten Termin geliefert."
+          "feedback": "Falsch! Der Verkäufer ist grundsätzlich zur rechtzeitigen Lieferung verpflichtet. Die korrekte Antwort ist: Der Käufer kann den Verkäufer mahnen, eine Nachfrist setzen und bei fruchtlosem Fristablauf Schadenersatz verlangen oder vom Vertrag zurücktreten. Der Ablauf dieser Schritte ist wichtig, um die Rechte des Käufers zu wahren. Beispiel: Sie haben ein Sofa bestellt, das nicht zum vereinbarten Termin geliefert wird. Sie mahnen den Verkäufer und setzen ihm eine Nachfrist. Kommt er dieser nicht nach, können Sie Schadenersatz verlangen oder vom Kauf zurücktreten."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Sie haben ein Sofa bestellt, das nicht zum vereinbarten Termin geliefert wird. Sie mahnen den Verkäufer und setzen ihm eine Nachfrist. Kommt er dieser nicht nach, können Sie Schadenersatz verlangen oder vom Kauf zurücktreten."
+      }
     },
     {
       "title": "Mängelrüge",
       "type": "MC",
-      "question_text": "Was ist eine Mängelrüge?",
+      "question_text": "Was ist eine Mängelrüge und wann muss sie erfolgen?",
       "answers": [
         {
-          "text": "Die Anzeige eines Mangel an der Ware durch den Käufer an den Verkäufer.",
+          "text": "Eine Mängelrüge ist die Anzeige eines Mangels an der gelieferten Ware durch den Käufer an den Verkäufer und muss unverzüglich nach Entdeckung des Mangels erfolgen.",
           "is_correct": true,
-          "feedback": "Richtig! Die Mängelrüge muss innerhalb einer angemessenen Frist erfolgen. Beispiel: Ein neu gekauftes Handy hat einen defekten Bildschirm.",
+          "feedback": "Richtig! Die Unverzüglichkeit ist wichtig, um die Rechte des Käufers zu wahren. Beispiel: Sie entdecken am neu gekauften Tisch einen Kratzer. Diesen müssen Sie dem Verkäufer unverzüglich melden, um Gewährleistungsansprüche geltend machen zu können."
         },
         {
-          "text": "Die Aufforderung des Verkäufers an den Käufer, die Ware zu bezahlen.",
+          "text": "Eine Mängelrüge kann der Käufer jederzeit innerhalb der gesetzlichen Gewährleistungsfrist von zwei Jahren geltend machen.",
           "is_correct": false,
-          "feedback": "Falsch. Das ist eine Zahlungsaufforderung. Richtig ist: Die Anzeige eines Mangel an der Ware durch den Käufer an den Verkäufer. Die Mängelrüge muss innerhalb einer angemessenen Frist erfolgen. Beispiel: Ein neu gekauftes Handy hat einen defekten Bildschirm.",
+          "feedback": "Falsch! Die Mängelrüge muss unverzüglich, also ohne schuldhaftes Zögern, nach Entdeckung des Mangels erfolgen. Die korrekte Antwort ist: Eine Mängelrüge ist die Anzeige eines Mangels an der gelieferten Ware durch den Käufer an den Verkäufer und muss unverzüglich nach Entdeckung des Mangels erfolgen. Die Unverzüglichkeit ist wichtig, um die Rechte des Käufers zu wahren. Beispiel: Sie entdecken am neu gekauften Tisch einen Kratzer. Diesen müssen Sie dem Verkäufer unverzüglich melden, um Gewährleistungsansprüche geltend machen zu können."
         },
         {
-          "text": "Die Bestätigung des Verkäufers, dass ein Mangel an der Ware vorliegt.",
+          "text": "Eine Mängelrüge ist nur bei versteckten Mängeln erforderlich, offensichtliche Mängel müssen nicht gerügt werden.",
           "is_correct": false,
-          "feedback": "Falsch. Das ist eine Mängelanerkennung. Richtig ist: Die Anzeige eines Mangel an der Ware durch den Käufer an den Verkäufer. Die Mängelrüge muss innerhalb einer angemessenen Frist erfolgen. Beispiel: Ein neu gekauftes Handy hat einen defekten Bildschirm."
+          "feedback": "Falsch! Auch offensichtliche Mängel müssen gerügt werden, um die Rechte des Käufers zu wahren. Die korrekte Antwort ist: Eine Mängelrüge ist die Anzeige eines Mangels an der gelieferten Ware durch den Käufer an den Verkäufer und muss unverzüglich nach Entdeckung des Mangels erfolgen. Die Unverzüglichkeit ist wichtig, um die Rechte des Käufers zu wahren. Beispiel: Sie entdecken am neu gekauften Tisch einen Kratzer. Diesen müssen Sie dem Verkäufer unverzüglich melden, um Gewährleistungsansprüche geltend machen zu können."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Sie entdecken am neu gekauften Tisch einen Kratzer. Diesen müssen Sie dem Verkäufer unverzüglich melden, um Gewährleistungsansprüche geltend machen zu können."
+      }
     },
     {
       "title": "Gewährleistung",
       "type": "MC",
-      "question_text": "Was ist die gesetzliche Gewährleistung?",
+      "question_text": "Was versteht man unter der gesetzlichen Gewährleistungspflicht des Verkäufers?",
       "answers": [
         {
-          "text": "Die Haftung des Verkäufers für Mängel, die die Sache bei Gefahrübergang aufweist.",
+          "text": "Die Haftung des Verkäufers für Sachmängel, die die Ware bei Gefahrübergang aufwies, auch wenn sie erst später erkennbar sind.",
           "is_correct": true,
-          "feedback": "Richtig! Die Gewährleistung beträgt zwei Jahre. Beispiel: Ein gebrauchtes Auto hat einen versteckten Motorschaden.",
+          "feedback": "Richtig! Der Verkäufer haftet für versteckte Mängel, die bereits bei Übergabe der Ware vorhanden waren. Beispiel: Ein gekauftes Fahrrad hat einen Rahmenbruch, der erst nach einigen Wochen sichtbar wird. Der Verkäufer haftet dafür, wenn der Bruch bereits bei Übergabe vorhanden war."
         },
         {
-          "text": "Eine freiwillige Leistung des Verkäufers, die über die gesetzliche Haftung hinausgeht.",
+          "text": "Die Verpflichtung des Verkäufers, die Ware für einen bestimmten Zeitraum zu reparieren oder zu ersetzen, wenn sie kaputt geht.",
           "is_correct": false,
-          "feedback": "Falsch. Das ist eine Garantie. Richtig ist: Die Haftung des Verkäufers für Mängel, die die Sache bei Gefahrübergang aufweist. Die Gewährleistung beträgt zwei Jahre. Beispiel: Ein gebrauchtes Auto hat einen versteckten Motorschaden.",
+          "feedback": "Falsch! Das beschreibt eher eine Garantie. Die korrekte Antwort ist: Die Haftung des Verkäufers für Sachmängel, die die Ware bei Gefahrübergang aufwies, auch wenn sie erst später erkennbar sind. Der Verkäufer haftet für versteckte Mängel, die bereits bei Übergabe der Ware vorhanden waren. Beispiel: Ein gekauftes Fahrrad hat einen Rahmenbruch, der erst nach einigen Wochen sichtbar wird. Der Verkäufer haftet dafür, wenn der Bruch bereits bei Übergabe vorhanden war."
         },
         {
-          "text": "Eine Versicherung gegen Schäden an der Ware.",
+          "text": "Das Recht des Käufers, die Ware innerhalb einer bestimmten Frist zurückzugeben, wenn sie ihm nicht mehr gefällt.",
           "is_correct": false,
-          "feedback": "Falsch. Eine Versicherung ist ein separater Vertrag. Richtig ist: Die Haftung des Verkäufers für Mängel, die die Sache bei Gefahrübergang aufweist. Die Gewährleistung beträgt zwei Jahre. Beispiel: Ein gebrauchtes Auto hat einen versteckten Motorschaden."
+          "feedback": "Falsch! Das beschreibt ein Rückgaberecht, das nicht mit der Gewährleistung zu verwechseln ist. Die korrekte Antwort ist: Die Haftung des Verkäufers für Sachmängel, die die Ware bei Gefahrübergang aufwies, auch wenn sie erst später erkennbar sind. Der Verkäufer haftet für versteckte Mängel, die bereits bei Übergabe der Ware vorhanden waren. Beispiel: Ein gekauftes Fahrrad hat einen Rahmenbruch, der erst nach einigen Wochen sichtbar wird. Der Verkäufer haftet dafür, wenn der Bruch bereits bei Übergabe vorhanden war."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Ein gekauftes Fahrrad hat einen Rahmenbruch, der erst nach einigen Wochen sichtbar wird. Der Verkäufer haftet dafür, wenn der Bruch bereits bei Übergabe vorhanden war."
+      }
     },
     {
       "title": "Zahlungsverzug",
@@ -181,50 +195,53 @@
       "question_text": "Welche Rechte hat ein Verkäufer bei Zahlungsverzug des Käufers?",
       "answers": [
         {
-          "text": "Verzugszinsen verlangen und unter Umständen die Betreibung einleiten.",
+          "text": "Der Verkäufer kann den Käufer mahnen, Verzugszinsen verlangen und nach Ablauf einer angemessenen Frist die Betreibung einleiten.",
           "is_correct": true,
-          "feedback": "Richtig! Der Verkäufer kann den Käufer zunächst mahnen. Beispiel: Der Käufer bezahlt die Rechnung für die gekaufte Waschmaschine nicht.",
+          "feedback": "Richtig! Diese Schritte sind wichtig, um die Zahlung der Kaufpreisforderung durchzusetzen. Beispiel: Sie haben eine Rechnung nicht fristgerecht bezahlt und erhalten eine Mahnung mit der Aufforderung zur Zahlung der Rechnung und Verzugszinsen. Reagieren Sie nicht, kann der Verkäufer die Betreibung einleiten."
         },
         {
-          "text": "Die Ware eigenmächtig zurückfordern.",
+          "text": "Der Verkäufer kann die Ware sofort zurückverlangen, sobald der Käufer mit der Zahlung in Verzug gerät.",
           "is_correct": false,
-          "feedback": "Falsch. Eine eigenmächtige Rückforderung ist nicht zulässig. Richtig ist: Der Verkäufer kann den Käufer zunächst mahnen. Beispiel: Der Käufer bezahlt die Rechnung für die gekaufte Waschmaschine nicht.",
+          "feedback": "Falsch! Ein Rücktrittsrecht besteht nur in bestimmten Fällen und erfordert meist weitere Voraussetzungen. Die korrekte Antwort ist: Der Verkäufer kann den Käufer mahnen, Verzugszinsen verlangen und nach Ablauf einer angemessenen Frist die Betreibung einleiten. Diese Schritte sind wichtig, um die Zahlung der Kaufpreisforderung durchzusetzen. Beispiel: Sie haben eine Rechnung nicht fristgerecht bezahlt und erhalten eine Mahnung mit der Aufforderung zur Zahlung der Rechnung und Verzugszinsen. Reagieren Sie nicht, kann der Verkäufer die Betreibung einleiten."
         },
         {
-          "text": "Den Kaufvertrag fristlos kündigen.",
+          "text": "Der Verkäufer hat bei Zahlungsverzug keine Rechte, da er die Zahlungsmodalitäten selbst festlegen kann.",
           "is_correct": false,
-          "feedback": "Falsch. Eine fristlose Kündigung ist nur in bestimmten Ausnahmefällen möglich. Richtig ist: Der Verkäufer kann den Käufer zunächst mahnen. Beispiel: Der Käufer bezahlt die Rechnung für die gekaufte Waschmaschine nicht."
+          "feedback": "Falsch! Der Verkäufer hat gesetzliche Rechte, um seine Kaufpreisforderung durchzusetzen. Die korrekte Antwort ist: Der Verkäufer kann den Käufer mahnen, Verzugszinsen verlangen und nach Ablauf einer angemessenen Frist die Betreibung einleiten. Diese Schritte sind wichtig, um die Zahlung der Kaufpreisforderung durchzusetzen. Beispiel: Sie haben eine Rechnung nicht fristgerecht bezahlt und erhalten eine Mahnung mit der Aufforderung zur Zahlung der Rechnung und Verzugszinsen. Reagieren Sie nicht, kann der Verkäufer die Betreibung einleiten."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Beispiel: Sie haben eine Rechnung nicht fristgerecht bezahlt und erhalten eine Mahnung mit der Aufforderung zur Zahlung der Rechnung und Verzugszinsen. Reagieren Sie nicht, kann der Verkäufer die Betreibung einleiten."
+      }
     },
     {
-      "title": "Onlinekauf",
+      "title": "Onlinekäufe",
       "type": "MC",
-      "question_text": "Was ist besonders wichtig bei Onlinekäufen?",
+      "question_text": "Was ist bei Onlinekäufen in Schweizer Onlineshops besonders zu beachten?",
       "answers": [
         {
-          "text": "Die Allgemeinen Geschäftsbedingungen (AGB) sorgfältig zu lesen.",
+          "text": "Die Allgemeinen Geschäftsbedingungen (AGB) des Onlineshops, da sie wichtige Regelungen zum Vertragsschluss, Zahlung und Lieferung enthalten.",
           "is_correct": true,
-          "feedback": "Richtig! Die AGB enthalten wichtige Informationen zu Widerrufsrecht, Zahlung und Lieferung. Beispiel: Ein Online-Shop hat in seinen AGB eine längere Lieferfrist als üblich angegeben.",
+          "feedback": "Richtig! Lesen Sie die AGB sorgfältig durch, bevor Sie einen Kauf abschließen. Beispiel: Die AGB regeln u.a. Lieferfristen, Versandkosten, Rückgaberecht und Gewährleistung. Informieren Sie sich vorab, um spätere Überraschungen zu vermeiden."
         },
         {
-          "text": "Den Kaufvertrag auszudrucken.",
+          "text": "Die Farbe und Grösse der bestellten Ware, da diese auf dem Bildschirm anders wirken können als in der Realität.",
           "is_correct": false,
-          "feedback": "Falsch. Ein Ausdruck des Vertrages ist nicht zwingend erforderlich. Richtig ist: Die AGB enthalten wichtige Informationen zu Widerrufsrecht, Zahlung und Lieferung. Beispiel: Ein Online-Shop hat in seinen AGB eine längere Lieferfrist als üblich angegeben.",
+          "feedback": "Falsch! Während dies praktische Tipps sind, geht es bei der Frage nach rechtlichen Aspekten. Die korrekte Antwort ist: Die Allgemeinen Geschäftsbedingungen (AGB) des Onlineshops, da sie wichtige Regelungen zum Vertragsschluss, Zahlung und Lieferung enthalten. Lesen Sie die AGB sorgfältig durch, bevor Sie einen Kauf abschließen. Beispiel: Die AGB regeln u.a. Lieferfristen, Versandkosten, Rückgaberecht und Gewährleistung. Informieren Sie sich vorab, um spätere Überraschungen zu vermeiden."
         },
         {
-          "text": "Nur bei bekannten Online-Händlern zu kaufen.",
+          "text": "Die Verfügbarkeit der Ware, da Onlineshops nicht immer den aktuellen Lagerbestand anzeigen.",
           "is_correct": false,
-          "feedback": "Falsch. Es ist immer wichtig, die AGB zu lesen, auch bei bekannten Händlern. Richtig ist: Die AGB enthalten wichtige Informationen zu Widerrufsrecht, Zahlung und Lieferung. Beispiel: Ein Online-Shop hat in seinen AGB eine längere Lieferfrist als üblich angegeben."
+          "feedback": "Falsch! Dies ist zwar ein wichtiger praktischer Aspekt, betrifft aber nicht die rechtlichen Besonderheiten. Die korrekte Antwort ist: Die Allgemeinen Geschäftsbedingungen (AGB) des Onlineshops, da sie wichtige Regelungen zum Vertragsschluss, Zahlung und Lieferung enthalten. Lesen Sie die AGB sorgfältig durch, bevor Sie einen Kauf abschließen. Beispiel: Die AGB regeln u.a. Lieferfristen, Versandkosten, Rückgaberecht und Gewährleistung. Informieren Sie sich vorab, um spätere Überraschungen zu vermeiden."
         }
       ],
       "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
-    }
+      "additional_info": {
+        "real_life_example": "Beispiel: Die AGB regeln u.a. Lieferfristen, Versandkosten, Rückgaberecht und Gewährleistung. Informieren Sie sich vorab, um spätere Überraschungen zu vermeiden."
+      }
     }
   ]
 }
