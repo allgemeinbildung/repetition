@@ -1,85 +1,84 @@
 {
   "questions": [
     {
-      "title": "Vertragsentstehung",
+      "title": "Vertragsabschluss",
       "type": "MC",
-      "question_text": "Was ist eine unabdingbare Voraussetzung für das Zustandekommen eines Kaufvertrages?",
+      "question_text": "Was ist ein wesentlicher Bestandteil eines Kaufvertrages?",
       "answers": [
         {
-          "text": "Übereinstimmende Willenserklärungen der Parteien",
+          "text": "Die Menge des Kaufgegenstandes",
           "is_correct": true,
-          "feedback": "Richtig! Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande. Dies bedeutet, dass sich Käufer und Verkäufer über die wesentlichen Vertragspunkte einig sind.",
-          "points": 1
+          "feedback": "Richtig! Die Menge des Kaufgegenstandes ist essenziell für einen Kaufvertrag. Zum Beispiel muss beim Kauf von 10 Tonnen Stahl klar sein, um welche Menge es sich handelt."
         },
         {
-          "text": "Mündliche Vereinbarung zwischen den Parteien, da diese flexibler ist",
+          "text": "Die Farbe des Kaufgegenstandes",
           "is_correct": false,
-          "feedback": "Falsch! Während mündliche Vereinbarungen in manchen Fällen ausreichen, ist die Form des Vertrages nicht entscheidend für sein Zustandekommen. Das wichtigste sind übereinstimmende Willenserklärungen. Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande. Dies bedeutet, dass sich Käufer und Verkäufer über die wesentlichen Vertragspunkte einig sind.",
-          "points": 0
+          "feedback": "Falsch. Die Farbe des Kaufgegenstandes ist nicht immer ein wesentlicher Bestandteil eines Kaufvertrages. Die korrekte Antwort ist die Menge des Kaufgegenstandes. Zum Beispiel muss beim Kauf von 10 Tonnen Stahl klar sein, um welche Menge es sich handelt."
         },
         {
-          "text": "Bezahlung des Kaufpreises durch den Käufer an den Verkäufer",
+          "text": "Der Lieferweg des Kaufgegenstandes",
           "is_correct": false,
-          "feedback": "Falsch! Die Bezahlung des Kaufpreises ist zwar ein wichtiger Schritt im Rahmen der Vertragserfüllung, aber nicht zwingend notwendig für das Zustandekommen des Vertrages selbst. Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande. Dies bedeutet, dass sich Käufer und Verkäufer über die wesentlichen Vertragspunkte einig sind.",
-          "points": 0
+          "feedback": "Falsch. Der Lieferweg des Kaufgegenstandes ist nicht immer ein wesentlicher Bestandteil eines Kaufvertrages. Die korrekte Antwort ist die Menge des Kaufgegenstandes. Zum Beispiel muss beim Kauf von 10 Tonnen Stahl klar sein, um welche Menge es sich handelt."
         }
       ],
+      "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Zum Beispiel muss beim Kauf von 10 Tonnen Stahl klar sein, um welche Menge es sich handelt."
+      }
     },
     {
-      "title": "Schriftform",
+      "title": "Vertragsformen",
       "type": "MC",
-      "question_text": "Wann ist die Schriftform bei einem Kaufvertrag zwingend erforderlich?",
+      "question_text": "Welche Schriftform erfordert die Bürgschaft bis CHF 2'000?",
       "answers": [
         {
-          "text": "Bei einem Kaufvertrag über ein Grundstück",
+          "text": "Qualifizierte Schriftlichkeit",
           "is_correct": true,
-          "feedback": "Richtig! Der Kaufvertrag über ein Grundstück ist formbedürftig und muss öffentlich beurkundet werden. Dies dient der Sicherheit und dem Schutz der Vertragsparteien.",
-          "points": 1
+          "feedback": "Richtig! Die Bürgschaft bis CHF 2'000 erfordert die qualifizierte Schriftlichkeit, neben der Unterschrift sind weitere handschriftliche Elemente erforderlich."
         },
         {
-          "text": "Bei einem Kaufvertrag über ein gebrauchtes Fahrrad",
+          "text": "Einfache Schriftlichkeit",
           "is_correct": false,
-          "feedback": "Falsch! Ein Kaufvertrag über ein gebrauchtes Fahrrad kann formlos geschlossen werden. Die Schriftform ist hier nicht zwingend erforderlich. Der Kaufvertrag über ein Grundstück ist formbedürftig und muss öffentlich beurkundet werden. Dies dient der Sicherheit und dem Schutz der Vertragsparteien.",
-          "points": 0
+          "feedback": "Falsch. Die einfache Schriftlichkeit genügt für eine Bürgschaft bis CHF 2'000 nicht. Richtig ist die qualifizierte Schriftlichkeit, neben der Unterschrift sind weitere handschriftliche Elemente erforderlich."
         },
         {
-          "text": "Bei einem Kaufvertrag zwischen zwei Freunden",
+          "text": "Mündliche Vereinbarung",
           "is_correct": false,
-          "feedback": "Falsch! Auch zwischen Freunden kann ein Kaufvertrag formlos geschlossen werden. Die Schriftform ist hier nicht zwingend erforderlich. Der Kaufvertrag über ein Grundstück ist formbedürftig und muss öffentlich beurkundet werden. Dies dient der Sicherheit und dem Schutz der Vertragsparteien.",
-          "points": 0
+          "feedback": "Falsch. Eine mündliche Vereinbarung reicht für eine Bürgschaft bis CHF 2'000 nicht aus. Richtig ist die qualifizierte Schriftlichkeit, neben der Unterschrift sind weitere handschriftliche Elemente erforderlich."
         }
       ],
+      "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Neben der Unterschrift des Bürgen sind weitere handschriftliche Elemente, wie der Wortlaut «Ich bin mir der Rechtsfolgen bewusst und bekräftige meine Verpflichtung als Bürge» erforderlich."
+      }
     },
     {
-      "title": "Gewährleistung",
+      "title": "Vertragsinhalte",
       "type": "MC",
-      "question_text": "Was versteht man unter der gesetzlichen Gewährleistungspflicht des Verkäufers?",
+      "question_text": "Welcher Vertragsinhalt ist nichtig?",
       "answers": [
         {
-          "text": "Die Haftung des Verkäufers für Mängel, die die Sache bei Gefahrübergang aufweist",
+          "text": "Kauf eines nicht existierenden Gegenstandes",
           "is_correct": true,
-          "feedback": "Richtig! Die gesetzliche Gewährleistungspflicht verpflichtet den Verkäufer zur Haftung für Sachmängel, die bereits bei Gefahrübergang vorhanden waren. Dies bedeutet, dass der Käufer im Falle eines Mangels Rechte gegenüber dem Verkäufer geltend machen kann.",
-          "points": 1
+          "feedback": "Richtig! Der Kauf eines nicht existierenden Gegenstandes ist ein Beispiel für einen unmöglichen Vertragsinhalt und somit nichtig."
         },
         {
-          "text": "Die Verpflichtung des Verkäufers, die Ware kostenlos zu reparieren, auch wenn der Mangel erst nach Gefahrübergang entstanden ist",
+          "text": "Kauf eines gestohlenen Gegenstandes",
           "is_correct": false,
-          "feedback": "Falsch! Die Gewährleistungspflicht bezieht sich nur auf Mängel, die bereits bei Gefahrübergang vorhanden waren. Die gesetzliche Gewährleistungspflicht verpflichtet den Verkäufer zur Haftung für Sachmängel, die bereits bei Gefahrübergang vorhanden waren. Dies bedeutet, dass der Käufer im Falle eines Mangels Rechte gegenüber dem Verkäufer geltend machen kann.",
-          "points": 0
+          "feedback": "Falsch. Der Kauf eines gestohlenen Gegenstandes ist zwar widerrechtlich, aber nicht unmöglich. Richtig ist der Kauf eines nicht existierenden Gegenstandes, da dieser Vertragsinhalt unmöglich ist."
         },
         {
-          "text": "Die Zusicherung des Verkäufers, dass die Ware frei von jeglichen Mängeln ist",
+          "text": "Kauf eines Gegenstandes zu einem überhöhten Preis",
           "is_correct": false,
-          "feedback": "Falsch! Die Gewährleistungspflicht bezieht sich nicht auf die Freiheit von jeglichen Mängeln. Es geht vielmehr darum, dass der Verkäufer für bereits bei Gefahrübergang vorhandene Mängel haftet. Die gesetzliche Gewährleistungspflicht verpflichtet den Verkäufer zur Haftung für Sachmängel, die bereits bei Gefahrübergang vorhanden waren. Dies bedeutet, dass der Käufer im Falle eines Mangels Rechte gegenüber dem Verkäufer geltend machen kann.",
-          "points": 0
+          "feedback": "Falsch. Der Kauf eines Gegenstandes zu einem überhöhten Preis kann zwar unter Umständen anfechtbar sein (z.B. Übervorteilung), ist aber nicht per se nichtig. Richtig ist der Kauf eines nicht existierenden Gegenstandes, da dieser Vertragsinhalt unmöglich ist."
         }
       ],
+      "points": 1,
       "penalty": -0.5,
-      "additional_info": {}
+      "additional_info": {
+        "real_life_example": "Ein Vertrag über den Kauf eines Einhorns wäre nichtig, da Einhörner nicht existieren und der Vertragsinhalt somit unmöglich ist."
       }
     }
   ]
