@@ -1,0 +1,85 @@
+{
+  "questions": [
+    {
+      "title": "Vertragsentstehung",
+      "type": "MC",
+      "question_text": "Was ist eine unabdingbare Voraussetzung für das Zustandekommen eines Kaufvertrages?",
+      "answers": [
+        {
+          "text": "Übereinstimmende Willenserklärungen der Parteien",
+          "is_correct": true,
+          "feedback": "Richtig! Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande. Dies bedeutet, dass sich Käufer und Verkäufer über die wesentlichen Vertragspunkte einig sind.",
+          "points": 1
+        },
+        {
+          "text": "Mündliche Vereinbarung zwischen den Parteien, da diese flexibler ist",
+          "is_correct": false,
+          "feedback": "Falsch! Während mündliche Vereinbarungen in manchen Fällen ausreichen, ist die Form des Vertrages nicht entscheidend für sein Zustandekommen. Das wichtigste sind übereinstimmende Willenserklärungen. Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande. Dies bedeutet, dass sich Käufer und Verkäufer über die wesentlichen Vertragspunkte einig sind.",
+          "points": 0
+        },
+        {
+          "text": "Bezahlung des Kaufpreises durch den Käufer an den Verkäufer",
+          "is_correct": false,
+          "feedback": "Falsch! Die Bezahlung des Kaufpreises ist zwar ein wichtiger Schritt im Rahmen der Vertragserfüllung, aber nicht zwingend notwendig für das Zustandekommen des Vertrages selbst. Ein Kaufvertrag kommt durch übereinstimmende Willenserklärungen zustande. Dies bedeutet, dass sich Käufer und Verkäufer über die wesentlichen Vertragspunkte einig sind.",
+          "points": 0
+        }
+      ],
+      "penalty": -0.5,
+      "additional_info": {}
+    },
+    {
+      "title": "Schriftform",
+      "type": "MC",
+      "question_text": "Wann ist die Schriftform bei einem Kaufvertrag zwingend erforderlich?",
+      "answers": [
+        {
+          "text": "Bei einem Kaufvertrag über ein Grundstück",
+          "is_correct": true,
+          "feedback": "Richtig! Der Kaufvertrag über ein Grundstück ist formbedürftig und muss öffentlich beurkundet werden. Dies dient der Sicherheit und dem Schutz der Vertragsparteien.",
+          "points": 1
+        },
+        {
+          "text": "Bei einem Kaufvertrag über ein gebrauchtes Fahrrad",
+          "is_correct": false,
+          "feedback": "Falsch! Ein Kaufvertrag über ein gebrauchtes Fahrrad kann formlos geschlossen werden. Die Schriftform ist hier nicht zwingend erforderlich. Der Kaufvertrag über ein Grundstück ist formbedürftig und muss öffentlich beurkundet werden. Dies dient der Sicherheit und dem Schutz der Vertragsparteien.",
+          "points": 0
+        },
+        {
+          "text": "Bei einem Kaufvertrag zwischen zwei Freunden",
+          "is_correct": false,
+          "feedback": "Falsch! Auch zwischen Freunden kann ein Kaufvertrag formlos geschlossen werden. Die Schriftform ist hier nicht zwingend erforderlich. Der Kaufvertrag über ein Grundstück ist formbedürftig und muss öffentlich beurkundet werden. Dies dient der Sicherheit und dem Schutz der Vertragsparteien.",
+          "points": 0
+        }
+      ],
+      "penalty": -0.5,
+      "additional_info": {}
+    },
+    {
+      "title": "Gewährleistung",
+      "type": "MC",
+      "question_text": "Was versteht man unter der gesetzlichen Gewährleistungspflicht des Verkäufers?",
+      "answers": [
+        {
+          "text": "Die Haftung des Verkäufers für Mängel, die die Sache bei Gefahrübergang aufweist",
+          "is_correct": true,
+          "feedback": "Richtig! Die gesetzliche Gewährleistungspflicht verpflichtet den Verkäufer zur Haftung für Sachmängel, die bereits bei Gefahrübergang vorhanden waren. Dies bedeutet, dass der Käufer im Falle eines Mangels Rechte gegenüber dem Verkäufer geltend machen kann.",
+          "points": 1
+        },
+        {
+          "text": "Die Verpflichtung des Verkäufers, die Ware kostenlos zu reparieren, auch wenn der Mangel erst nach Gefahrübergang entstanden ist",
+          "is_correct": false,
+          "feedback": "Falsch! Die Gewährleistungspflicht bezieht sich nur auf Mängel, die bereits bei Gefahrübergang vorhanden waren. Die gesetzliche Gewährleistungspflicht verpflichtet den Verkäufer zur Haftung für Sachmängel, die bereits bei Gefahrübergang vorhanden waren. Dies bedeutet, dass der Käufer im Falle eines Mangels Rechte gegenüber dem Verkäufer geltend machen kann.",
+          "points": 0
+        },
+        {
+          "text": "Die Zusicherung des Verkäufers, dass die Ware frei von jeglichen Mängeln ist",
+          "is_correct": false,
+          "feedback": "Falsch! Die Gewährleistungspflicht bezieht sich nicht auf die Freiheit von jeglichen Mängeln. Es geht vielmehr darum, dass der Verkäufer für bereits bei Gefahrübergang vorhandene Mängel haftet. Die gesetzliche Gewährleistungspflicht verpflichtet den Verkäufer zur Haftung für Sachmängel, die bereits bei Gefahrübergang vorhanden waren. Dies bedeutet, dass der Käufer im Falle eines Mangels Rechte gegenüber dem Verkäufer geltend machen kann.",
+          "points": 0
+        }
+      ],
+      "penalty": -0.5,
+      "additional_info": {}
+    }
+  ]
+}
