@@ -17,6 +17,7 @@
             <option value="">Themen</option>
         </select>
         <button id="loadQuizButton">Fragen laden</button>
+        <button id="generateLMSButton">LMS-Format generieren</button>
     </div>
     <div id="questionContainer" style="display:none;">
         <h2 id="questionTitle"></h2>
@@ -24,14 +25,6 @@
         <div id="answerContainer"></div>
         <p id="feedback"></p>
         <button id="nextButton" style="display:none;">Nächste Frage</button>
-    </div>
-    <div>
-        <label for="topicSelect">Wählen Sie ein Thema:</label>
-        <select id="topicSelect">
-            <option value="">Themen</option>
-        </select>
-        <button id="loadQuizButton">Fragen laden</button>
-        <button id="generateLMSButton">LMS-Format generieren</button>
     </div>
     <div id="resultContainer" style="display:none;">
         <h2>Quiz beendet</h2>
@@ -138,7 +131,6 @@
         function generateLMSFormat(questions) {
             let output = '';
             questions.forEach((question, index) => {
-                output += '#Template SC\n';
                 output += `Typ\tSC\n`;
                 output += `Title\t${question.title}\n`;
                 output += `Feedback correct answer\t${question.additional_info?.real_life_example || 'Richtig!'}\n`;
