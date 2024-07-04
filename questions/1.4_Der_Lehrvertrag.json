@@ -1,84 +1,435 @@
 {
   "questions": [
     {
-      "title": "Grundlagen des Lehrvertrags",
+      "title": "Lehrvertrag",
       "type": "MC",
-      "question_text": "Was ist der Hauptzweck eines Lehrvertrags in der Schweiz?",
+      "question_text": "Was ist die wichtigste Funktion eines Lehrvertrags in der Schweiz?",
       "answers": [
         {
-          "text": "Die rechtlichen Rahmenbedingungen für ein Lehrverhältnis festzulegen und eine geregelte Berufsausbildung zu gewährleisten.",
+          "text": "Festlegung der rechtlichen Rahmenbedingungen für die Ausbildung und Sicherstellung eines ordnungsgemäßen Ablaufs nach gesetzlichen Vorgaben.",
           "is_correct": true,
-          "feedback": "Richtig! Der Lehrvertrag bildet die Grundlage für eine geregelte Berufsausbildung und schützt die Rechte und Pflichten beider Parteien."
+          "feedback": "Richtig! Der Lehrvertrag dient als rechtliche Grundlage für die Ausbildung und stellt sicher, dass sie den gesetzlichen Vorgaben entspricht."
         },
         {
-          "text": "Arbeitgeber vor finanziellen Risiken zu schützen, die durch die Ausbildung junger Menschen entstehen.",
+          "text": "Sicherung der Finanzierung der Ausbildungskosten durch den Lehrbetrieb.",
           "is_correct": false,
-          "feedback": "Falsch! Der Lehrvertrag dient nicht primär dem finanziellen Schutz des Arbeitgebers. Richtig ist: Der Lehrvertrag bildet die Grundlage für eine geregelte Berufsausbildung und schützt die Rechte und Pflichten beider Parteien."
+          "feedback": "Falsch. Während der Lehrvertrag die Vergütung regelt, ist seine Hauptfunktion die rechtliche Absicherung der Ausbildung. Die richtige Antwort ist: Festlegung der rechtlichen Rahmenbedingungen für die Ausbildung und Sicherstellung eines ordnungsgemäßen Ablaufs nach gesetzlichen Vorgaben."
         },
         {
-          "text": "Den Ausbildungsbetrieb von der Haftung für Schäden freizustellen, die durch den Lernenden verursacht werden.",
+          "text": "Ermöglichung der Kontrolle der Arbeitsleistung des Lernenden durch den Berufsbildner.",
           "is_correct": false,
-          "feedback": "Falsch! Der Lehrvertrag stellt den Ausbildungsbetrieb nicht von der Haftung frei. Richtig ist: Der Lehrvertrag bildet die Grundlage für eine geregelte Berufsausbildung und schützt die Rechte und Pflichten beider Parteien."
+          "feedback": "Falsch. Der Fokus liegt auf der Ausbildung, nicht primär auf der Kontrolle der Arbeitsleistung. Die richtige Antwort ist: Festlegung der rechtlichen Rahmenbedingungen für die Ausbildung und Sicherstellung eines ordnungsgemäßen Ablaufs nach gesetzlichen Vorgaben."
         }
       ],
       "points": 1,
       "penalty": -0.5,
       "additional_info": {
-        "real_life_example": "Ein Unternehmen aus der Metallbranche schliesst mit einem Jugendlichen einen Lehrvertrag ab, um ihm den Beruf des Metallbauers beizubringen."
+        "real_life_example": "Ein Jugendlicher, der eine Lehre als Bäcker beginnt, schließt einen Lehrvertrag mit der Bäckerei ab, um die Rechte und Pflichten beider Parteien zu klären."
       }
     },
     {
-      "title": "Vertragspartner und Formvorschriften",
+      "title": "Vertragspartner",
       "type": "MC",
       "question_text": "Wer sind die Vertragspartner eines Lehrvertrags?",
       "answers": [
         {
           "text": "Der Berufsbildner und die lernende Person.",
           "is_correct": true,
-          "feedback": "Richtig! Der Berufsbildner ist verantwortlich für die Ausbildung, während die lernende Person sich verpflichtet, die Ausbildung gewissenhaft zu absolvieren."
+          "feedback": "Richtig! Der Berufsbildner verpflichtet sich zur Ausbildung, die lernende Person zur gewissenhaften Absolvierung."
         },
         {
-          "text": "Die lernende Person, die Eltern und die Berufsschule.",
+          "text": "Die lernende Person und deren Eltern.",
           "is_correct": false,
-          "feedback": "Falsch! Die Eltern unterschreiben zwar mit, wenn der Lernende minderjährig ist, aber die Vertragsparteien sind der Berufsbildner und die lernende Person. "
+          "feedback": "Falsch. Die Eltern spielen bei Minderjährigen zwar eine Rolle, Vertragspartner sind aber der Berufsbildner und die lernende Person. Die richtige Antwort ist: Der Berufsbildner und die lernende Person"
         },
         {
-          "text": "Das Unternehmen, die Gewerkschaft und das kantonale Amt für Berufsbildung.",
+          "text": "Der Berufsbildner und das Kantonale Amt für Berufsbildung.",
           "is_correct": false,
-          "feedback": "Falsch! Die Vertragspartner sind nicht das Unternehmen, die Gewerkschaft und das kantonale Amt für Berufsbildung. Richtig ist: Der Berufsbildner ist verantwortlich für die Ausbildung, während die lernende Person sich verpflichtet, die Ausbildung gewissenhaft zu absolvieren."
+          "feedback": "Falsch. Das Amt genehmigt den Vertrag, ist aber nicht selbst Vertragspartner. Die richtige Antwort ist: Der Berufsbildner und die lernende Person"
         }
       ],
       "points": 1,
       "penalty": -0.5,
       "additional_info": {
-        "real_life_example": "Ein Bäckermeister als Berufsbildner schliesst einen Lehrvertrag mit einem Jugendlichen ab, der Konditor lernen möchte."
+        "real_life_example": "Ein Ausbildungsbetrieb für Elektroniker schließt einen Lehrvertrag mit einem Jugendlichen ab, der diesen Beruf erlernen möchte."
+      }
+    },
+    {
+      "title": "Formvorschriften",
+      "type": "MC",
+      "question_text": "Welche Formvorschriften gelten für den Abschluss eines Lehrvertrags?",
+      "answers": [
+        {
+          "text": "Der Vertrag muss schriftlich abgeschlossen und vom Kantonalen Amt für Berufsbildung genehmigt werden.",
+          "is_correct": true,
+          "feedback": "Richtig! Schriftform und kantonale Genehmigung sind zentral für die Gültigkeit."
+        },
+        {
+          "text": "Ein mündlicher Vertrag ist ausreichend, wenn beide Parteien einverstanden sind.",
+          "is_correct": false,
+          "feedback": "Falsch. Schriftform ist zwingend vorgeschrieben, um Rechte und Pflichten klar zu definieren. Die richtige Antwort ist: Der Vertrag muss schriftlich abgeschlossen und vom Kantonalen Amt für Berufsbildung genehmigt werden."
+        },
+        {
+          "text": "Der Vertrag muss von einem Notar beurkundet werden.",
+          "is_correct": false,
+          "feedback": "Falsch. Notarielle Beurkundung ist nicht notwendig. Die richtige Antwort ist: Der Vertrag muss schriftlich abgeschlossen und vom Kantonalen Amt für Berufsbildung genehmigt werden."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Lehrvertrag für angehende Köche muss schriftlich fixiert und von der zuständigen kantonalen Behörde genehmigt werden."
+      }
+    },
+    {
+      "title": "Mindestangaben",
+      "type": "MC",
+      "question_text": "Was gehört zu den obligatorischen Mindestangaben eines Lehrvertrags?",
+      "answers": [
+        {
+          "text": "Art und Dauer der Ausbildung, Probezeit, Arbeitszeit, Lohn und Ferien.",
+          "is_correct": true,
+          "feedback": "Richtig! Diese Angaben sind essenziell, um klare Rahmenbedingungen zu schaffen."
+        },
+        {
+          "text": "Zukünftige Karrierepläne des Lernenden nach Abschluss der Ausbildung.",
+          "is_correct": false,
+          "feedback": "Falsch. Zukünftige Karrierepläne sind irrelevant für den Lehrvertrag. Die richtige Antwort ist: Art und Dauer der Ausbildung, Probezeit, Arbeitszeit, Lohn und Ferien"
+        },
+        {
+          "text": "Private Kontaktdaten des Berufsbildners, wie Handynummer und E-Mail-Adresse.",
+          "is_correct": false,
+          "feedback": "Falsch. Private Kontaktdaten des Berufsbildners sind nicht obligatorisch. Die richtige Antwort ist: Art und Dauer der Ausbildung, Probezeit, Arbeitszeit, Lohn und Ferien"
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "In einem Lehrvertrag für eine Ausbildung zur Fachkraft für Lagerlogistik müssen die Art der Ausbildung, Dauer der Lehre, Probezeit, Arbeitszeiten, Lohn und Urlaubsanspruch schriftlich festgehalten sein."
+      }
+    },
+    {
+      "title": "Freiwillige Bestandteile",
+      "type": "MC",
+      "question_text": "Welche der folgenden Punkte können freiwillig im Lehrvertrag geregelt werden?",
+      "answers": [
+        {
+          "text": "Berufskleidung, Schulmaterial, Unterkunft.",
+          "is_correct": true,
+          "feedback": "Richtig! Solche Regelungen können das Ausbildungsumfeld optimieren."
+        },
+        {
+          "text": "Die Dauer der Probezeit, da diese gesetzlich festgelegt ist.",
+          "is_correct": false,
+          "feedback": "Falsch. Die Dauer der Probezeit ist gesetzlich geregelt und kann nicht frei vereinbart werden. Die richtige Antwort ist: Berufskleidung, Schulmaterial, Unterkunft."
+        },
+        {
+          "text": "Die Ableistung von Militärdienst während der Lehrzeit.",
+          "is_correct": false,
+          "feedback": "Falsch. Die Ableistung von Militärdienst ist durch das Militärgesetz geregelt und nicht Teil des Lehrvertrags. Die richtige Antwort ist: Berufskleidung, Schulmaterial, Unterkunft."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Betrieb kann in seinen Lehrverträgen festlegen, ob und in welcher Form er seinen Lehrlingen Berufskleidung, wie z.B. Overalls für angehende Mechatroniker, zur Verfügung stellt."
       }
     },
     {
       "title": "Probezeit",
       "type": "MC",
-      "question_text": "Was ist der Hauptzweck der Probezeit im Lehrvertrag?",
+      "question_text": "Welchem Zweck dient die Probezeit im Lehrverhältnis?",
       "answers": [
         {
-          "text": "Sie ermöglicht beiden Seiten, die Eignung für die Berufswahl bzw. die Wahl des Lernenden zu überprüfen.",
+          "text": "Beidseitige Überprüfung der Berufswahl und Eignung für die Ausbildung.",
           "is_correct": true,
-          "feedback": "Richtig! Die Probezeit bietet die Möglichkeit, festzustellen, ob die gewählte Ausbildung den Erwartungen und Fähigkeiten entspricht."
+          "feedback": "Richtig! Beide Seiten können in der Probezeit feststellen, ob die Wahl passt."
         },
         {
-          "text": "Sie dient dazu, den Lernenden mit geringerer Entlöhnung zu beschäftigen, bevor der richtige Vertrag beginnt.",
+          "text": "Gewöhnung des Lernenden an den Arbeitsalltag ohne bindenden Vertrag.",
           "is_correct": false,
-          "feedback": "Falsch! Die Probezeit dient nicht dazu, den Lernenden günstiger zu beschäftigen. Richtig ist: Sie ermöglicht beiden Seiten, die Eignung für die Berufswahl bzw. die Wahl des Lernenden zu überprüfen."
+          "feedback": "Falsch. Auch in der Probezeit gilt der Vertrag. Die richtige Antwort ist: Beidseitige Überprüfung der Berufswahl und Eignung für die Ausbildung."
         },
         {
-          "text": "Sie soll dem Berufsbildner die Möglichkeit geben, den Lernenden in verschiedenen Bereichen einzusetzen, ohne an den Vertrag gebunden zu sein.",
+          "text": "Einarbeitung des Lernenden in den Betriebsablauf ohne Lohnzahlungspflicht.",
           "is_correct": false,
-          "feedback": "Falsch! Auch während der Probezeit ist der Berufsbildner an die Bedingungen des Lehrvertrags gebunden. Richtig ist: Sie ermöglicht beiden Seiten, die Eignung für die Berufswahl bzw. die Wahl des Lernenden zu überprüfen."
+          "feedback": "Falsch. Auch in der Probezeit besteht Anspruch auf Lohnzahlung. Die richtige Antwort ist: Beidseitige Überprüfung der Berufswahl und Eignung für die Ausbildung."
         }
       ],
       "points": 1,
       "penalty": -0.5,
       "additional_info": {
-        "real_life_example": "Eine angehende Floristin merkt während der Probezeit, dass der Beruf körperlich zu anstrengend für sie ist und sich für eine andere Ausbildung entscheidet."
+        "real_life_example": "Während der Probezeit in einem Lehrverhältnis als Informatiker kann der Lehrling feststellen, ob ihm die Arbeit liegt und der Betrieb kann die Eignung des Lehrlings überprüfen."
+      }
+    },
+    {
+      "title": "Kündigungsfrist",
+      "type": "MC",
+      "question_text": "Wie lang ist die Kündigungsfrist während der Probezeit?",
+      "answers": [
+        {
+          "text": "Sieben Tage.",
+          "is_correct": true,
+          "feedback": "Richtig! Die kurze Frist ermöglicht Flexibilität in der Probezeit."
+        },
+        {
+          "text": "Einen Monat.",
+          "is_correct": false,
+          "feedback": "Falsch. Ein Monat ist die Mindestdauer der Probezeit selbst. Die richtige Antwort ist: Sieben Tage."
+        },
+        {
+          "text": "Drei Monate.",
+          "is_correct": false,
+          "feedback": "Falsch. Drei Monate ist die maximale Dauer der Probezeit selbst. Die richtige Antwort ist: Sieben Tage."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Stellt ein angehender Maurer während der Probezeit fest, dass der Beruf nicht seinen Vorstellungen entspricht, kann er mit einer Frist von sieben Tagen kündigen."
+      }
+    },
+    {
+      "title": "Beendigung",
+      "type": "MC",
+      "question_text": "Wann endet ein Lehrverhältnis automatisch?",
+      "answers": [
+        {
+          "text": "Nach Ablauf der im Lehrvertrag festgelegten Ausbildungszeit.",
+          "is_correct": true,
+          "feedback": "Richtig! Die Befristung im Vertrag definiert den automatischen Endpunkt."
+        },
+        {
+          "text": "Wenn der Lernende das 18. Lebensjahr vollendet hat.",
+          "is_correct": false,
+          "feedback": "Falsch. Das Alter des Lernenden ist nicht relevant für das Vertragsende. Die richtige Antwort ist: Nach Ablauf der im Lehrvertrag festgelegten Ausbildungszeit"
+        },
+        {
+          "text": "Sobald der Lernende die Abschlussprüfung bestanden hat.",
+          "is_correct": false,
+          "feedback": "Falsch. Das Lehrverhältnis kann über den Prüfungstermin hinausgehen. Die richtige Antwort ist: Nach Ablauf der im Lehrvertrag festgelegten Ausbildungszeit"
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Lehrverhältnis als Automobil-Mechatroniker endet automatisch nach Ablauf der im Lehrvertrag festgelegten Ausbildungsdauer, in der Regel drei oder vier Jahre."
+      }
+    },
+    {
+      "title": "Außerordentliche Auflösung",
+      "type": "MC",
+      "question_text": "Wann ist eine außerordentliche Auflösung des Lehrverhältnisses möglich?",
+      "answers": [
+        {
+          "text": "Nur nach Ablauf der Probezeit und aus wichtigem Grund.",
+          "is_correct": true,
+          "feedback": "Richtig! Wichtige Gründe sind z.B. Pflichtverletzungen oder unüberbrückbare Differenzen."
+        },
+        {
+          "text": "Jederzeit, wenn der Berufsbildner dies für notwendig hält.",
+          "is_correct": false,
+          "feedback": "Falsch. Einseitige Entscheidungen genügen nicht, es braucht wichtige Gründe. Die richtige Antwort ist: Nur nach Ablauf der Probezeit und aus wichtigem Grund"
+        },
+        {
+          "text": "Wenn der Lernende einen besser bezahlten Ausbildungsplatz findet.",
+          "is_correct": false,
+          "feedback": "Falsch. Ein besserer Ausbildungsplatz ist kein wichtiger Grund. Die richtige Antwort ist: Nur nach Ablauf der Probezeit und aus wichtigem Grund"
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Wenn ein Lehrling wiederholt gegen die Betriebsordnung verstößt oder Arbeitszeitbetrug begeht, kann dies einen wichtigen Grund für eine außerordentliche Auflösung des Lehrverhältnisses darstellen."
+      }
+    },
+    {
+      "title": "Pflicht der Lernenden",
+      "type": "MC",
+      "question_text": "Was ist die Hauptpflicht einer lernenden Person während der Ausbildung?",
+      "answers": [
+        {
+          "text": "Das Lehrziel zu erreichen, also die beruflichen Fähigkeiten zu erlernen.",
+          "is_correct": true,
+          "feedback": "Richtig! Sorgfalt, Aufgabenbewältigung und Lernbereitschaft dienen diesem Ziel."
+        },
+        {
+          "text": "Dem Berufsbildner in allen Belangen zu gehorchen, auch in der Freizeit.",
+          "is_correct": false,
+          "feedback": "Falsch. Die Weisungsbefugnis bezieht sich auf die Ausbildung, nicht auf die Freizeit. Die richtige Antwort ist: Das Lehrziel zu erreichen, also die beruflichen Fähigkeiten zu erlernen."
+        },
+        {
+          "text": "Möglichst viel Arbeitsleistung zu erbringen, um den Betrieb zu unterstützen.",
+          "is_correct": false,
+          "feedback": "Falsch. Der Fokus liegt auf der Ausbildung, nicht primär auf der Arbeitsleistung. Die richtige Antwort ist: Das Lehrziel zu erreichen, also die beruflichen Fähigkeiten zu erlernen."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Lehrling in einer Tischlerei hat die Pflicht, sich die notwendigen Fähigkeiten und Kenntnisse anzueignen, um den Beruf erfolgreich zu erlernen."
+      }
+    },
+    {
+      "title": "Haftung",
+      "type": "MC",
+      "question_text": "In welchem Fall haften Lernende für Schäden im Lehrbetrieb?",
+      "answers": [
+        {
+          "text": "Bei fahrlässig oder absichtlich verursachten Schäden.",
+          "is_correct": true,
+          "feedback": "Richtig! Das Ausmaß der Haftung richtet sich nach dem Verschuldensgrad."
+        },
+        {
+          "text": "Für alle Schäden, die während ihrer Anwesenheit im Betrieb entstehen.",
+          "is_correct": false,
+          "feedback": "Falsch. Es muss ein Verschulden vorliegen, nicht nur Anwesenheit. Die richtige Antwort ist: Bei fahrlässig oder absichtlich verursachten Schäden."
+        },
+        {
+          "text": "Grundsätzlich nicht, da sie während der Ausbildung versichert sind.",
+          "is_correct": false,
+          "feedback": "Falsch. Die Versicherung deckt nicht jedes Verschulden ab. Die richtige Antwort ist: Bei fahrlässig oder absichtlich verursachten Schäden."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Beschädigt ein Lehrling im Malerbetrieb aus Unachtsamkeit die Ausrüstung, kann er haftbar gemacht werden. Die Haftung ist jedoch anders geregelt als bei Erwachsenen."
+      }
+    },
+    {
+      "title": "Lohnanspruch",
+      "type": "MC",
+      "question_text": "Worauf haben Lernende während der gesamten Ausbildungsdauer Anspruch?",
+      "answers": [
+        {
+          "text": "Lohnzahlung.",
+          "is_correct": true,
+          "feedback": "Richtig! Die Höhe orientiert sich an Empfehlungen der Berufsverbände."
+        },
+        {
+          "text": "Einen 13. Monatslohn.",
+          "is_correct": false,
+          "feedback": "Falsch. Ein 13. Monatslohn ist nicht obligatorisch. Die richtige Antwort ist: Lohnzahlung."
+        },
+        {
+          "text": "Ein leistungsabhängiges Gehalt.",
+          "is_correct": false,
+          "feedback": "Falsch. Das Gehalt ist nicht leistungsabhängig, sondern an der Ausbildungsstufe orientiert. Die richtige Antwort ist: Lohnzahlung."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Auszubildende in einem handwerklichen Beruf, wie z.B. Anlagenmechaniker, haben während ihrer gesamten Lehrzeit Anspruch auf Lohnzahlung."
+      }
+    },
+    {
+      "title": "Lohnfortzahlung",
+      "type": "MC",
+      "question_text": "In welchen Fällen besteht eine Lohnfortzahlungspflicht für Lernende?",
+      "answers": [
+        {
+          "text": "Bei Krankheit, Unfall oder Militärdienst.",
+          "is_correct": true,
+          "feedback": "Richtig! Die Lohnfortzahlung ist gesetzlich geregelt."
+        },
+        {
+          "text": "Bei Urlaubsreisen ins Ausland.",
+          "is_correct": false,
+          "feedback": "Falsch. Urlaubsanspruch regelt die Dauer, nicht aber die Finanzierung von Reisen. Die richtige Antwort ist: Bei Krankheit, Unfall oder Militärdienst."
+        },
+        {
+          "text": "Bei persönlichen Erledigungen während der Arbeitszeit.",
+          "is_correct": false,
+          "feedback": "Falsch. Persönliche Erledigungen berechtigen nicht zur Lohnfortzahlung. Die richtige Antwort ist: Bei Krankheit, Unfall oder Militärdienst."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ist ein Lehrling, z.B. angehende Fachkraft im Gastgewerbe, krank, besteht weiterhin der Anspruch auf Lohnfortzahlung."
+      }
+    },
+    {
+      "title": "Arbeitszeit",
+      "type": "MC",
+      "question_text": "Was gilt für die Arbeitszeit von Jugendlichen in der Lehre?",
+      "answers": [
+        {
+          "text": "Sie ist gesetzlich begrenzt, und Unterrichtszeiten gelten als Arbeitszeit.",
+          "is_correct": true,
+          "feedback": "Richtig! Der Jugendarbeitsschutz begrenzt die Belastung, Unterricht wird angerechnet."
+        },
+        {
+          "text": "Jugendliche dürfen unbegrenzt arbeiten, solange sie den Mindestlohn erhalten.",
+          "is_correct": false,
+          "feedback": "Falsch. Gesetzliche Höchstarbeitszeiten schützen Jugendliche. Die richtige Antwort ist: Sie ist gesetzlich begrenzt, und Unterrichtszeiten gelten als Arbeitszeit"
+        },
+        {
+          "text": "Die Arbeitszeit ist frei verhandelbar und wird im Lehrvertrag individuell festgelegt.",
+          "is_correct": false,
+          "feedback": "Falsch. Das Gesetz setzt Grenzen, individuelle Vereinbarungen dürfen diese nicht überschreiten. Die richtige Antwort ist: Sie ist gesetzlich begrenzt, und Unterrichtszeiten gelten als Arbeitszeit"
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Die Arbeitszeit für Lehrlinge unter 18 Jahren, z.B. angehende Friseure, ist gesetzlich limitiert. Die Zeit in der Berufsschule zählt als Arbeitszeit."
+      }
+    },
+    {
+      "title": "Berufsspezifische Tätigkeiten",
+      "type": "MC",
+      "question_text": "Was dürfen Lernende im Rahmen ihrer Ausbildung tun?",
+      "answers": [
+        {
+          "text": "Nur berufsspezifische Tätigkeiten ausüben, die mit dem erlernten Beruf zusammenhängen.",
+          "is_correct": true,
+          "feedback": "Richtig! Die Arbeitspflicht ist auf den Ausbildungszweck beschränkt."
+        },
+        {
+          "text": "Alle anfallenden Arbeiten im Betrieb erledigen, unabhängig vom Ausbildungsberuf.",
+          "is_correct": false,
+          "feedback": "Falsch. Die Aufgaben müssen dem Ausbildungsziel dienen. Die richtige Antwort ist: Nur berufsspezifische Tätigkeiten ausüben, die mit dem erlernten Beruf zusammenhängen"
+        },
+        {
+          "text": "Sich selbst Aufgaben suchen, die sie für ihre Ausbildung als sinnvoll erachten.",
+          "is_correct": false,
+          "feedback": "Falsch. Die Aufgabenzuweisung obliegt dem Ausbildenden. Die richtige Antwort ist: Nur berufsspezifische Tätigkeiten ausüben, die mit dem erlernten Beruf zusammenhängen"
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Lehrling im Einzelhandel darf nur Aufgaben übernehmen, die mit dem Verkauf und der Beratung von Kunden zu tun haben."
+      }
+    },
+    {
+      "title": "Urlaubsanspruch",
+      "type": "MC",
+      "question_text": "Wie viel Urlaubsanspruch haben Lernende bis zum 20. Lebensjahr?",
+      "answers": [
+        {
+          "text": "Mindestens fünf Wochen bezahlten Urlaub pro Jahr.",
+          "is_correct": true,
+          "feedback": "Richtig! Der Urlaubsanspruch ist gesetzlich geregelt."
+        },
+        {
+          "text": "Nur unbezahlten Urlaub, da sie während der Ausbildung lernen und nicht arbeiten sollen.",
+          "is_correct": false,
+          "feedback": "Falsch. Lernende haben Anspruch auf bezahlten Urlaub. Die richtige Antwort ist: Mindestens fünf Wochen bezahlten Urlaub pro Jahr"
+        },
+        {
+          "text": "So viel Urlaub, wie im Lehrvertrag individuell vereinbart wurde.",
+          "is_correct": false,
+          "feedback": "Falsch. Der gesetzliche Mindesturlaub darf nicht unterschritten werden. Die richtige Antwort ist: Mindestens fünf Wochen bezahlten Urlaub pro Jahr"
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Lehrlinge, z.B. angehende Hotelfachleute, haben Anspruch auf mindestens 5 Wochen bezahlten Urlaub pro Jahr."
       }
     }
   ]
