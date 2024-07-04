@@ -25,6 +25,14 @@
         <p id="feedback"></p>
         <button id="nextButton" style="display:none;">Nächste Frage</button>
     </div>
+    <div>
+        <label for="topicSelect">Wählen Sie ein Thema:</label>
+        <select id="topicSelect">
+            <option value="">Themen</option>
+        </select>
+        <button id="loadQuizButton">Fragen laden</button>
+        <button id="generateLMSButton">LMS-Format generieren</button>
+    </div>
     <div id="resultContainer" style="display:none;">
         <h2>Quiz beendet</h2>
         <p>Deine Punkte: <span id="finalScore"></span> von maximal 6 Punkten</p>
@@ -126,6 +134,57 @@
         nextButton.addEventListener('click', () => {
             currentQuestionIndex++;
             showQuestion();
+        });
+        function generateLMSFormat(questions) {
+            let output = '';
+            questions.forEach((question, index) => {
+                output += '#Template SC\n';
+                output += `Typ\tSC\n`;
+                output += `Title\t${question.title}\n`;
+                output += `Feedback correct answer\t${question.additional_info?.real_life_example || 'Richtig!'}\n`;
+                output += `Feedback wrong answer\t${question.additional_info?.real_life_example || 'Falsch!'}\n`;
+                output += `Question\t${question.question_text}\n`;
+                output += `Points\tAnswer Value\n`;
+        
+                question.answers.forEach(answer => {
+                    const points = answer.is_correct ? '1' : '-0.5';
+                    output += `${points}\t${answer.text}\n`;
+                });
+        
+                output += '\n';
+            });
+        
+            return output;
+        }
+        
+        function downloadLMSFormat(content, filename) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+        
+        const generateLMSButton = document.getElementById('generateLMSButton');
+        
+        generateLMSButton.addEventListener('click', () => {
+            const selectedFile = topicSelect.value;
+            if (selectedFile) {
+                fetch(selectedFile)
+                    .then(response => response.json())
+                    .then(data => {
+                        const lmsFormat = generateLMSFormat(data.questions);
+                        const filename = selectedFile.split('/').pop().replace('.json', '_lms_format.txt');
+                        downloadLMSFormat(lmsFormat, filename);
+                    })
+                    .catch(error => console.error('Error generating LMS format:', error));
+            } else {
+                alert('Bitte wählen Sie ein Thema aus.');
+            }
         });
 
         loadQuizButton.addEventListener('click', () => {
