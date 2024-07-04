@@ -1,0 +1,85 @@
+{
+  "questions": [
+    {
+      "title": "Grundlagen des Lehrvertrags",
+      "type": "MC",
+      "question_text": "Was ist der Hauptzweck eines Lehrvertrags in der Schweiz?",
+      "answers": [
+        {
+          "text": "Die rechtlichen Rahmenbedingungen für ein Lehrverhältnis festzulegen und eine geregelte Berufsausbildung zu gewährleisten.",
+          "is_correct": true,
+          "feedback": "Richtig! Der Lehrvertrag bildet die Grundlage für eine geregelte Berufsausbildung und schützt die Rechte und Pflichten beider Parteien."
+        },
+        {
+          "text": "Arbeitgeber vor finanziellen Risiken zu schützen, die durch die Ausbildung junger Menschen entstehen.",
+          "is_correct": false,
+          "feedback": "Falsch! Der Lehrvertrag dient nicht primär dem finanziellen Schutz des Arbeitgebers. Richtig ist: Der Lehrvertrag bildet die Grundlage für eine geregelte Berufsausbildung und schützt die Rechte und Pflichten beider Parteien."
+        },
+        {
+          "text": "Den Ausbildungsbetrieb von der Haftung für Schäden freizustellen, die durch den Lernenden verursacht werden.",
+          "is_correct": false,
+          "feedback": "Falsch! Der Lehrvertrag stellt den Ausbildungsbetrieb nicht von der Haftung frei. Richtig ist: Der Lehrvertrag bildet die Grundlage für eine geregelte Berufsausbildung und schützt die Rechte und Pflichten beider Parteien."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Unternehmen aus der Metallbranche schliesst mit einem Jugendlichen einen Lehrvertrag ab, um ihm den Beruf des Metallbauers beizubringen."
+      }
+    },
+    {
+      "title": "Vertragspartner und Formvorschriften",
+      "type": "MC",
+      "question_text": "Wer sind die Vertragspartner eines Lehrvertrags?",
+      "answers": [
+        {
+          "text": "Der Berufsbildner und die lernende Person.",
+          "is_correct": true,
+          "feedback": "Richtig! Der Berufsbildner ist verantwortlich für die Ausbildung, während die lernende Person sich verpflichtet, die Ausbildung gewissenhaft zu absolvieren."
+        },
+        {
+          "text": "Die lernende Person, die Eltern und die Berufsschule.",
+          "is_correct": false,
+          "feedback": "Falsch! Die Eltern unterschreiben zwar mit, wenn der Lernende minderjährig ist, aber die Vertragsparteien sind der Berufsbildner und die lernende Person. "
+        },
+        {
+          "text": "Das Unternehmen, die Gewerkschaft und das kantonale Amt für Berufsbildung.",
+          "is_correct": false,
+          "feedback": "Falsch! Die Vertragspartner sind nicht das Unternehmen, die Gewerkschaft und das kantonale Amt für Berufsbildung. Richtig ist: Der Berufsbildner ist verantwortlich für die Ausbildung, während die lernende Person sich verpflichtet, die Ausbildung gewissenhaft zu absolvieren."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Ein Bäckermeister als Berufsbildner schliesst einen Lehrvertrag mit einem Jugendlichen ab, der Konditor lernen möchte."
+      }
+    },
+    {
+      "title": "Probezeit",
+      "type": "MC",
+      "question_text": "Was ist der Hauptzweck der Probezeit im Lehrvertrag?",
+      "answers": [
+        {
+          "text": "Sie ermöglicht beiden Seiten, die Eignung für die Berufswahl bzw. die Wahl des Lernenden zu überprüfen.",
+          "is_correct": true,
+          "feedback": "Richtig! Die Probezeit bietet die Möglichkeit, festzustellen, ob die gewählte Ausbildung den Erwartungen und Fähigkeiten entspricht."
+        },
+        {
+          "text": "Sie dient dazu, den Lernenden mit geringerer Entlöhnung zu beschäftigen, bevor der richtige Vertrag beginnt.",
+          "is_correct": false,
+          "feedback": "Falsch! Die Probezeit dient nicht dazu, den Lernenden günstiger zu beschäftigen. Richtig ist: Sie ermöglicht beiden Seiten, die Eignung für die Berufswahl bzw. die Wahl des Lernenden zu überprüfen."
+        },
+        {
+          "text": "Sie soll dem Berufsbildner die Möglichkeit geben, den Lernenden in verschiedenen Bereichen einzusetzen, ohne an den Vertrag gebunden zu sein.",
+          "is_correct": false,
+          "feedback": "Falsch! Auch während der Probezeit ist der Berufsbildner an die Bedingungen des Lehrvertrags gebunden. Richtig ist: Sie ermöglicht beiden Seiten, die Eignung für die Berufswahl bzw. die Wahl des Lernenden zu überprüfen."
+        }
+      ],
+      "points": 1,
+      "penalty": -0.5,
+      "additional_info": {
+        "real_life_example": "Eine angehende Floristin merkt während der Probezeit, dass der Beruf körperlich zu anstrengend für sie ist und sich für eine andere Ausbildung entscheidet."
+      }
+    }
+  ]
+}
