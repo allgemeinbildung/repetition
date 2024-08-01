@@ -16,6 +16,12 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .slider-container {
+            margin-top: 20px;
+        }
+        .slider-label {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -28,6 +34,11 @@
         <button id="loadQuizButton">Fragen laden</button>
         <button id="generateLMSButton">LMS-Format generieren</button>
     </div>
+    <div class="slider-container">
+        <label for="questionCountSlider" class="slider-label">Anzahl der Fragen:</label>
+        <input type="range" id="questionCountSlider" min="1" max="15" value="6">
+        <span id="questionCountLabel">6</span>
+    </div>
     <div id="questionContainer" style="display:none;">
         <h2 id="questionTitle"></h2>
         <p id="questionText"></p>
@@ -37,13 +48,19 @@
     </div>
     <div id="resultContainer" style="display:none;">
         <h2>Quiz beendet</h2>
-        <p>Deine Punkte: <span id="finalScore"></span> von maximal 6 Punkten</p>
+        <p>Deine Punkte: <span id="finalScore"></span> von maximal <span id="maxScore"></span> Punkten</p>
         <div id="questionsSummary"></div>
     </div>
 
     <script>
         const topicSelect = document.getElementById('topicSelect');
         const loadQuizButton = document.getElementById('loadQuizButton');
+        const questionCountSlider = document.getElementById('questionCountSlider');
+        const questionCountLabel = document.getElementById('questionCountLabel');
+
+        questionCountSlider.addEventListener('input', () => {
+            questionCountLabel.textContent = questionCountSlider.value;
+        });
 
         // Load the list of JSON files
         fetch('questions/filelist.json')
@@ -71,6 +88,7 @@
         const nextButton = document.getElementById('nextButton');
         const resultContainer = document.getElementById('resultContainer');
         const finalScore = document.getElementById('finalScore');
+        const maxScore = document.getElementById('maxScore');
 
         function getRandomQuestions(questions, count) {
             const shuffled = questions.sort(() => 0.5 - Math.random());
@@ -144,6 +162,7 @@
             questionContainer.style.display = 'none';
             resultContainer.style.display = 'block';
             finalScore.textContent = score;
+            maxScore.textContent = quizData.questions.length;
             displayQuestionsSummary();
         }
 
@@ -175,12 +194,13 @@
 
         loadQuizButton.addEventListener('click', () => {
             const selectedFile = topicSelect.value;
+            const questionCount = parseInt(questionCountSlider.value, 10);
             if (selectedFile) {
                 fetch(selectedFile)
                     .then(response => response.json())
                     .then(data => {
                         quizData = {
-                            questions: getRandomQuestions(data.questions, 6)
+                            questions: getRandomQuestions(data.questions, questionCount)
                         };
                         currentQuestionIndex = 0;
                         score = 0;
