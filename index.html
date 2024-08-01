@@ -72,7 +72,11 @@
                 questionTitle.textContent = question.title;
                 questionText.textContent = question.question_text;
                 answerContainer.innerHTML = '';
-                question.answers.forEach((answer, index) => {
+
+                // Shuffle the answers
+                const shuffledAnswers = question.answers.sort(() => 0.5 - Math.random());
+
+                shuffledAnswers.forEach((answer, index) => {
                     const button = document.createElement('button');
                     button.textContent = answer.text;
                     button.style.backgroundColor = ''; // Reset background color
@@ -80,6 +84,37 @@
                     button.addEventListener('click', () => checkAnswer(index));
                     answerContainer.appendChild(button);
                 });
+
+                feedback.textContent = '';
+                nextButton.style.display = 'none';
+            } else {
+                showResult();
+            }
+        }function showQuestion() {
+            if (currentQuestionIndex < quizData.questions.length) {
+                const question = quizData.questions[currentQuestionIndex];
+                questionTitle.textContent = question.title;
+                questionText.textContent = question.question_text;
+                answerContainer.innerHTML = '';
+
+                // Shuffle the answers
+                const shuffledAnswers = question.answers.sort(() => 0.5 - Math.random());
+
+                shuffledAnswers.forEach((answer, index) => {
+                    const button = document.createElement('button');
+                    button.textContent = answer.text;
+                    button.style.backgroundColor = ''; // Reset background color
+                    button.style.color = ''; // Reset text color
+                    button.addEventListener('click', () => checkAnswer(index));
+                    answerContainer.appendChild(button);
+                });
+
+                feedback.textContent = '';
+                nextButton.style.display = 'none';
+            } else {
+                showResult();
+            }
+        }
                 feedback.textContent = '';
                 nextButton.style.display = 'none';
             } else {
