@@ -7,6 +7,15 @@
     <style>
         body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
         button { margin-top: 10px; margin-right: 10px; }
+        .result-message { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+        .restart-button { font-size: 18px; padding: 10px 20px; }
+        #questionsSummary {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +38,7 @@
     <div id="resultContainer" style="display:none;">
         <h2>Quiz beendet</h2>
         <p>Deine Punkte: <span id="finalScore"></span> von maximal 6 Punkten</p>
+        <div id="questionsSummary"></div>
     </div>
 
     <script>
@@ -51,6 +61,7 @@
         let quizData;
         let currentQuestionIndex = 0;
         let score = 0;
+        let userAnswers = [];
 
         const questionContainer = document.getElementById('questionContainer');
         const questionTitle = document.getElementById('questionTitle');
@@ -67,23 +78,23 @@
         }
 
         function showQuestion() {
-        if (currentQuestionIndex < quizData.questions.length) {
-            const question = quizData.questions[currentQuestionIndex];
-            questionTitle.textContent = question.title;
-            questionText.textContent = question.question_text;
-            answerContainer.innerHTML = '';
+            if (currentQuestionIndex < quizData.questions.length) {
+                const question = quizData.questions[currentQuestionIndex];
+                questionTitle.textContent = question.title;
+                questionText.textContent = question.question_text;
+                answerContainer.innerHTML = '';
 
-            // Shuffle the answers
-            const shuffledAnswers = question.answers.sort(() => 0.5 - Math.random());
+                // Shuffle the answers
+                const shuffledAnswers = question.answers.sort(() => 0.5 - Math.random());
 
-            shuffledAnswers.forEach((answer, index) => {
-                const button = document.createElement('button');
-                button.textContent = answer.text;
-                button.style.backgroundColor = ''; // Reset background color
-                button.style.color = ''; // Reset text color
-                button.addEventListener('click', () => checkAnswer(index));
-                answerContainer.appendChild(button);
-            });
+                shuffledAnswers.forEach((answer, index) => {
+                    const button = document.createElement('button');
+                    button.textContent = answer.text;
+                    button.style.backgroundColor = ''; // Reset background color
+                    button.style.color = ''; // Reset text color
+                    button.addEventListener('click', () => checkAnswer(index));
+                    answerContainer.appendChild(button);
+                });
                 feedback.textContent = '';
                 nextButton.style.display = 'none';
             } else {
@@ -94,6 +105,13 @@
         function checkAnswer(answerIndex) {
             const question = quizData.questions[currentQuestionIndex];
             const selectedAnswer = question.answers[answerIndex];
+
+            userAnswers.push({
+                questionText: question.question_text,
+                userAnswer: selectedAnswer.text,
+                correctAnswer: question.answers.find(a => a.is_correct).text,
+                isCorrect: selectedAnswer.is_correct
+            });
 
             let feedbackText = '';
             if (selectedAnswer.feedback) {
@@ -126,61 +144,33 @@
             questionContainer.style.display = 'none';
             resultContainer.style.display = 'block';
             finalScore.textContent = score;
+            displayQuestionsSummary();
+        }
+
+        function displayQuestionsSummary() {
+            const summaryContainer = document.getElementById('questionsSummary');
+            summaryContainer.innerHTML = '';
+
+            userAnswers.forEach((answer, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.style.marginBottom = '15px';
+                questionDiv.style.padding = '10px';
+                questionDiv.style.border = '1px solid #ccc';
+                questionDiv.style.borderRadius = '5px';
+
+                questionDiv.innerHTML = `
+                    <p><strong>Frage ${index + 1}:</strong> ${answer.questionText}</p>
+                    <p>Ihre Antwort: <span style="color: ${answer.isCorrect ? 'green' : 'red'};">${answer.userAnswer}</span></p>
+                    <p>Korrekte Antwort: <span style="color: green;">${answer.correctAnswer}</span></p>
+                `;
+
+                summaryContainer.appendChild(questionDiv);
+            });
         }
 
         nextButton.addEventListener('click', () => {
             currentQuestionIndex++;
             showQuestion();
-        });
-        function generateLMSFormat(questions) {
-            let output = '';
-            questions.forEach((question, index) => {
-                output += `Typ\tSC\n`;
-                output += `Title\t${question.title}\n`;
-                output += `Feedback correct answer\t${question.additional_info?.real_life_example || 'Richtig!'}\n`;
-                output += `Feedback wrong answer\t${question.additional_info?.real_life_example || 'Falsch!'}\n`;
-                output += `Question\t${question.question_text}\n`;
-                output += `Points\tAnswer Value\n`;
-        
-                question.answers.forEach(answer => {
-                    const points = answer.is_correct ? '1' : '-0.5';
-                    output += `${points}\t${answer.text}\n`;
-                });
-        
-                output += '\n';
-            });
-        
-            return output;
-        }
-        
-        function downloadLMSFormat(content, filename) {
-            const blob = new Blob([content], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-        
-        const generateLMSButton = document.getElementById('generateLMSButton');
-        
-        generateLMSButton.addEventListener('click', () => {
-            const selectedFile = topicSelect.value;
-            if (selectedFile) {
-                fetch(selectedFile)
-                    .then(response => response.json())
-                    .then(data => {
-                        const lmsFormat = generateLMSFormat(data.questions);
-                        const filename = selectedFile.split('/').pop().replace('.json', '_lms_format.txt');
-                        downloadLMSFormat(lmsFormat, filename);
-                    })
-                    .catch(error => console.error('Error generating LMS format:', error));
-            } else {
-                alert('Bitte wählen Sie ein Thema aus.');
-            }
         });
 
         loadQuizButton.addEventListener('click', () => {
@@ -194,11 +184,63 @@
                         };
                         currentQuestionIndex = 0;
                         score = 0;
+                        userAnswers = []; // Reset user answers
                         questionContainer.style.display = 'block';
                         resultContainer.style.display = 'none';
                         showQuestion();
                     })
                     .catch(error => console.error('Error loading quiz data:', error));
+            } else {
+                alert('Bitte wählen Sie ein Thema aus.');
+            }
+        });
+
+        function generateLMSFormat(questions) {
+            let output = '';
+            questions.forEach((question, index) => {
+                output += `Typ\tSC\n`;
+                output += `Title\t${question.title}\n`;
+                output += `Feedback correct answer\t${question.additional_info?.real_life_example || 'Richtig!'}\n`;
+                output += `Feedback wrong answer\t${question.additional_info?.real_life_example || 'Falsch!'}\n`;
+                output += `Question\t${question.question_text}\n`;
+                output += `Points\tAnswer Value\n`;
+
+                question.answers.forEach(answer => {
+                    const points = answer.is_correct ? '1' : '-0.5';
+                    output += `${points}\t${answer.text}\n`;
+                });
+
+                output += '\n';
+            });
+
+            return output;
+        }
+
+        function downloadLMSFormat(content, filename) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        const generateLMSButton = document.getElementById('generateLMSButton');
+
+        generateLMSButton.addEventListener('click', () => {
+            const selectedFile = topicSelect.value;
+            if (selectedFile) {
+                fetch(selectedFile)
+                    .then(response => response.json())
+                    .then(data => {
+                        const lmsFormat = generateLMSFormat(data.questions);
+                        const filename = selectedFile.split('/').pop().replace('.json', '_lms_format.txt');
+                        downloadLMSFormat(lmsFormat, filename);
+                    })
+                    .catch(error => console.error('Error generating LMS format:', error));
             } else {
                 alert('Bitte wählen Sie ein Thema aus.');
             }
