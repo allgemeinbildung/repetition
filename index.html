@@ -223,7 +223,7 @@
                 output += `Feedback correct answer\t${question.additional_info?.real_life_example || 'Richtig!'}\n`;
                 output += `Feedback wrong answer\t${question.additional_info?.real_life_example || 'Falsch!'}\n`;
                 output += `Question\t${question.question_text}\n`;
-                output += `Points\tAnswer Value\n`;
+                output += `Points\t1\n`;
 
                 question.answers.forEach(answer => {
                     const points = answer.is_correct ? '1' : '-0.5';
